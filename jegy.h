@@ -6,20 +6,47 @@
 using namespace  std;
 class Jegy {
 private:
-    //pontos hely
-    int vonatszam;
+    ///pontos hely
+    string vonatszam;
     int kocsiszam;
     int hely;
-    //indulasi adatok
+    ///indulasi adatok
     string indul_allomas;
     Datum indul_datum;
-    //erkezesi adatok
+    ///erkezesi adatok
     string erkez_allomas;
     Datum erkez_datum;
 public:
+    Jegy(string vsz, int ksz, int hely, string ind_all, Datum ind_dt, string erk_all, Datum erk_dt) :vonatszam(vsz), kocsiszam(ksz), hely(hely), indul_allomas(ind_all), indul_datum(ind_dt), erkez_allomas(erk_all), erkez_datum(erk_dt) {}
 
+    Jegy() {}
 
 
 };
+
+class Jegyek {
+private:
+    int meret;
+    Jegy* jegyek;
+public:
+    Jegyek() {
+        jegyek = new Jegy[0];
+        meret = 0;
+    }
+
+    Jegy operator[](int i) const;
+
+    void add(const Jegy &j);
+
+    void remove();
+
+    int size() const;
+
+    ~Jegyek() {
+        delete[] jegyek;
+    }
+};
+
+
 
 #endif
