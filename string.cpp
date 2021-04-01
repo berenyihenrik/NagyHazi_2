@@ -3,10 +3,10 @@
   #define _CRT_SECURE_NO_WARNINGS
 #endif
 
-#include <iostream>             // Kiíratáshoz
-#include <cstring>              // Sztringműveletekhez
+#include <iostream>
+#include <cstring>
 
-#include "memtrace.h"           // a standard headerek után kell lennie
+#include "memtrace.h"
 #include "string.h"
 using namespace std;
 
@@ -75,11 +75,18 @@ String String::operator+(const String& rhs_s) const {
     } else {
         strcpy(temp.pData, rhs_s.pData);
     }
-
-
-
     return temp;
+}
 
+bool String::operator==(const String &s) {
+    if(strcmp(this->c_str(), s.c_str()) == 0) {
+        return true;
+    }
+    return false;
+}
+
+bool String::operator!=(const String &s) {
+    return !(*this == s);
 }
 
 /// << operator, ami kiír az ostream-re

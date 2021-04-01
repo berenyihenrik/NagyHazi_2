@@ -4,14 +4,12 @@
 #include "vonat.h"
 using namespace std;
 
-
+///Vonat
 ostream& operator<<(ostream& os, const Vonat& v) {
     return os << v.get_vsz() << '#' << v.get_ksz() << '#' << v.get_ind_dt() << '#' << v.get_ind_all() << '#' << v.get_erkez_dt() << '#' << v.get_erkez_all() << endl;
 }
 
-
-
-///JARATOK
+///Jaratok
 void beolvas(Jaratok& j, const char* fajlnev) {
     ifstream fpp;
     fpp.open(fajlnev);
@@ -54,6 +52,26 @@ void Jaratok::add(const Vonat& v) {
     delete[] jaratok;
     jaratok = temp;
     meret++;
+}
+
+void Jaratok::remove(const char* vonatszam) {
+    for(size_t i = 0; i < meret; i++) {
+        if(jaratok[i].get_vsz() == vonatszam) {
+            Vonat* temp = new Vonat[meret-1];
+            size_t idx = 0;
+            for(size_t j = 0; j < meret; j++) {
+                if(jaratok[j].get_vsz() != vonatszam) {
+                    temp[idx] = jaratok[j];
+                    idx++;
+                }
+            }
+            meret--;
+            delete[] jaratok;
+            jaratok = temp;
+            return;
+        }
+    }
+    throw "Nincs ilyen vonatszam!";
 }
 
 size_t Jaratok::size() const{

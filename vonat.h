@@ -27,8 +27,6 @@ public:
     Datum get_ind_dt() const {return indul_datum;}
     String get_erkez_all() const {return erkez_allomas;}
     Datum get_erkez_dt() const {return erkez_datum;}
-
-
 };
 
 ostream& operator<<(ostream& os, const Vonat& v);
@@ -48,7 +46,7 @@ public:
 
     void add(const Vonat &v);
 
-    void remove();
+    void remove(const char* vonatszam);
 
     size_t size() const;
 

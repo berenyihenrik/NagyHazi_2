@@ -6,13 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/beren/Desktop/NagyHazi_2/datum.cpp
-datum.h
-/mnt/c/Users/beren/Desktop/NagyHazi_2/datum.h
-
-/mnt/c/Users/beren/Desktop/NagyHazi_2/datum.h
+/Users/berenyi/Desktop/NagyHazi_2/datum.h
 iostream
 -
 fstream
 -
+
+/Users/berenyi/Desktop/NagyHazi_2/main.cpp
+iostream
+-
+fstream
+-
+string
+-
+datum.h
+/Users/berenyi/Desktop/NagyHazi_2/datum.h
+vonat.h
+/Users/berenyi/Desktop/NagyHazi_2/vonat.h
+string.h
+/Users/berenyi/Desktop/NagyHazi_2/string.h
+
+/Users/berenyi/Desktop/NagyHazi_2/string.h
+iostream
+-
+
+/Users/berenyi/Desktop/NagyHazi_2/vonat.h
+string
+-
+datum.h
+/Users/berenyi/Desktop/NagyHazi_2/datum.h
+string.h
+/Users/berenyi/Desktop/NagyHazi_2/string.h
 

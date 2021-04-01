@@ -7,12 +7,6 @@ class String {
     char *pData;        ///< pointer az adatra
     size_t len;         ///< hossz lezáró nulla nélkül
 public:
-
-    void printDbg(const char *txt = "") const {
-        std::cout << txt << "[" << len << "], "
-                  << (pData ? pData : "(NULL)") << '|' << std::endl;
-    }
-
     /// Paraméter nélküli konstruktor:
     String() :pData(0), len(0) {}
 
@@ -49,6 +43,8 @@ String& operator+=(const char rhs_s) {
     return *this;
 }
 
+bool operator==(const String &s);
+bool operator!=(const String &s);
 
 ~String();
 };

@@ -4,33 +4,32 @@
 #include <string>
 #include "datum.h"
 #include "string.h"
+#include "vonat.h"
 using namespace  std;
 class Jegy {
 private:
     ///pontos hely
-    String vonatszam;
+    String nev;
     int kocsiszam;
     int hely;
-    ///indulasi adatok
-    String indul_allomas;
-    Datum indul_datum;
-    ///erkezesi adatok
-    String erkez_allomas;
-    Datum erkez_datum;
+    ///vonat adatai
+    Vonat vonat;
 public:
-    Jegy(String vsz, int ksz, int hely, String ind_all, Datum ind_dt, String erk_all, Datum erk_dt) :vonatszam(vsz), kocsiszam(ksz), hely(hely), indul_allomas(ind_all), indul_datum(ind_dt), erkez_allomas(erk_all), erkez_datum(erk_dt) {}
+    Jegy(String nev, int ksz, int hely, Vonat v) :nev(nev), kocsiszam(ksz), hely(hely), vonat(v) {}
 
     Jegy() {}
 
-    String get_vsz() const {return vonatszam;}
+    String get_nev() const{return nev;}
+    String get_vsz() const {return vonat.get_vsz();}
     int get_ksz() const {return kocsiszam;}
-    String get_ind_all() const {return indul_allomas;}
-    Datum get_ind_dt() const {return indul_datum;}
-    String get_erkez_all() const {return erkez_allomas;}
-    Datum get_erkez_dt() const {return erkez_datum;}
-
-
+    int get_hely() const {return hely;}
+    String get_ind_all() const {return vonat.get_ind_all();}
+    Datum get_ind_dt() const {return vonat.get_ind_dt();}
+    String get_erkez_all() const {return vonat.get_erkez_all();}
+    Datum get_erkez_dt() const {return vonat.get_erkez_dt();}
 };
+
+ostream& operator<<(ostream& os, const Jegy& j);
 
 class Jegyek {
 private:
@@ -46,15 +45,15 @@ public:
 
     void add(const Jegy &j);
 
-    void remove();
+    void remove(const char* nev);
 
-    size_t size() const;
+    size_t size() const {return meret;}
 
     ~Jegyek() {
         delete[] jegyek;
     }
 };
 
-
+void beolvas(Jegyek& j, const char* fajlnev);
 
 #endif
