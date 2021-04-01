@@ -38,7 +38,7 @@ void beolvas(Jaratok& j, const char* fajlnev) {
     delete[] adatok;
 }
 
-Vonat Jaratok::operator[](int i) const{
+Vonat Jaratok::operator[](size_t i) const{
     if(i < 0 || i >= meret) {
         throw "KIVETEL";
     }
@@ -47,7 +47,7 @@ Vonat Jaratok::operator[](int i) const{
 
 void Jaratok::add(const Vonat& v) {
     Vonat* temp = new Vonat[meret+1];
-    for(int i = 0; i < meret; i++) {
+    for(size_t i = 0; i < meret; i++) {
         temp[i] = jaratok[i];
     }
     temp[meret] = v;
@@ -56,7 +56,7 @@ void Jaratok::add(const Vonat& v) {
     meret++;
 }
 
-int Jaratok::size() const{
+size_t Jaratok::size() const{
     return meret;
 }
 

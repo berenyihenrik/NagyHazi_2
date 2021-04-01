@@ -26,7 +26,7 @@ public:
 
 class Jegyek {
 private:
-    int meret;
+    size_t meret;
     Jegy* jegyek;
 public:
     Jegyek() {
@@ -34,13 +34,13 @@ public:
         meret = 0;
     }
 
-    Jegy operator[](int i) const;
+    Jegy operator[](site_t i) const;
 
     void add(const Jegy &j);
 
     void remove();
 
-    int size() const;
+    size_t size() const;
 
     ~Jegyek() {
         delete[] jegyek;

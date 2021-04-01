@@ -36,7 +36,7 @@ ostream& operator<<(ostream& os, const Vonat& v);
 //Heterogen kollekcio a jaratok tarolasara
 class Jaratok {
 private:
-    int meret;
+    size_t meret;
     Vonat* jaratok;
 public:
     Jaratok() {
@@ -44,13 +44,13 @@ public:
         meret = 0;
     }
 
-    Vonat operator[](int i) const;
+    Vonat operator[](size_t i) const;
 
     void add(const Vonat &v);
 
     void remove();
 
-    int size() const;
+    size_t size() const;
 
     ~Jaratok() {
         delete[] jaratok;
