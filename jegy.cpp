@@ -1,4 +1,4 @@
-#include "jegy.h"
+#include "jegy.hpp"
 
 ///Jegy
 ostream& operator<<(ostream& os, const Jegy& j) {

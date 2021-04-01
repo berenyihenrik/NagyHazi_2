@@ -2,14 +2,12 @@
 #include <fstream>
 #include <string>
 
-#include "datum.h"
-#include "vonat.h"
-#include "string.h"
+#include "datum.hpp"
+#include "vonat.hpp"
+#include "string.hpp"
 using namespace std;
 
 int main() {
-
-
     Jaratok j;
     beolvas(j, "vonatok.txt");
 

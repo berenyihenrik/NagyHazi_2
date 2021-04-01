@@ -85,7 +85,7 @@
 		<Unit filename="/Users/berenyi/Desktop/NagyHazi_2/datum.cpp">
 			<Option target="NagyHazi_2"/>
 		</Unit>
-		<Unit filename="/Users/berenyi/Desktop/NagyHazi_2/datum.h">
+		<Unit filename="/Users/berenyi/Desktop/NagyHazi_2/datum.hpp">
 			<Option target="NagyHazi_2"/>
 		</Unit>
 		<Unit filename="/Users/berenyi/Desktop/NagyHazi_2/gtest_lite.h">
@@ -94,7 +94,7 @@
 		<Unit filename="/Users/berenyi/Desktop/NagyHazi_2/jegy.cpp">
 			<Option target="NagyHazi_2"/>
 		</Unit>
-		<Unit filename="/Users/berenyi/Desktop/NagyHazi_2/jegy.h">
+		<Unit filename="/Users/berenyi/Desktop/NagyHazi_2/jegy.hpp">
 			<Option target="NagyHazi_2"/>
 		</Unit>
 		<Unit filename="/Users/berenyi/Desktop/NagyHazi_2/main.cpp">
@@ -109,13 +109,13 @@
 		<Unit filename="/Users/berenyi/Desktop/NagyHazi_2/string.cpp">
 			<Option target="NagyHazi_2"/>
 		</Unit>
-		<Unit filename="/Users/berenyi/Desktop/NagyHazi_2/string.h">
+		<Unit filename="/Users/berenyi/Desktop/NagyHazi_2/string.hpp">
 			<Option target="NagyHazi_2"/>
 		</Unit>
 		<Unit filename="/Users/berenyi/Desktop/NagyHazi_2/vonat.cpp">
 			<Option target="NagyHazi_2"/>
 		</Unit>
-		<Unit filename="/Users/berenyi/Desktop/NagyHazi_2/vonat.h">
+		<Unit filename="/Users/berenyi/Desktop/NagyHazi_2/vonat.hpp">
 			<Option target="NagyHazi_2"/>
 		</Unit>
 		<Unit filename="/Users/berenyi/Desktop/NagyHazi_2/CMakeLists.txt">

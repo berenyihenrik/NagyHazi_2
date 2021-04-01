@@ -1,6 +1,6 @@
-#include "datum.h"
+#include "datum.hpp"
 
-bool Datum::operator>(Datum &datum2){
+bool Datum::operator>(Datum &datum2) const{
     if(this->ev < datum2.ev) {
         return false;
     } else if(this->ev > datum2.ev) {
@@ -28,7 +28,7 @@ bool Datum::operator>(Datum &datum2){
     return true;
 }
 
-bool Datum::operator<(Datum &datum2) {
+bool Datum::operator<(Datum &datum2) const{
     return !(*this > datum2);
 }
 

@@ -7,7 +7,7 @@
 #include <cstring>
 
 #include "memtrace.h"
-#include "string.h"
+#include "string.hpp"
 using namespace std;
 
 /// Konstruktorok: egy char karakterből (createString)

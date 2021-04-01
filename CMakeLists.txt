@@ -3,6 +3,6 @@ project(NagyHazi_2)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(NagyHazi_2 main.cpp vonat.cpp vonat.h jegy.cpp jegy.h datum.cpp datum.h gtest_lite.h memtrace.cpp memtrace.h string.cpp string.h)
+add_executable(NagyHazi_2 main.cpp vonat.cpp vonat.hpp jegy.cpp jegy.hpp datum.cpp datum.hpp gtest_lite.h memtrace.cpp memtrace.h string.cpp string.hpp)
 
 add_compile_definitions(MEMTRACE)

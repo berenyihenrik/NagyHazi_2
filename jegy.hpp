@@ -2,9 +2,9 @@
 #define NAGYHAZI_2_JEGY_H
 
 #include <string>
-#include "datum.h"
-#include "string.h"
-#include "vonat.h"
+#include "datum.hpp"
+#include "string.hpp"
+#include "vonat.hpp"
 using namespace  std;
 class Jegy {
 private:

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "vonat.h"
+#include "vonat.hpp"
 using namespace std;
 
 ///Vonat

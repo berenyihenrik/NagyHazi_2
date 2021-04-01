@@ -3,26 +3,27 @@
 
 CMakeFiles/NagyHazi_2.dir/datum.cpp.o
  /Users/berenyi/Desktop/NagyHazi_2/datum.cpp
- /Users/berenyi/Desktop/NagyHazi_2/datum.h
+ /Users/berenyi/Desktop/NagyHazi_2/datum.hpp
 CMakeFiles/NagyHazi_2.dir/jegy.cpp.o
- /Users/berenyi/Desktop/NagyHazi_2/datum.h
+ /Users/berenyi/Desktop/NagyHazi_2/datum.hpp
  /Users/berenyi/Desktop/NagyHazi_2/jegy.cpp
- /Users/berenyi/Desktop/NagyHazi_2/jegy.h
- /Users/berenyi/Desktop/NagyHazi_2/string.h
+ /Users/berenyi/Desktop/NagyHazi_2/jegy.hpp
+ /Users/berenyi/Desktop/NagyHazi_2/string.hpp
+ /Users/berenyi/Desktop/NagyHazi_2/vonat.hpp
 CMakeFiles/NagyHazi_2.dir/main.cpp.o
- /Users/berenyi/Desktop/NagyHazi_2/datum.h
+ /Users/berenyi/Desktop/NagyHazi_2/datum.hpp
  /Users/berenyi/Desktop/NagyHazi_2/main.cpp
- /Users/berenyi/Desktop/NagyHazi_2/string.h
- /Users/berenyi/Desktop/NagyHazi_2/vonat.h
+ /Users/berenyi/Desktop/NagyHazi_2/string.hpp
+ /Users/berenyi/Desktop/NagyHazi_2/vonat.hpp
 CMakeFiles/NagyHazi_2.dir/memtrace.cpp.o
  /Users/berenyi/Desktop/NagyHazi_2/memtrace.cpp
  /Users/berenyi/Desktop/NagyHazi_2/memtrace.h
 CMakeFiles/NagyHazi_2.dir/string.cpp.o
  /Users/berenyi/Desktop/NagyHazi_2/memtrace.h
  /Users/berenyi/Desktop/NagyHazi_2/string.cpp
- /Users/berenyi/Desktop/NagyHazi_2/string.h
+ /Users/berenyi/Desktop/NagyHazi_2/string.hpp
 CMakeFiles/NagyHazi_2.dir/vonat.cpp.o
- /Users/berenyi/Desktop/NagyHazi_2/datum.h
- /Users/berenyi/Desktop/NagyHazi_2/string.h
+ /Users/berenyi/Desktop/NagyHazi_2/datum.hpp
+ /Users/berenyi/Desktop/NagyHazi_2/string.hpp
  /Users/berenyi/Desktop/NagyHazi_2/vonat.cpp
- /Users/berenyi/Desktop/NagyHazi_2/vonat.h
+ /Users/berenyi/Desktop/NagyHazi_2/vonat.hpp

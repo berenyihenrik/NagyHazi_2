@@ -1,8 +1,8 @@
 #ifndef NAGYHAZI_2_VONAT_H
 #define NAGYHAZI_2_VONAT_H
 #include <string>
-#include "datum.h"
-#include "string.h"
+#include "datum.hpp"
+#include "string.hpp"
 
 using namespace std;
 
