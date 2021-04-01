@@ -35,7 +35,11 @@ bool Datum::operator<(Datum &datum2) {
 ostream& operator<<(ostream& os, const Datum& d) {
     int ora = d.get_idopont()/60;
     int perc = d.get_idopont() - ora*60;
-    os << d.get_ev() << '/' << d.get_honap() << '/' << d.get_nap() << ' ' << ora << ':';
+    if(&os == &cout) {
+        os << d.get_ev() << '/' << d.get_honap() << '/' << d.get_nap() << ' ' << ora << ':';
+    } else {
+        os << d.get_ev() << '#' << d.get_honap() << '#' << d.get_nap() << ora << '#';
+    }
     if(perc < 10) {
         os << '0';
     }

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/beren/Desktop/NagyHazi_2/datum.cpp
+datum.h
+/mnt/c/Users/beren/Desktop/NagyHazi_2/datum.h
+
+/mnt/c/Users/beren/Desktop/NagyHazi_2/datum.h
+iostream
+-
+fstream
+-
+

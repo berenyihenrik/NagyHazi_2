@@ -10,36 +10,14 @@ using namespace std;
 int main() {
 
 
-    string test;
-
-
-
-    //Jaratok j;
-    //beolvas(j, "vonatok.txt");
-
-    //cout << j;
-
-
-
-    String tester;
-    String tester2;
-    //tester +=  'C';
-    //cout<< tester;
-    ifstream fpp;
-    fpp.open("vonatok.txt");
-    if(!fpp) {
-        printf("KIVETEL\n");
-        throw "QP4TVJ";
-    }
-
-    //getline(fpp, tester, '#');
-
-    //cout << tester;
-
     Jaratok j;
     beolvas(j, "vonatok.txt");
 
     cout << j;
+
+    ofstream f;
+    f.open("asd.txt");
+    f << j;
 
 
     return 0;

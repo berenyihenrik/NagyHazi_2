@@ -1,6 +1,7 @@
 #ifndef NAGYHAZI_2_DATUM_H
 #define NAGYHAZI_2_DATUM_H
 #include <iostream>
+#include <fstream>
 using namespace std;
 class Datum {
 private:

@@ -66,4 +66,3 @@ ostream& operator<<(ostream& os, const Jaratok& j) {
     }
     return os;
 }
-
