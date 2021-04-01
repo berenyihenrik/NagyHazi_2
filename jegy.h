@@ -34,7 +34,7 @@ public:
         meret = 0;
     }
 
-    Jegy operator[](site_t i) const;
+    Jegy operator[](size_t i) const;
 
     void add(const Jegy &j);
 
