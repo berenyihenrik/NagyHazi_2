@@ -251,6 +251,33 @@ memtrace.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NagyHazi_2.dir/build.make CMakeFiles/NagyHazi_2.dir/memtrace.cpp.s
 .PHONY : memtrace.cpp.s
 
+string.o: string.cpp.o
+
+.PHONY : string.o
+
+# target to build an object file
+string.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NagyHazi_2.dir/build.make CMakeFiles/NagyHazi_2.dir/string.cpp.o
+.PHONY : string.cpp.o
+
+string.i: string.cpp.i
+
+.PHONY : string.i
+
+# target to preprocess a source file
+string.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NagyHazi_2.dir/build.make CMakeFiles/NagyHazi_2.dir/string.cpp.i
+.PHONY : string.cpp.i
+
+string.s: string.cpp.s
+
+.PHONY : string.s
+
+# target to generate assembly for a file
+string.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NagyHazi_2.dir/build.make CMakeFiles/NagyHazi_2.dir/string.cpp.s
+.PHONY : string.cpp.s
+
 vonat.o: vonat.cpp.o
 
 .PHONY : vonat.o
@@ -299,6 +326,9 @@ help:
 	@echo "... memtrace.o"
 	@echo "... memtrace.i"
 	@echo "... memtrace.s"
+	@echo "... string.o"
+	@echo "... string.i"
+	@echo "... string.s"
 	@echo "... vonat.o"
 	@echo "... vonat.i"
 	@echo "... vonat.s"

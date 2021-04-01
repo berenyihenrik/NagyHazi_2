@@ -106,6 +106,12 @@
 		<Unit filename="/Users/berenyi/Desktop/NagyHazi_2/memtrace.h">
 			<Option target="NagyHazi_2"/>
 		</Unit>
+		<Unit filename="/Users/berenyi/Desktop/NagyHazi_2/string.cpp">
+			<Option target="NagyHazi_2"/>
+		</Unit>
+		<Unit filename="/Users/berenyi/Desktop/NagyHazi_2/string.h">
+			<Option target="NagyHazi_2"/>
+		</Unit>
 		<Unit filename="/Users/berenyi/Desktop/NagyHazi_2/vonat.cpp">
 			<Option target="NagyHazi_2"/>
 		</Unit>

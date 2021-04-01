@@ -10,12 +10,18 @@ CMakeFiles/NagyHazi_2.dir/jegy.cpp.o: ../jegy.h
 
 CMakeFiles/NagyHazi_2.dir/main.cpp.o: ../datum.h
 CMakeFiles/NagyHazi_2.dir/main.cpp.o: ../main.cpp
+CMakeFiles/NagyHazi_2.dir/main.cpp.o: ../string.h
 CMakeFiles/NagyHazi_2.dir/main.cpp.o: ../vonat.h
 
 CMakeFiles/NagyHazi_2.dir/memtrace.cpp.o: ../memtrace.cpp
 CMakeFiles/NagyHazi_2.dir/memtrace.cpp.o: ../memtrace.h
 
+CMakeFiles/NagyHazi_2.dir/string.cpp.o: ../memtrace.h
+CMakeFiles/NagyHazi_2.dir/string.cpp.o: ../string.cpp
+CMakeFiles/NagyHazi_2.dir/string.cpp.o: ../string.h
+
 CMakeFiles/NagyHazi_2.dir/vonat.cpp.o: ../datum.h
+CMakeFiles/NagyHazi_2.dir/vonat.cpp.o: ../string.h
 CMakeFiles/NagyHazi_2.dir/vonat.cpp.o: ../vonat.cpp
 CMakeFiles/NagyHazi_2.dir/vonat.cpp.o: ../vonat.h
 

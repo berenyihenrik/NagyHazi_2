@@ -2,29 +2,30 @@
 #define NAGYHAZI_2_VONAT_H
 #include <string>
 #include "datum.h"
+#include "string.h"
 
 using namespace std;
 
 class Vonat {
 private:
-    string vonatszam;
+    String vonatszam;
     int kocsik_szama;
     ///indulasi adatok
-    string indul_allomas;
+    String indul_allomas;
     Datum indul_datum;
     ///erkezesi adatok
-    string erkez_allomas;
+    String erkez_allomas;
     Datum erkez_datum;
 public:
-    Vonat(string vsz, int ksz, string ind_all, Datum ind_dt, string erk_all, Datum erk_dt) :vonatszam(vsz), kocsik_szama(ksz), indul_allomas(ind_all), indul_datum(ind_dt), erkez_allomas(erk_all), erkez_datum(erk_dt) {}
+    Vonat(String vsz, int ksz, String ind_all, Datum ind_dt, String erk_all, Datum erk_dt) :vonatszam(vsz), kocsik_szama(ksz), indul_allomas(ind_all), indul_datum(ind_dt), erkez_allomas(erk_all), erkez_datum(erk_dt) {}
 
     Vonat() {}
 
-    string get_vsz() const {return vonatszam;}
+    String get_vsz() const {return vonatszam;}
     int get_ksz() const {return kocsik_szama;}
-    string get_ind_all() const {return indul_allomas;}
+    String get_ind_all() const {return indul_allomas;}
     Datum get_ind_dt() const {return indul_datum;}
-    string get_erkez_all() const {return erkez_allomas;}
+    String get_erkez_all() const {return erkez_allomas;}
     Datum get_erkez_dt() const {return erkez_datum;}
 
 
