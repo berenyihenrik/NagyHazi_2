@@ -5,6 +5,7 @@
 #include "datum.hpp"
 #include "vonat.hpp"
 #include "string.hpp"
+#include "jegy.hpp"
 using namespace std;
 
 int main() {
@@ -13,19 +14,17 @@ int main() {
 
     cout << j << endl;
 
-
-    try {
-        j.remove("BBB001");
-    }
-    catch(const char* c){
-        cout << c;
-    }
-
-    cout << j;
+    //cout << j;
 
     ofstream f;
     f.open("asd.txt");
     f << j;
+
+    Jegyek je;
+    beolvas(j, je, "jegyek.txt");
+
+    cout << endl << je << endl;
+
 
 
     return 0;

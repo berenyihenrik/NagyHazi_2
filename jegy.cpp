@@ -42,28 +42,42 @@ void Jegyek::remove(const char* nev) {
     throw "Ilyen neven nincs foglalas!";
 }
 
-/*void beolvas(Jaratok& j, const char* fajlnev) {
+void beolvas(Jaratok& ja, Jegyek& je, const char* fajlnev) {
     ifstream fpp;
     fpp.open(fajlnev);
     if(!fpp) {
         printf("KIVETEL\n");
         throw "QP4TVJ";
     }
-    String* adatok = new String[15];
+    String* adatok = new String[4];
+    Vonat v;
 
     int i = 0;
     while(getline(fpp,adatok[i],'#')) {
-        if(i == 12) {
-            getline(fpp, adatok[13], '\n');
-            Datum ind(stoi(adatok[1]), stoi(adatok[2]), stoi(adatok[3]), stoi(adatok[4])*60+stoi(adatok[5]));
-            Datum erk(stoi(adatok[6]), stoi(adatok[7]), stoi(adatok[8]), stoi(adatok[9])*60+stoi(adatok[10]));
-            Vonat v(adatok[0], stoi(adatok[13]), adatok[11], ind, adatok[12], erk);            i = -1;
-            j.add(v);
+        cout << adatok[i] << endl;
+        if(i == 2) {
+            getline(fpp, adatok[3], '\n');
+            for(size_t k = 0; k < ja.size(); k++) {
+                if(ja[k].get_vsz() == adatok[3]) {
+                    v = ja[k];
+                    break;
+                }
+            }
+            Jegy j(adatok[0], stoi(adatok[1]), stoi(adatok[2]), v);
+            i = -1;
+            je.add(j);
             delete[] adatok;
-            adatok = new String[14];
+            adatok = new String[4];
         }
-
         i++;
     }
     delete[] adatok;
-}*/
+    fpp.close();
+}
+
+ostream& operator<<(ostream& os, const Jegyek& j) {
+    for(size_t i = 0; i < j.size(); i++) {
+        os << j[i];
+    }
+    return os;
+}

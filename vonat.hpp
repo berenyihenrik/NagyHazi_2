@@ -21,6 +21,8 @@ public:
 
     Vonat() {}
 
+
+
     String get_vsz() const {return vonatszam;}
     int get_ksz() const {return kocsik_szama;}
     String get_ind_all() const {return indul_allomas;}

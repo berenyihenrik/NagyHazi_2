@@ -54,6 +54,8 @@ public:
     }
 };
 
-void beolvas(Jegyek& j, const char* fajlnev);
+void beolvas(Jaratok& ja, Jegyek& je, const char* fajlnev);
+
+ostream& operator<<(ostream& os, const Jegyek& j);
 
 #endif

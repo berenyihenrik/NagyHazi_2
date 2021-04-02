@@ -25,7 +25,8 @@ void beolvas(Jaratok& j, const char* fajlnev) {
             getline(fpp, adatok[13], '\n');
             Datum ind(stoi(adatok[1]), stoi(adatok[2]), stoi(adatok[3]), stoi(adatok[4])*60+stoi(adatok[5]));
             Datum erk(stoi(adatok[6]), stoi(adatok[7]), stoi(adatok[8]), stoi(adatok[9])*60+stoi(adatok[10]));
-            Vonat v(adatok[0], stoi(adatok[13]), adatok[11], ind, adatok[12], erk);            i = -1;
+            Vonat v(adatok[0], stoi(adatok[13]), adatok[11], ind, adatok[12], erk);
+            i = -1;
             j.add(v);
             delete[] adatok;
             adatok = new String[14];
@@ -34,6 +35,7 @@ void beolvas(Jaratok& j, const char* fajlnev) {
         i++;
     }
     delete[] adatok;
+    fpp.close();
 }
 
 Vonat Jaratok::operator[](size_t i) const{
@@ -79,7 +81,7 @@ size_t Jaratok::size() const{
 }
 
 ostream& operator<<(ostream& os, const Jaratok& j) {
-    for(int i = 0; i < j.size(); i++) {
+    for(size_t i = 0; i < j.size(); i++) {
         os << j[i];
     }
     return os;
