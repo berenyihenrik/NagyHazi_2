@@ -2,7 +2,15 @@
 
 ///Jegy
 ostream& operator<<(ostream& os, const Jegy& j) {
-    return os << j.get_nev() << '#' << j.get_vsz() << '#' << j.get_ksz() << '#' << j.get_hely() << '#' << j.get_ind_dt() << '#' << j.get_ind_all() << '#' << j.get_erkez_dt() << '#' << j.get_erkez_all() << endl;
+    if(&os == &cout) {
+        return os << j.get_nev() << ' ' << j.get_vsz() << ' ' << j.get_ksz() << ' ' << j.get_hely() << ' '
+        << j.get_ind_dt() << ' ' << j.get_ind_all() << ' ' << j.get_erkez_dt() << ' ' << j.get_erkez_all()
+        << endl;
+    } else {
+        return os << j.get_nev() << '#' << j.get_vsz() << '#' << j.get_ksz() << '#' << j.get_hely() << '#'
+        << j.get_ind_dt() << '#' << j.get_ind_all() << '#' << j.get_erkez_dt() << '#' << j.get_erkez_all()
+        << endl;
+    }
 }
 
 
@@ -54,7 +62,6 @@ void beolvas(Jaratok& ja, Jegyek& je, const char* fajlnev) {
 
     int i = 0;
     while(getline(fpp,adatok[i],'#')) {
-        cout << adatok[i] << endl;
         if(i == 2) {
             getline(fpp, adatok[3], '\n');
             for(size_t k = 0; k < ja.size(); k++) {

@@ -94,6 +94,25 @@ ostream& operator<<(std::ostream& os, const String& s) {
     return os << s.c_str() ;
 }
 
+/// << operator, ami beolvas az istreamrol egy szot
+std::istream& operator>>(std::istream& is, String& s0) {
+    unsigned char ch;
+    s0 = String("");
+    std::ios_base::fmtflags fl = is.flags();
+    is.setf(ios_base::skipws);
+    while (is >> ch) {
+        is.unsetf(ios_base::skipws);
+        if (isspace(ch)) {
+            is.putback(ch);
+            break;
+        } else {
+            s0 = s0 + ch;
+        }
+    }
+    is.setf(fl);
+    return is;
+}
+
 
 bool getline(std::istream& is, String& s, char d) {
     char current;

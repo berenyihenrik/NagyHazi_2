@@ -51,6 +51,8 @@ bool operator!=(const String &s);
 
 std::ostream& operator<<(std::ostream& os, const String& s);
 
+std::istream& operator>>(std::istream& is, String& s0);
+
 bool getline(std::istream& is, String& s, char d);
 
 int stoi(String& s);

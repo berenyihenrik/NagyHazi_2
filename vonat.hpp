@@ -9,7 +9,7 @@ using namespace std;
 class Vonat {
 private:
     String vonatszam;
-    int kocsik_szama;
+    //int kocsik_szama;
     ///indulasi adatok
     String indul_allomas;
     Datum indul_datum;
@@ -17,14 +17,14 @@ private:
     String erkez_allomas;
     Datum erkez_datum;
 public:
-    Vonat(String vsz, int ksz, String ind_all, Datum ind_dt, String erk_all, Datum erk_dt) :vonatszam(vsz), kocsik_szama(ksz), indul_allomas(ind_all), indul_datum(ind_dt), erkez_allomas(erk_all), erkez_datum(erk_dt) {}
+    Vonat(String vsz, String ind_all, Datum ind_dt, String erk_all, Datum erk_dt) :vonatszam(vsz), indul_allomas(ind_all), indul_datum(ind_dt), erkez_allomas(erk_all), erkez_datum(erk_dt) {}
 
     Vonat() {}
 
 
 
     String get_vsz() const {return vonatszam;}
-    int get_ksz() const {return kocsik_szama;}
+    //int get_ksz() const {return kocsik_szama;}
     String get_ind_all() const {return indul_allomas;}
     Datum get_ind_dt() const {return indul_datum;}
     String get_erkez_all() const {return erkez_allomas;}
@@ -58,6 +58,8 @@ public:
 };
 
 void beolvas(Jaratok& j, const char* fajlnev);
+
+void keres(Jaratok& j, String honnan, String hova, Datum kezdo, Datum vegso);
 
 ostream& operator<<(ostream& os, const Jaratok& j);
 

@@ -251,6 +251,33 @@ memtrace.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NagyHazi_2.dir/build.make CMakeFiles/NagyHazi_2.dir/memtrace.cpp.s
 .PHONY : memtrace.cpp.s
 
+menu.o: menu.cpp.o
+
+.PHONY : menu.o
+
+# target to build an object file
+menu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NagyHazi_2.dir/build.make CMakeFiles/NagyHazi_2.dir/menu.cpp.o
+.PHONY : menu.cpp.o
+
+menu.i: menu.cpp.i
+
+.PHONY : menu.i
+
+# target to preprocess a source file
+menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NagyHazi_2.dir/build.make CMakeFiles/NagyHazi_2.dir/menu.cpp.i
+.PHONY : menu.cpp.i
+
+menu.s: menu.cpp.s
+
+.PHONY : menu.s
+
+# target to generate assembly for a file
+menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NagyHazi_2.dir/build.make CMakeFiles/NagyHazi_2.dir/menu.cpp.s
+.PHONY : menu.cpp.s
+
 string.o: string.cpp.o
 
 .PHONY : string.o
@@ -326,6 +353,9 @@ help:
 	@echo "... memtrace.o"
 	@echo "... memtrace.i"
 	@echo "... memtrace.s"
+	@echo "... menu.o"
+	@echo "... menu.i"
+	@echo "... menu.s"
 	@echo "... string.o"
 	@echo "... string.i"
 	@echo "... string.s"

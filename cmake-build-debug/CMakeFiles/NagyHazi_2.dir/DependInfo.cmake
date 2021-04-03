@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/berenyi/Desktop/NagyHazi_2/jegy.cpp" "/Users/berenyi/Desktop/NagyHazi_2/cmake-build-debug/CMakeFiles/NagyHazi_2.dir/jegy.cpp.o"
   "/Users/berenyi/Desktop/NagyHazi_2/main.cpp" "/Users/berenyi/Desktop/NagyHazi_2/cmake-build-debug/CMakeFiles/NagyHazi_2.dir/main.cpp.o"
   "/Users/berenyi/Desktop/NagyHazi_2/memtrace.cpp" "/Users/berenyi/Desktop/NagyHazi_2/cmake-build-debug/CMakeFiles/NagyHazi_2.dir/memtrace.cpp.o"
+  "/Users/berenyi/Desktop/NagyHazi_2/menu.cpp" "/Users/berenyi/Desktop/NagyHazi_2/cmake-build-debug/CMakeFiles/NagyHazi_2.dir/menu.cpp.o"
   "/Users/berenyi/Desktop/NagyHazi_2/string.cpp" "/Users/berenyi/Desktop/NagyHazi_2/cmake-build-debug/CMakeFiles/NagyHazi_2.dir/string.cpp.o"
   "/Users/berenyi/Desktop/NagyHazi_2/vonat.cpp" "/Users/berenyi/Desktop/NagyHazi_2/cmake-build-debug/CMakeFiles/NagyHazi_2.dir/vonat.cpp.o"
   )

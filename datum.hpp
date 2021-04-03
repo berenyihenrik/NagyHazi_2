@@ -2,6 +2,8 @@
 #define NAGYHAZI_2_DATUM_H
 #include <iostream>
 #include <fstream>
+#include "string.hpp"
+
 using namespace std;
 class Datum {
 private:
@@ -26,5 +28,7 @@ public:
 
 ostream& operator<<(ostream& os, const Datum& d);
 
+///Datum beolvasasa
+istream& operator>>(istream& is, Datum& d);
 
 #endif

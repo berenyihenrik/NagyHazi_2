@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/NagyHazi_2.dir/jegy.cpp.o"
   "CMakeFiles/NagyHazi_2.dir/main.cpp.o"
   "CMakeFiles/NagyHazi_2.dir/memtrace.cpp.o"
+  "CMakeFiles/NagyHazi_2.dir/menu.cpp.o"
   "CMakeFiles/NagyHazi_2.dir/string.cpp.o"
   "CMakeFiles/NagyHazi_2.dir/vonat.cpp.o"
   "NagyHazi_2"
