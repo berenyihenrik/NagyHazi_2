@@ -17,6 +17,15 @@ private:
 public:
     Jegy(String nev, int ksz, int hely, Vonat v) :nev(nev), kocsiszam(ksz), hely(hely), vonat(v) {}
 
+    Jegy(String nev, int ksz, int hely, String vonatszam, Jaratok& ja):nev(nev), kocsiszam(ksz), hely(hely) {
+        for(size_t i = 0; i < ja.size(); i ++) {
+            if(vonatszam == ja[i].get_vsz()) {
+                this->vonat = ja[i];
+                break;
+            }
+        }
+    }
+
     Jegy() {}
 
     String get_nev() const{return nev;}

@@ -24,23 +24,11 @@ string.hpp
 vonat.hpp
 /Users/berenyi/Desktop/NagyHazi_2/vonat.hpp
 
-/Users/berenyi/Desktop/NagyHazi_2/main.cpp
-iostream
--
-fstream
--
-string
--
-datum.hpp
-/Users/berenyi/Desktop/NagyHazi_2/datum.hpp
-vonat.hpp
-/Users/berenyi/Desktop/NagyHazi_2/vonat.hpp
-string.hpp
-/Users/berenyi/Desktop/NagyHazi_2/string.hpp
-jegy.hpp
-/Users/berenyi/Desktop/NagyHazi_2/jegy.hpp
+/Users/berenyi/Desktop/NagyHazi_2/menu.cpp
 menu.hpp
 /Users/berenyi/Desktop/NagyHazi_2/menu.hpp
+vonat.hpp
+/Users/berenyi/Desktop/NagyHazi_2/vonat.hpp
 
 /Users/berenyi/Desktop/NagyHazi_2/menu.hpp
 vonat.hpp

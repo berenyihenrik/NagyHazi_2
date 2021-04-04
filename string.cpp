@@ -94,7 +94,7 @@ ostream& operator<<(std::ostream& os, const String& s) {
     return os << s.c_str() ;
 }
 
-/// << operator, ami beolvas az istreamrol egy szot
+/// >> operator, ami beolvas az istreamrol egy szot
 std::istream& operator>>(std::istream& is, String& s0) {
     unsigned char ch;
     s0 = String("");
@@ -102,7 +102,7 @@ std::istream& operator>>(std::istream& is, String& s0) {
     is.setf(ios_base::skipws);
     while (is >> ch) {
         is.unsetf(ios_base::skipws);
-        if (isspace(ch)) {
+        if (ch == '\n') {
             is.putback(ch);
             break;
         } else {
