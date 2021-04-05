@@ -47,7 +47,7 @@ ostream& operator<<(ostream& os, const Datum& d) {
     return os << perc;
 }
 
-///Datum beolvasasa, beolvasas koyben kiirja cout-ra, hogy milyen adatot var eyyel segitve a felhasznalot
+///Dátum beolvasása, beolvasás közben kiírja cout-ra, hogy milyen adatot vár ezzel segítve a felhasználót
 istream& operator>>(istream& is, Datum& d) {
     String ev;
     String honap;
@@ -55,38 +55,38 @@ istream& operator>>(istream& is, Datum& d) {
     String ora;
     String perc;
 
-    cout << "ev:";
+    cout << "Év:";
     is >> ev;
     while(stoi(ev) < 2021) {
-        cout << "Hibas evszam, kerlek 2021 vagy kesobbi evszamot adj meg!" << endl;
+        cout << "Hibás évszám, kérlek 2021 vagy későbbi évszamot adj meg!" << endl;
         is >> ev;
     }
 
-    cout << "honap:";
+    cout << "Honap:";
     is >> honap;
     while(stoi(honap) < 1 || stoi(honap) > 12) {
-        cout << "Hibas honap, kerlek 1 es 12 kozotti szamot adj meg!" << endl;
+        cout << "Hibás hónap, kérlek 1 és 12 közötti számot adj meg!" << endl;
         is >> honap;
     }
 
-    cout << "nap:";
+    cout << "Nap:";
     is >> nap;
     while(stoi(nap) < 1 || stoi(nap) > 31) {
-        cout << "Hibas nap, kerlek 1 es 31 kozotti szamot adj meg!" << endl;
+        cout << "Hibás nap, kérlek 1 és 31 közötti számot adj meg!" << endl;
         is >> nap;
     }
 
-    cout << "ora:";
+    cout << "Óra:";
     is >> ora;
     while(stoi(ora) < 0 || stoi(ora) > 24) {
-        cout << "Hibas ora, kerlek 0 es 24 kozotti szamot adj meg!" << endl;
+        cout << "Hibás óra, kérlek 0 és 24 közötti számot adj meg!" << endl;
         is >> ora;
     }
 
-    cout << "perc:";
+    cout << "Perc:";
     is >> perc;
     while(stoi(perc) < 0 || stoi(perc) > 60) {
-        cout << "Hibas perc, kerlek 0 es 60 kozotti szamot adj meg!" << endl;
+        cout << "Hibás perc, kérlek 0 és 60 közötti számot adj meg!" << endl;
         is >> perc;
     }
 

@@ -47,7 +47,7 @@ void Jegyek::remove(const char* nev) {
             return;
         }
     }
-    throw "Ilyen neven nincs foglalas!";
+    throw "Ilyen néven nincs foglalás!";
 }
 
 void beolvas(Jaratok& ja, Jegyek& je, const char* fajlnev) {

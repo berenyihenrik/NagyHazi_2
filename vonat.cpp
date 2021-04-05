@@ -14,10 +14,10 @@ ostream& operator<<(ostream& os, const Vonat& v) {
     }
 }
 
-///Jaratok
+///Járatok
 Vonat Jaratok::operator[](size_t i) const{
     if(i < 0 || i >= meret) {
-        throw "KIVETEL";
+        throw "KIVÉTEL";
     }
     return jaratok[i];
 }
@@ -70,7 +70,7 @@ void beolvas(Jaratok& j, const char* fajlnev) {
     ifstream fpp;
     fpp.open(fajlnev);
     if(!fpp) {
-        printf("KIVETEL\n");
+        printf("KIVÉTEL\n");
         throw "QP4TVJ";
     }
     String* adatok = new String[13];

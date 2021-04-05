@@ -9,10 +9,10 @@ using namespace std;
 class Vonat {
 private:
     String vonatszam;
-    ///indulasi adatok
+    ///indulási adatok
     String indul_allomas;
     Datum indul_datum;
-    ///erkezesi adatok
+    ///érkezési adatok
     String erkez_allomas;
     Datum erkez_datum;
 public:
@@ -29,7 +29,7 @@ public:
 
 ostream& operator<<(ostream& os, const Vonat& v);
 
-//Heterogen kollekcio a jaratok tarolasara
+//Heterogén kollekció a járatok tárolására
 class Jaratok {
 private:
     size_t meret;

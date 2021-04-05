@@ -10,7 +10,7 @@ private:
     int ev;
     int honap;
     int nap;
-    int idopont; //idopont percekben, kiiraskor lesz szetosztva orara es percre
+    int idopont; //időpont percekben, kiíraskor lesz szétosztva órára es percre
 public:
     Datum(int ev, int honap, int nap, int idopont) :ev(ev), honap(honap), nap(nap), idopont(idopont) {}
 
@@ -28,7 +28,7 @@ public:
 
 ostream& operator<<(ostream& os, const Datum& d);
 
-///Datum beolvasasa
+///Dátum beolvasása
 istream& operator>>(istream& is, Datum& d);
 
 #endif

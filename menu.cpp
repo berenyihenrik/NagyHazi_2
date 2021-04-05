@@ -10,8 +10,8 @@ void menu(Jaratok& ja, Jegyek& je) {
         "1.: Járat keresése\n" <<
         "2.: Jegy foglalása\n" <<
         "3.: Foglalás törlése\n" <<
-        "4.: Vonat felvetele\n" <<
-        "5.: Vonat torlese\n" <<
+        "4.: Vonat felvétele\n" <<
+        "5.: Vonat törlése\n" <<
         "6.: Kilépés\n";
 
         cin >> menupont;
@@ -77,33 +77,33 @@ void menu(Jaratok& ja, Jegyek& je) {
             cout << je;
         }
 
-        /* Vonat felvetele manupont */
+        /* Vonat felvétele menüpont */
         else if(menupont == 4) {
-            cout << "Mi legyen a vonat azonositoja?";
+            cout << "Mi legyen a vonat azonosítója?";
             String azonosito;
             cin >> azonosito;
             while(ja.checkID(azonosito)) {
-                cout << "Ilyen azonosito mar letezik, kerlek ird be ujra!" << endl;
+                cout << "Ilyen azonosító már létezik, kérlek írd be újra!" << endl;
                 cin >> azonosito;
             }
 
-            cout << "Mi legyen a vonat kiindulasi allomasa?";
+            cout << "Mi legyen a vonat kiindulási állomása?";
             String ind_all;
             cin >> ind_all;
 
-            cout << "Mi legyen a vonat indulasi datuma?" << endl;
+            cout << "Mi legyen a vonat indulási dátuma?" << endl;
             Datum ind;
             cin >> ind;
 
-            cout << "Mi legyen a vonat vegallomasa?";
+            cout << "Mi legyen a vonat végállomása?";
             String erk_all;
             cin >> erk_all;
 
-            cout << "Mi legyen a vonat erkezesi datuma" << endl;
+            cout << "Mi legyen a vonat érkezési dátuma" << endl;
             Datum erk;
             cin >> erk;
             while(erk < ind) {
-                cout << "A vonatnak kesobbi idopontban kell megerkeznie, mint az indulasi datum, kerlek ird be ujra!" << endl;
+                cout << "A vonatnak későbbi időpontban kell megérkeznie, mint az indulási dátum, kérlek írd be újra!" << endl;
                 cin >> erk;
             }
 
@@ -111,9 +111,9 @@ void menu(Jaratok& ja, Jegyek& je) {
             ja.add(v);
         }
 
-        /* Vonat torlese menupont */
+        /* Vonat törlése menüpont */
         else if(menupont == 5) {
-            cout << "Adja meg annak a vonatnak az azonositojat, amelyiket torolni szeretne.";
+            cout << "Adja meg annak a vonatnak az azonosítóját, amelyiket törölni szeretné.";
             String azonosito;
             cin >> azonosito;
 
