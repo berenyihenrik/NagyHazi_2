@@ -9,7 +9,6 @@ using namespace std;
 class Vonat {
 private:
     String vonatszam;
-    //int kocsik_szama;
     ///indulasi adatok
     String indul_allomas;
     Datum indul_datum;
@@ -21,10 +20,7 @@ public:
 
     Vonat() {}
 
-
-
     String get_vsz() const {return vonatszam;}
-    //int get_ksz() const {return kocsik_szama;}
     String get_ind_all() const {return indul_allomas;}
     Datum get_ind_dt() const {return indul_datum;}
     String get_erkez_all() const {return erkez_allomas;}
@@ -51,6 +47,8 @@ public:
     void remove(const char* vonatszam);
 
     size_t size() const;
+
+    bool checkID(String azonosito);
 
     ~Jaratok() {
         delete[] jaratok;

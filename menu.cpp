@@ -4,14 +4,15 @@
 
 void menu(Jaratok& ja, Jegyek& je) {
     int menupont = 0;
-    while(menupont != 5) {
+    while(menupont != 6) {
         cout <<
         "Válassz egyet az alábbi menüpontok közül:\n" <<
         "1.: Járat keresése\n" <<
         "2.: Jegy foglalása\n" <<
         "3.: Foglalás törlése\n" <<
-        "4.: Összesítés\n" <<
-        "5.: Kilépés\n";
+        "4.: Vonat felvetele\n" <<
+        "5.: Vonat torlese\n" <<
+        "6.: Kilépés\n";
 
         cin >> menupont;
 
@@ -44,6 +45,10 @@ void menu(Jaratok& ja, Jegyek& je) {
             cout << "Mi a járat azonosítója?";
             String azonosito;
             cin >> azonosito;
+            while(!ja.checkID(azonosito)) {
+                cout << "Ilyen azonosito nem letezik, kerlek ird be ujra!" << endl;
+                cin >> azonosito;
+            }
 
             cout << "Milyen névre legyen a foglalás?";
             String nev;
@@ -59,8 +64,6 @@ void menu(Jaratok& ja, Jegyek& je) {
 
             Jegy j(nev, kocsiszam, ulohely, azonosito, ja);
             je.add(j);
-
-            //cout << je;
         }
 
         /* Jegy törlése menüpont */
@@ -69,29 +72,66 @@ void menu(Jaratok& ja, Jegyek& je) {
             String nev;
             cin >> nev;
 
-
             je.remove(nev.c_str());
 
             cout << je;
         }
 
+        /* Vonat felvetele manupont */
+        else if(menupont == 4) {
+            cout << "Mi legyen a vonat azonositoja?";
+            String azonosito;
+            cin >> azonosito;
+            while(ja.checkID(azonosito)) {
+                cout << "Ilyen azonosito mar letezik, kerlek ird be ujra!" << endl;
+                cin >> azonosito;
+            }
+
+            cout << "Mi legyen a vonat kiindulasi allomasa?";
+            String ind_all;
+            cin >> ind_all;
+
+            cout << "Mi legyen a vonat indulasi datuma?" << endl;
+            Datum ind;
+            cin >> ind;
+
+            cout << "Mi legyen a vonat vegallomasa?";
+            String erk_all;
+            cin >> erk_all;
+
+            cout << "Mi legyen a vonat erkezesi datuma" << endl;
+            Datum erk;
+            cin >> erk;
+            while(erk < ind) {
+                cout << "A vonatnak kesobbi idopontban kell megerkeznie, mint az indulasi datum, kerlek ird be ujra!" << endl;
+                cin >> erk;
+            }
+
+            Vonat v(azonosito, ind_all, ind, erk_all, erk);
+            ja.add(v);
+        }
+
+        /* Vonat torlese menupont */
+        else if(menupont == 5) {
+            cout << "Adja meg annak a vonatnak az azonositojat, amelyiket torolni szeretne.";
+            String azonosito;
+            cin >> azonosito;
+
+            try {
+                ja.remove(azonosito.c_str());
+            }
+            catch(const char* c) {
+                cout << c;
+            }
+        }
 
 
 
 
-
-
-
-
-
-
-
-        /* Minden más érték az 5-öt kivéve => nem létező menüpont */
-        else if(menupont != 5) {
+        /* Minden más érték az 6-ot kivéve => nem létező menüpont */
+        else if(menupont != 6) {
             printf("Nem létező menüpont.\n");
         }
 
     }
-
-
 }

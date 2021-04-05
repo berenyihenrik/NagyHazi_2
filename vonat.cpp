@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <string>
 #include "vonat.hpp"
 using namespace std;
@@ -51,11 +50,20 @@ void Jaratok::remove(const char* vonatszam) {
             return;
         }
     }
-    throw "Nincs ilyen vonatszam!";
+    throw "Nincs ilyen vonatszam!\n";
 }
 
 size_t Jaratok::size() const{
     return meret;
+}
+
+bool Jaratok::checkID(String azonosito) {
+    for(size_t i = 0; i < meret; i ++) {
+        if(jaratok[i].get_vsz() == azonosito) {
+            return true;
+        }
+    }
+    return false;
 }
 
 void beolvas(Jaratok& j, const char* fajlnev) {
