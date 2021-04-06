@@ -56,6 +56,8 @@ public:
 
     void remove(const char* nev);
 
+    bool checkSeat(String azonosito, int kocsiszam, int ulohely) const;
+
     size_t size() const {return meret;}
 
     ~Jegyek() {

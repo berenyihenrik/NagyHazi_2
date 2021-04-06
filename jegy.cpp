@@ -50,6 +50,15 @@ void Jegyek::remove(const char* nev) {
     throw "Ilyen néven nincs foglalás!";
 }
 
+bool Jegyek::checkSeat(String azonosito, int kocsiszam, int ulohely) const {
+    for(size_t i = 0; i < meret; i++) {
+        if(jegyek[i].get_vsz() == azonosito && jegyek[i].get_ksz() == kocsiszam && jegyek[i].get_hely() == ulohely) {
+            return true;
+        }
+    }
+    return false;
+}
+
 void beolvas(Jaratok& ja, Jegyek& je, const char* fajlnev) {
     ifstream fpp;
     fpp.open(fajlnev);

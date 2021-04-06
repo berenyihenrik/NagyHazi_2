@@ -46,7 +46,7 @@ void menu(Jaratok& ja, Jegyek& je) {
             String azonosito;
             cin >> azonosito;
             while(!ja.checkID(azonosito)) {
-                cout << "Ilyen azonosito nem letezik, kerlek ird be ujra!" << endl;
+                cout << "Ilyen azonosító nem letezik, kérlek írd be újra!" << endl;
                 cin >> azonosito;
             }
 
@@ -54,13 +54,20 @@ void menu(Jaratok& ja, Jegyek& je) {
             String nev;
             cin >> nev;
 
-            cout << "Kerlek valassz kocsit!";
+            cout << "Kérlek válassz kocsit!";
             int kocsiszam;
             cin >> kocsiszam;
 
             cout << "Kérlek válassz ülőhelyet!";
             int ulohely;
             cin >> ulohely;
+            while(je.checkSeat(azonosito, kocsiszam, ulohely)) {
+                cout << "Ez az ülőhely már foglalt, kérlek válassz másikat!" << endl;
+                cout << "Kérlek válassz kocsit!";
+                cin >> kocsiszam;
+                cout << "Kérlek válassz ülőhelyet!";
+                cin >> ulohely;
+            }
 
             Jegy j(nev, kocsiszam, ulohely, azonosito, ja);
             je.add(j);
