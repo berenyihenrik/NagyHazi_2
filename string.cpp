@@ -78,7 +78,7 @@ String String::operator+(const String& rhs_s) const {
     return temp;
 }
 
-bool String::operator==(const String &s) {
+bool String::operator==(const String &s) const {
     if(strcmp(this->c_str(), s.c_str()) == 0) {
         return true;
     }

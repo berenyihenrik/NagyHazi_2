@@ -9,9 +9,16 @@ ostream& operator<<(ostream& os, const Vonat& v) {
         return os << v.get_vsz() << ' ' << v.get_ind_dt() << ' ' << v.get_ind_all() << ' ' << v.get_erkez_dt()
         << ' '<< v.get_erkez_all() << endl;
     } else {
-        return os << v.get_vsz() << '#' << v.get_ind_dt() << '#' << v.get_ind_all() << '#' << v.get_erkez_dt()
+        return os << v.get_vsz() << '#' << v.get_ind_dt() << '#' << v.get_erkez_dt() << '#' << v.get_ind_all()
         << '#'<< v.get_erkez_all() << endl;
     }
+}
+
+bool Vonat::operator==(const Vonat &v) const {
+    if(this->vonatszam == v.get_vsz()) {
+        return true;
+    }
+    return false;
 }
 
 ///Járatok

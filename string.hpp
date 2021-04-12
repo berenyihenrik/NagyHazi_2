@@ -43,7 +43,7 @@ String& operator+=(const char rhs_s) {
     return *this;
 }
 
-bool operator==(const String &s);
+bool operator==(const String &s) const;
 bool operator!=(const String &s);
 
 ~String();

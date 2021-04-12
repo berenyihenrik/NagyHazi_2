@@ -26,7 +26,18 @@ public:
         }
     }
 
+    Jegy(const Jegy &j) {
+        this->nev = j.get_nev();
+        this->kocsiszam = j.get_ksz();
+        this->hely = j.get_hely();
+        this->vonat = j.get_vonat();
+    }
+
     Jegy() {}
+
+    Jegy& operator=(const Jegy j);
+
+    bool operator==(const Jegy &j) const;
 
     String get_nev() const{return nev;}
     String get_vsz() const {return vonat.get_vsz();}
@@ -36,6 +47,7 @@ public:
     Datum get_ind_dt() const {return vonat.get_ind_dt();}
     String get_erkez_all() const {return vonat.get_erkez_all();}
     Datum get_erkez_dt() const {return vonat.get_erkez_dt();}
+    Vonat get_vonat() const {return vonat;}
 };
 
 ostream& operator<<(ostream& os, const Jegy& j);

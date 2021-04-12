@@ -24,6 +24,8 @@ public:
     bool operator>(Datum &datum2) const;
 
     bool operator<(Datum &datum2) const;
+
+    bool operator==(const Datum &datum2) const;
 };
 
 ostream& operator<<(ostream& os, const Datum& d);

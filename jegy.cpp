@@ -7,12 +7,26 @@ ostream& operator<<(ostream& os, const Jegy& j) {
         << j.get_ind_dt() << ' ' << j.get_ind_all() << ' ' << j.get_erkez_dt() << ' ' << j.get_erkez_all()
         << endl;
     } else {
-        return os << j.get_nev() << '#' << j.get_vsz() << '#' << j.get_ksz() << '#' << j.get_hely() << '#'
-        << j.get_ind_dt() << '#' << j.get_ind_all() << '#' << j.get_erkez_dt() << '#' << j.get_erkez_all()
-        << endl;
+        return os << j.get_nev() << '#' << j.get_ksz() << '#' << j.get_hely() << '#'<< j.get_vsz() << endl;
     }
 }
 
+Jegy& Jegy::operator=(const Jegy j) {
+    if(this != &j) {
+        this->nev = j.get_nev();
+        this->kocsiszam = j.get_ksz();
+        this->hely = j.get_hely();
+        this->vonat = j.get_vonat();
+    }
+    return *this;
+}
+
+bool Jegy::operator==(const Jegy &j) const {
+    if(this->nev == j.get_nev() && this->kocsiszam == j.get_ksz() && this->hely == j.get_hely() && this->vonat == j.vonat) {
+        return true;
+    }
+    return false;
+}
 
 ///Jegyek
 Jegy Jegyek::operator[](size_t i) const {

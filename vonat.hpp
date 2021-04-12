@@ -20,6 +20,8 @@ public:
 
     Vonat() {}
 
+    bool operator==(const Vonat& v) const;
+
     String get_vsz() const {return vonatszam;}
     String get_ind_all() const {return indul_allomas;}
     Datum get_ind_dt() const {return indul_datum;}
