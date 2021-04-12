@@ -1,0 +1,3 @@
+/mnt/c/Users/beren/Desktop/NagyHazi_2/Programkód/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/beren/Desktop/NagyHazi_2/Programkód/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/beren/Desktop/NagyHazi_2/Programkód/cmake-build-debug/CMakeFiles/NagyHazi_2.dir

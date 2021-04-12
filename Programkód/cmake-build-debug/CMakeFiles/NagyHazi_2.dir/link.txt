@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/NagyHazi_2.dir/main.cpp.o CMakeFiles/NagyHazi_2.dir/vonat.cpp.o CMakeFiles/NagyHazi_2.dir/jegy.cpp.o CMakeFiles/NagyHazi_2.dir/datum.cpp.o CMakeFiles/NagyHazi_2.dir/memtrace.cpp.o CMakeFiles/NagyHazi_2.dir/string.cpp.o CMakeFiles/NagyHazi_2.dir/menu.cpp.o  -o NagyHazi_2 
