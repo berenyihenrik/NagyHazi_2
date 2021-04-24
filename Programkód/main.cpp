@@ -181,6 +181,16 @@ int main() {
         EXPECT_STREQ("Debrecen", v.get_erkez_all().c_str());
     } ENDM
 
+    TEST(Vonat, egyenloseg) {
+        String s1("AAA111");
+        String s2("BBB111");
+        Vonat v1(s1, ind, d1, erk, d2);
+        Vonat v2(s1, ind, d1, erk, d2);
+        Vonat v3(s2, ind, d1, erk, d2);
+        EXPECT_EQ(v1, v2);
+        EXPECT_FALSE(v1 == v3);
+    } ENDM
+
     //Jegy osztaly tesztje
     Jegy j("Berenyi Henrik Daniel", 10, 5, v);
 
@@ -239,6 +249,7 @@ int main() {
         stringstream ss;
         ss << ja[0];
         EXPECT_STREQ("ABB001#2021#4#20#18#50#2021#4#20#19#00#Budapest#Sopron\n", ss.str().c_str());
+        EXPECT_THROW(ja[ja.size()], const char*);
     } ENDM
 
     TEST(Jaratok, tovabbi_fuggvenyek) {
