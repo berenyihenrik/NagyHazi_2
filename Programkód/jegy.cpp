@@ -1,6 +1,6 @@
 #include "jegy.hpp"
 
-///Jegy
+/// Jegy
 ostream& operator<<(ostream& os, const Jegy& j) {
     if(&os == &cout) {
         return os << j.get_nev() << ' ' << j.get_vsz() << ' ' << j.get_ksz() << ' ' << j.get_hely() << ' '
@@ -28,7 +28,7 @@ bool Jegy::operator==(const Jegy &j) const {
     return false;
 }
 
-///Jegyek
+/// Jegyek
 Jegy Jegyek::operator[](size_t i) const {
     return jegyek[i];
 }

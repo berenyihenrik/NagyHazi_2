@@ -7,14 +7,14 @@
 using namespace std;
 
 int main() {
-    /*
-    Jaratok ja;
-    beolvas(ja, "vonatok.txt");
-    Jegyek je;
-    beolvas(ja, je, "jegyek.txt");
 
-    menu(ja ,je);
-    Végleges programhoz tartozó rész, illetve felhasználói menü meghívása */
+    Jaratok jaratok;
+    beolvas(jaratok, "vonatok.txt");
+    Jegyek jegyek;
+    beolvas(jaratok, jegyek, "jegyek.txt");
+
+    menu(jaratok ,jegyek);
+    // Végleges programhoz tartozó rész, illetve felhasználói menü meghívása
 
 
 
@@ -25,23 +25,23 @@ int main() {
 
     ///TESZTEK
 
-    //String osztaly tesztje
+    // String osztály tesztje
     TEST(String, Konstruktorok) {
         String s1;  // Paraméter nélküli konstruktor
         EXPECT_EQ("\0", s1.c_str());
-        EXPECT_EQ(0, s1.size());
+        EXPECT_EQ(0, int(s1.size()));
 
         String s2('c'); // Konstruktor karakter paraméterrel
         EXPECT_STREQ("c", s2.c_str());
-        EXPECT_EQ(1, s2.size());
+        EXPECT_EQ(1, int(s2.size()));
 
         String s3("string"); // Konstruktor C string-el
         EXPECT_STREQ("string", s3.c_str());
-        EXPECT_EQ(6, s3.size());
+        EXPECT_EQ(6, int(s3.size()));
 
         String s4(s3); // Másoló konstruktor
         EXPECT_STREQ("string", s4.c_str());
-        EXPECT_EQ(6, s4.size());
+        EXPECT_EQ(6, int(s4.size()));
     } ENDM
 
     TEST(String, operatorok) {
@@ -92,7 +92,7 @@ int main() {
        EXPECT_EQ(123, i1);
     } ENDM
 
-    //Datum osztaly tesztje
+    // Dátum osztály tesztje
     TEST(Datum, kiir) {
         Datum d1(2021, 05, 06, 1140);
         stringstream ss;
@@ -136,7 +136,7 @@ int main() {
         EXPECT_FALSE(d9 >= d10);
         EXPECT_GE(d10, d9);
 
-        // minden egyenlo
+        // minden egyenlő
         Datum d11(2021, 05, 9, 1141);
         EXPECT_GE(d10, d11);
         EXPECT_LE(d10, d11);
@@ -159,7 +159,7 @@ int main() {
     } ENDM
 
 
-    //Vonat osztaly tesztje
+    // Vonat osztály tesztje
     String azonosito = "AAA111";
     String ind = "Budapest";
     String erk = "Debrecen";
@@ -191,7 +191,7 @@ int main() {
         EXPECT_FALSE(v1 == v3);
     } ENDM
 
-    //Jegy osztaly tesztje
+    // Jegy osztály tesztje
     Jegy j("Berenyi Henrik Daniel", 10, 5, v);
 
     TEST(Jegy, kiir) {
@@ -218,8 +218,16 @@ int main() {
        j1 = j2;
        EXPECT_EQ(j1, j2);
     } ENDM
+
+    TEST(Jegy, egyenloseg) {
+        Jegy j1("Kovacs Endre", 13, 2, v);
+        Jegy j2("Kovacs Endre", 13, 2, v);
+        Jegy j3("Nagy Lajos", 13, 3, v);
+        EXPECT_EQ(j1, j2);
+        EXPECT_FALSE(j1 == j3);
+    } ENDM
     
-    //Jaratok es Jegyek tesztjei
+    // Járatok es Jegyek tesztjei
     Jaratok ja;
     EXPECT_THROW(beolvas(ja, "ilyen_nincs.txt"), const char*); //ismeretlen fájl esetén kivétel
     EXPECT_NO_THROW(beolvas(ja, "vonatok.txt")); //sikeres beolvasás
@@ -262,13 +270,14 @@ int main() {
        stringstream ss;
        ss << je;
        EXPECT_STREQ("Berenyi Henrik#12#8#ABB001\n"
-                    "Kiss Gabor#21#9#ZBB002\n",ss.str().c_str());
+                    "Kiss Gabor#21#9#ZBB002\n"
+                    "Kovács István#10#2#ABB001\n",ss.str().c_str());
     } ENDM
 
     TEST(Jegyek, add/remove) {
        je.add(j);
-       EXPECT_EQ(j, je[2]);
-       EXPECT_EQ(size_t(3), je.size());
+       EXPECT_EQ(j, je[3]);
+       EXPECT_EQ(size_t(4), je.size());
 
        EXPECT_THROW(je.remove("nincs ilyen nev"), const char*);
        EXPECT_NO_THROW(je.remove("Berenyi Henrik Daniel"));
@@ -281,7 +290,7 @@ int main() {
     } ENDM
 
     TEST(Jaratok, tovabbi_fuggvenyek) {
-       EXPECT_EQ(size_t(2), je.size());
+       EXPECT_EQ(size_t(3), je.size());
        EXPECT_TRUE(je.checkSeat(je[0].get_vsz(), je[0].get_ksz(), je[0].get_hely()));
        EXPECT_FALSE(je.checkSeat("AAA222", 12, 21));
     } ENDM

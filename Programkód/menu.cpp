@@ -1,7 +1,6 @@
 #include "menu.hpp"
 #include "vonat.hpp"
 
-
 void menu(Jaratok& ja, Jegyek& je) {
     int menupont = 0;
     while(menupont != 6) {
@@ -132,13 +131,20 @@ void menu(Jaratok& ja, Jegyek& je) {
             }
         }
 
-
-
-
         /* Minden más érték az 6-ot kivéve => nem létező menüpont */
         else if(menupont != 6) {
             printf("Nem létező menüpont.\n");
         }
-
     }
+
+    // Memóriában tárolt adatok elmentése a szöveges fájlokban
+    ofstream fpp;
+
+    fpp.open("vonatok.txt");
+    fpp << ja;
+    fpp.close();
+
+    fpp.open("jegyek.txt");
+    fpp << je;
+    fpp.close();
 }

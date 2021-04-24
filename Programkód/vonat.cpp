@@ -3,7 +3,7 @@
 #include "vonat.hpp"
 using namespace std;
 
-///Vonat
+/// Vonat
 ostream& operator<<(ostream& os, const Vonat& v) {
     if(&os == &cout) {
         return os << v.get_vsz() << ' ' << v.get_ind_dt() << ' ' << v.get_ind_all() << ' ' << v.get_erkez_dt()
@@ -21,7 +21,7 @@ bool Vonat::operator==(const Vonat &v) const {
     return false;
 }
 
-///Járatok
+/// Járatok
 Vonat Jaratok::operator[](size_t i) const{
     if(i < 0 || i >= meret) {
         throw "KIVÉTEL";

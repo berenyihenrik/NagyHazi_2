@@ -27,10 +27,10 @@ public:
 
     bool operator==(const Datum &datum2) const;
 };
-
+/// Dátum kiírása
 ostream& operator<<(ostream& os, const Datum& d);
 
-///Dátum beolvasása
+/// Dátum beolvasása
 istream& operator>>(istream& is, Datum& d);
 
 #endif

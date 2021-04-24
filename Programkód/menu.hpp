@@ -6,4 +6,3 @@
 void menu(Jaratok& ja, Jegyek& je);
 
 #endif
-

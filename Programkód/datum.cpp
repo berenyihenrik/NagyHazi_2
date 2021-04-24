@@ -54,7 +54,7 @@ ostream& operator<<(ostream& os, const Datum& d) {
     return os << perc;
 }
 
-///Dátum beolvasása, beolvasás közben kiírja cout-ra, hogy milyen adatot vár ezzel segítve a felhasználót
+/// Dátum beolvasása, beolvasás közben kiírja cout-ra, hogy milyen adatot vár ezzel segítve a felhasználót
 istream& operator>>(istream& is, Datum& d) {
     String ev;
     String honap;

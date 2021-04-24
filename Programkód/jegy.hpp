@@ -8,11 +8,11 @@
 using namespace  std;
 class Jegy {
 private:
-    ///pontos hely
+    /// pontos hely
     String nev;
     int kocsiszam;
     int hely;
-    ///vonat adatai
+    /// vonat adatai
     Vonat vonat;
 public:
     Jegy(String nev, int ksz, int hely, Vonat v) :nev(nev), kocsiszam(ksz), hely(hely), vonat(v) {}
