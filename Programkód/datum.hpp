@@ -21,9 +21,9 @@ public:
     int get_nap() const{return nap;}
     int get_idopont() const{return idopont;}
 
-    bool operator>(Datum &datum2) const;
+    bool operator>=(Datum &datum2) const;
 
-    bool operator<(Datum &datum2) const;
+    bool operator<=(Datum &datum2) const;
 
     bool operator==(const Datum &datum2) const;
 };

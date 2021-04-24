@@ -109,7 +109,7 @@ void menu(Jaratok& ja, Jegyek& je) {
             cout << "Mi legyen a vonat érkezési dátuma" << endl;
             Datum erk;
             cin >> erk;
-            while(erk < ind) {
+            while(erk <= ind) {
                 cout << "A vonatnak későbbi időpontban kell megérkeznie, mint az indulási dátum, kérlek írd be újra!" << endl;
                 cin >> erk;
             }

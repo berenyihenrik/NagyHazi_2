@@ -112,8 +112,8 @@ int main() {
     TEST(Datum, nagyobb/kisebb) {
         Datum d1(2021, 05, 06, 1140);
         Datum d2(2021, 06, 01, 1100);
-        EXPECT_GT(d2, d1);
-        EXPECT_LT(d1, d2);
+        EXPECT_GE(d2, d1);
+        EXPECT_LE(d1, d2);
     } ENDM
 
     TEST(Datum, ertekadas) {

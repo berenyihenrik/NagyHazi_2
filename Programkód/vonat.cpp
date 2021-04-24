@@ -105,7 +105,7 @@ void keres(Jaratok& j, String honnan, String hova, Datum kezdo, Datum vegso) {
     bool vanTalalat = false;
     for (size_t i = 0; i < j.size(); i++) {
         if (strstr(j[i].get_ind_all().c_str(), honnan.c_str()) != 0 && strstr(j[i].get_erkez_all().c_str(), hova.c_str()) != NULL) {
-            if (j[i].get_ind_dt() > kezdo && j[i].get_erkez_dt() < vegso) {
+            if (j[i].get_ind_dt() >= kezdo && j[i].get_erkez_dt() <= vegso) {
                 cout << j[i];
                 vanTalalat = true;
             }
