@@ -4,15 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/Users/beren/Desktop/NagyHazi_2/Programkód/datum.cpp" "/mnt/c/Users/beren/Desktop/NagyHazi_2/Programkód/cmake-build-debug/CMakeFiles/NagyHazi_2.dir/datum.cpp.o"
-  "/mnt/c/Users/beren/Desktop/NagyHazi_2/Programkód/jegy.cpp" "/mnt/c/Users/beren/Desktop/NagyHazi_2/Programkód/cmake-build-debug/CMakeFiles/NagyHazi_2.dir/jegy.cpp.o"
-  "/mnt/c/Users/beren/Desktop/NagyHazi_2/Programkód/main.cpp" "/mnt/c/Users/beren/Desktop/NagyHazi_2/Programkód/cmake-build-debug/CMakeFiles/NagyHazi_2.dir/main.cpp.o"
-  "/mnt/c/Users/beren/Desktop/NagyHazi_2/Programkód/memtrace.cpp" "/mnt/c/Users/beren/Desktop/NagyHazi_2/Programkód/cmake-build-debug/CMakeFiles/NagyHazi_2.dir/memtrace.cpp.o"
-  "/mnt/c/Users/beren/Desktop/NagyHazi_2/Programkód/menu.cpp" "/mnt/c/Users/beren/Desktop/NagyHazi_2/Programkód/cmake-build-debug/CMakeFiles/NagyHazi_2.dir/menu.cpp.o"
-  "/mnt/c/Users/beren/Desktop/NagyHazi_2/Programkód/string.cpp" "/mnt/c/Users/beren/Desktop/NagyHazi_2/Programkód/cmake-build-debug/CMakeFiles/NagyHazi_2.dir/string.cpp.o"
-  "/mnt/c/Users/beren/Desktop/NagyHazi_2/Programkód/vonat.cpp" "/mnt/c/Users/beren/Desktop/NagyHazi_2/Programkód/cmake-build-debug/CMakeFiles/NagyHazi_2.dir/vonat.cpp.o"
+  "/Users/berenyi/Desktop/NagyHazi_2/Programkód/datum.cpp" "/Users/berenyi/Desktop/NagyHazi_2/Programkód/cmake-build-debug/CMakeFiles/NagyHazi_2.dir/datum.cpp.o"
+  "/Users/berenyi/Desktop/NagyHazi_2/Programkód/jegy.cpp" "/Users/berenyi/Desktop/NagyHazi_2/Programkód/cmake-build-debug/CMakeFiles/NagyHazi_2.dir/jegy.cpp.o"
+  "/Users/berenyi/Desktop/NagyHazi_2/Programkód/main.cpp" "/Users/berenyi/Desktop/NagyHazi_2/Programkód/cmake-build-debug/CMakeFiles/NagyHazi_2.dir/main.cpp.o"
+  "/Users/berenyi/Desktop/NagyHazi_2/Programkód/memtrace.cpp" "/Users/berenyi/Desktop/NagyHazi_2/Programkód/cmake-build-debug/CMakeFiles/NagyHazi_2.dir/memtrace.cpp.o"
+  "/Users/berenyi/Desktop/NagyHazi_2/Programkód/menu.cpp" "/Users/berenyi/Desktop/NagyHazi_2/Programkód/cmake-build-debug/CMakeFiles/NagyHazi_2.dir/menu.cpp.o"
+  "/Users/berenyi/Desktop/NagyHazi_2/Programkód/string.cpp" "/Users/berenyi/Desktop/NagyHazi_2/Programkód/cmake-build-debug/CMakeFiles/NagyHazi_2.dir/string.cpp.o"
+  "/Users/berenyi/Desktop/NagyHazi_2/Programkód/vonat.cpp" "/Users/berenyi/Desktop/NagyHazi_2/Programkód/cmake-build-debug/CMakeFiles/NagyHazi_2.dir/vonat.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX

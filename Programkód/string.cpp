@@ -56,14 +56,6 @@ String& String::operator=(const String& rhs_s) {
     return *this;
 }
 
-
-char String::operator[](size_t i) {
-    if(i < 0 || i >= len) {
-        throw "KIVETEL";
-    }
-    return pData[i];
-}
-
 String String::operator+(const String& rhs_s) const {
     String temp;
     temp.len = len + rhs_s.len;

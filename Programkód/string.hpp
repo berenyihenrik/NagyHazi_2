@@ -29,8 +29,6 @@ String(const String &s);
 
 String& operator=(const String& rhs_s);
 
-char operator[](size_t i);
-
 String operator+(const String& rhs_s) const;
 String operator+(const char rhs_c) const { return *this + String(rhs_c);}
 
