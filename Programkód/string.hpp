@@ -8,7 +8,7 @@ class String {
     size_t len;         ///< hossz lezáró nulla nélkül
 public:
     /// Paraméter nélküli konstruktor:
-    String() :pData(0), len(0) {}
+    String() :pData(NULL), len(0) {}
 
     /// Sztring hosszát adja vissza.
     /// @return sztring tényleges hossza (lezáró nulla nélkül).

@@ -25,6 +25,73 @@ int main() {
 
     ///TESZTEK
 
+    //String osztaly tesztje
+    TEST(String, Konstruktorok) {
+        String s1;  // Paraméter nélküli konstruktor
+        EXPECT_EQ("\0", s1.c_str());
+        EXPECT_EQ(0, s1.size());
+
+        String s2('c'); // Konstruktor karakter paraméterrel
+        EXPECT_STREQ("c", s2.c_str());
+        EXPECT_EQ(1, s2.size());
+
+        String s3("string"); // Konstruktor C string-el
+        EXPECT_STREQ("string", s3.c_str());
+        EXPECT_EQ(6, s3.size());
+
+        String s4(s3); // Másoló konstruktor
+        EXPECT_STREQ("string", s4.c_str());
+        EXPECT_EQ(6, s4.size());
+    } ENDM
+
+    TEST(String, operatorok) {
+        String s1("hello");
+        String s2("world");
+        s2 = s1;
+        EXPECT_STREQ(s1.c_str(), s2.c_str());
+
+        s2 = String(" world");
+        EXPECT_STREQ(" world", s2.c_str());
+
+        String s3 = s1 + s2;
+        EXPECT_STREQ("hello world", s3.c_str());
+    } ENDM
+
+    TEST(String, kiir) {
+        String s1("Hello World!");
+        stringstream ss;
+        ss << s1;
+        EXPECT_STREQ("Hello World!", ss.str().c_str());
+    } ENDM
+
+    TEST(String, beolvas) {
+        stringstream ss;
+        ss << "Hello World!";
+        String s1;
+        ss >> s1;
+        String s2("Hello World!");
+        EXPECT_EQ(s1, s2);
+    } ENDM
+
+    TEST(String, egyeb fuggvenyek) {
+       // getline
+       stringstream ss;
+       ss << "adat1#adat2";
+       String s1;
+       String s2("adat1");
+       getline(ss, s1, '#');
+       EXPECT_STREQ(s2.c_str(), s1.c_str());
+       s2 = "adat2";
+       String s3;
+       getline(ss, s3, '#');
+       EXPECT_STREQ(s2.c_str(), s3.c_str());
+
+       // stoi
+       String s4("123");
+       int i1 = stoi(s4);
+       EXPECT_EQ(123, i1);
+    } ENDM
+
     //Datum osztaly tesztje
     TEST(Datum, kiir) {
         Datum d1(2021, 05, 06, 1140);
