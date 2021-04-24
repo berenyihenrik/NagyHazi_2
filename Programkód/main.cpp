@@ -109,11 +109,46 @@ int main() {
         EXPECT_EQ(d1, d2);
     } ENDM
 
-    TEST(Datum, nagyobb/kisebb) {
+    TEST(Datum, nagyobb/kisebb egyenlo) {
         Datum d1(2021, 05, 06, 1140);
         Datum d2(2021, 06, 01, 1100);
         EXPECT_GE(d2, d1);
         EXPECT_LE(d1, d2);
+
+        Datum d3(2021, 05, 10, 1140);
+        Datum d4 = d3;
+        EXPECT_GE(d3, d4);
+        EXPECT_LE(d3, d4);
+
+        Datum d5(2021, 05, 10, 1140);
+        Datum d6(2022, 05, 10, 1140);
+        EXPECT_FALSE(d5 >= d6);
+        EXPECT_FALSE(d6 <= d5);
+        EXPECT_GE(d6, d5);
+
+        Datum d7(2021, 05, 9, 1140);
+        Datum d8(2021, 05, 10, 1140);
+        EXPECT_FALSE(d7 >= d8);
+        EXPECT_GE(d8, d7);
+
+        Datum d9(2021, 05, 9, 1140);
+        Datum d10(2021, 05, 9, 1141);
+        EXPECT_FALSE(d9 >= d10);
+        EXPECT_GE(d10, d9);
+
+        // minden egyenlo
+        Datum d11(2021, 05, 9, 1141);
+        EXPECT_GE(d10, d11);
+        EXPECT_LE(d10, d11);
+    } ENDM
+
+    TEST(Datum, egyenloseg) {
+        Datum d1(2021, 05, 06, 1140);
+        Datum d2(2021, 05, 06, 1140);
+        EXPECT_EQ(d1, d2);
+
+        Datum d3(2020, 01, 01, 1180);
+        EXPECT_FALSE(d1 == d3);
     } ENDM
 
     TEST(Datum, ertekadas) {

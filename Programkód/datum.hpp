@@ -10,7 +10,7 @@ private:
     int ev;
     int honap;
     int nap;
-    int idopont; //időpont percekben, kiíraskor lesz szétosztva órára es percre
+    int idopont; // időpont percekben, kiíraskor lesz szétosztva órára es percre
 public:
     Datum(int ev, int honap, int nap, int idopont) :ev(ev), honap(honap), nap(nap), idopont(idopont) {}
 
