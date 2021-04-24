@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NHF4: datum.cpp Forrásfájl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">NHF4
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Keresés');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">datum.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="datum_8cpp.html">Ugrás a fájl dokumentációjához.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="datum_8hpp.html">datum.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_datum.html#a92dcade7ea7f877aad18c8199ed99b13">    3</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_datum.html#a92dcade7ea7f877aad18c8199ed99b13">Datum::operator&gt;=</a>(<a class="code" href="class_datum.html">Datum</a> &amp;datum2)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    <span class="keywordflow">if</span>(this-&gt;ev &lt; datum2.ev) {</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(this-&gt;ev &gt; datum2.ev) {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    }</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">if</span>(this-&gt;honap &lt; datum2.honap) {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(this-&gt;honap &gt; datum2.honap) {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(this-&gt;nap &lt; datum2.nap) {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(this-&gt;nap &gt; datum2.nap) {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(this-&gt;idopont &lt; datum2.idopont) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(this-&gt;idopont &gt; datum2.idopont) {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_datum.html#a94d7d701a91b900aca0e7ab4cfce9f84">   29</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_datum.html#a94d7d701a91b900aca0e7ab4cfce9f84">Datum::operator&lt;=</a>(<a class="code" href="class_datum.html">Datum</a> &amp;datum2)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">if</span>(this-&gt;ev == datum2.ev &amp;&amp; this-&gt;honap == datum2.honap &amp;&amp; this-&gt;nap == datum2.nap &amp;&amp; this-&gt;idopont == datum2. idopont) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> !(*<span class="keyword">this</span> &gt;= datum2);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_datum.html#af9d46200f3742e30135bdf0cbe33cd8b">   36</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_datum.html#af9d46200f3742e30135bdf0cbe33cd8b">Datum::operator==</a>(<span class="keyword">const</span> <a class="code" href="class_datum.html">Datum</a> &amp;datum2)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span>(this-&gt;ev == datum2.ev &amp;&amp; this-&gt;honap == datum2.honap &amp;&amp; this-&gt;nap == datum2.nap &amp;&amp; this-&gt;idopont == datum2.idopont) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="datum_8cpp.html#a825b98ab8ec8b3ac4334ddc9627da3c0">   43</a></span>&#160;ostream&amp; <a class="code" href="datum_8cpp.html#a825b98ab8ec8b3ac4334ddc9627da3c0">operator&lt;&lt;</a>(ostream&amp; os, <span class="keyword">const</span> <a class="code" href="class_datum.html">Datum</a>&amp; d) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">int</span> ora = d.<a class="code" href="class_datum.html#a2860f3589c0b302ab6cc62dfcd67f5cf">get_idopont</a>()/60;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span> perc = d.<a class="code" href="class_datum.html#a2860f3589c0b302ab6cc62dfcd67f5cf">get_idopont</a>() - ora*60;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">if</span>(&amp;os == &amp;cout) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        os &lt;&lt; d.<a class="code" href="class_datum.html#ad2cada79821fdf6e0942568fbdcb09fa">get_ev</a>() &lt;&lt; <span class="charliteral">&#39;/&#39;</span> &lt;&lt; d.<a class="code" href="class_datum.html#ac04dad00e07abbdffd9b4fc80b1832df">get_honap</a>() &lt;&lt; <span class="charliteral">&#39;/&#39;</span> &lt;&lt; d.<a class="code" href="class_datum.html#a080ea0596ceb119c481f7ce1d95cfdd4">get_nap</a>() &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; ora &lt;&lt; <span class="charliteral">&#39;:&#39;</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        os &lt;&lt; d.<a class="code" href="class_datum.html#ad2cada79821fdf6e0942568fbdcb09fa">get_ev</a>() &lt;&lt; <span class="charliteral">&#39;#&#39;</span> &lt;&lt; d.<a class="code" href="class_datum.html#ac04dad00e07abbdffd9b4fc80b1832df">get_honap</a>() &lt;&lt; <span class="charliteral">&#39;#&#39;</span> &lt;&lt; d.<a class="code" href="class_datum.html#a080ea0596ceb119c481f7ce1d95cfdd4">get_nap</a>() &lt;&lt; <span class="charliteral">&#39;#&#39;</span> &lt;&lt; ora &lt;&lt; <span class="charliteral">&#39;#&#39;</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span>(perc &lt; 10) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;0&#39;</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> os &lt;&lt; perc;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="datum_8cpp.html#a3f22ffaa089a5c41032fe8be3d25f7b8">   58</a></span>&#160;istream&amp; <a class="code" href="datum_8cpp.html#a3f22ffaa089a5c41032fe8be3d25f7b8">operator&gt;&gt;</a>(istream&amp; is, <a class="code" href="class_datum.html">Datum</a>&amp; d) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="class_string.html">String</a> ev;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="class_string.html">String</a> honap;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="class_string.html">String</a> nap;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="class_string.html">String</a> ora;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="class_string.html">String</a> perc;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Év:&quot;</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    is &gt;&gt; ev;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">while</span>(<a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(ev) &lt; 2021) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Hibás évszám, kérlek 2021 vagy későbbi évszamot adj meg!&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        is &gt;&gt; ev;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Honap:&quot;</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    is &gt;&gt; honap;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">while</span>(<a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(honap) &lt; 1 || <a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(honap) &gt; 12) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Hibás hónap, kérlek 1 és 12 közötti számot adj meg!&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        is &gt;&gt; honap;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Nap:&quot;</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    is &gt;&gt; nap;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">while</span>(<a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(nap) &lt; 1 || <a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(nap) &gt; 31) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Hibás nap, kérlek 1 és 31 közötti számot adj meg!&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        is &gt;&gt; nap;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Óra:&quot;</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    is &gt;&gt; ora;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">while</span>(<a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(ora) &lt; 0 || <a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(ora) &gt; 24) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Hibás óra, kérlek 0 és 24 közötti számot adj meg!&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        is &gt;&gt; ora;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Perc:&quot;</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    is &gt;&gt; perc;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">while</span>(<a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(perc) &lt; 0 || <a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(perc) &gt; 60) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Hibás perc, kérlek 0 és 60 közötti számot adj meg!&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        is &gt;&gt; perc;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    d = <a class="code" href="class_datum.html">Datum</a>(<a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(ev),<a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(honap), <a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(nap), <a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(ora)*60+<a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(perc));</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> is;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="ttc" id="aclass_datum_html"><div class="ttname"><a href="class_datum.html">Datum</a></div><div class="ttdef"><b>Definition:</b> <a href="datum_8hpp_source.html#l00008">datum.hpp:8</a></div></div>
+<div class="ttc" id="aclass_datum_html_a080ea0596ceb119c481f7ce1d95cfdd4"><div class="ttname"><a href="class_datum.html#a080ea0596ceb119c481f7ce1d95cfdd4">Datum::get_nap</a></div><div class="ttdeci">int get_nap() const</div><div class="ttdef"><b>Definition:</b> <a href="datum_8hpp_source.html#l00021">datum.hpp:21</a></div></div>
+<div class="ttc" id="aclass_datum_html_a2860f3589c0b302ab6cc62dfcd67f5cf"><div class="ttname"><a href="class_datum.html#a2860f3589c0b302ab6cc62dfcd67f5cf">Datum::get_idopont</a></div><div class="ttdeci">int get_idopont() const</div><div class="ttdef"><b>Definition:</b> <a href="datum_8hpp_source.html#l00022">datum.hpp:22</a></div></div>
+<div class="ttc" id="aclass_datum_html_a92dcade7ea7f877aad18c8199ed99b13"><div class="ttname"><a href="class_datum.html#a92dcade7ea7f877aad18c8199ed99b13">Datum::operator&gt;=</a></div><div class="ttdeci">bool operator&gt;=(Datum &amp;datum2) const</div><div class="ttdef"><b>Definition:</b> <a href="datum_8cpp_source.html#l00003">datum.cpp:3</a></div></div>
+<div class="ttc" id="aclass_datum_html_a94d7d701a91b900aca0e7ab4cfce9f84"><div class="ttname"><a href="class_datum.html#a94d7d701a91b900aca0e7ab4cfce9f84">Datum::operator&lt;=</a></div><div class="ttdeci">bool operator&lt;=(Datum &amp;datum2) const</div><div class="ttdef"><b>Definition:</b> <a href="datum_8cpp_source.html#l00029">datum.cpp:29</a></div></div>
+<div class="ttc" id="aclass_datum_html_ac04dad00e07abbdffd9b4fc80b1832df"><div class="ttname"><a href="class_datum.html#ac04dad00e07abbdffd9b4fc80b1832df">Datum::get_honap</a></div><div class="ttdeci">int get_honap() const</div><div class="ttdef"><b>Definition:</b> <a href="datum_8hpp_source.html#l00020">datum.hpp:20</a></div></div>
+<div class="ttc" id="aclass_datum_html_ad2cada79821fdf6e0942568fbdcb09fa"><div class="ttname"><a href="class_datum.html#ad2cada79821fdf6e0942568fbdcb09fa">Datum::get_ev</a></div><div class="ttdeci">int get_ev() const</div><div class="ttdef"><b>Definition:</b> <a href="datum_8hpp_source.html#l00019">datum.hpp:19</a></div></div>
+<div class="ttc" id="aclass_datum_html_af9d46200f3742e30135bdf0cbe33cd8b"><div class="ttname"><a href="class_datum.html#af9d46200f3742e30135bdf0cbe33cd8b">Datum::operator==</a></div><div class="ttdeci">bool operator==(const Datum &amp;datum2) const</div><div class="ttdef"><b>Definition:</b> <a href="datum_8cpp_source.html#l00036">datum.cpp:36</a></div></div>
+<div class="ttc" id="aclass_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdef"><b>Definition:</b> <a href="string_8hpp_source.html#l00006">string.hpp:6</a></div></div>
+<div class="ttc" id="adatum_8cpp_html_a3f22ffaa089a5c41032fe8be3d25f7b8"><div class="ttname"><a href="datum_8cpp.html#a3f22ffaa089a5c41032fe8be3d25f7b8">operator&gt;&gt;</a></div><div class="ttdeci">istream &amp; operator&gt;&gt;(istream &amp;is, Datum &amp;d)</div><div class="ttdoc">Dátum beolvasása, beolvasás közben kiírja cout-ra, hogy milyen adatot vár ezzel segítve a felhasználó...</div><div class="ttdef"><b>Definition:</b> <a href="datum_8cpp_source.html#l00058">datum.cpp:58</a></div></div>
+<div class="ttc" id="adatum_8cpp_html_a825b98ab8ec8b3ac4334ddc9627da3c0"><div class="ttname"><a href="datum_8cpp.html#a825b98ab8ec8b3ac4334ddc9627da3c0">operator&lt;&lt;</a></div><div class="ttdeci">ostream &amp; operator&lt;&lt;(ostream &amp;os, const Datum &amp;d)</div><div class="ttdoc">Dátum kiírása.</div><div class="ttdef"><b>Definition:</b> <a href="datum_8cpp_source.html#l00043">datum.cpp:43</a></div></div>
+<div class="ttc" id="adatum_8hpp_html"><div class="ttname"><a href="datum_8hpp.html">datum.hpp</a></div></div>
+<div class="ttc" id="astring_8cpp_html_a406d0690caa9817062e7abb20615b34e"><div class="ttname"><a href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a></div><div class="ttdeci">int stoi(String &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="string_8cpp_source.html#l00120">string.cpp:120</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Készítette&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

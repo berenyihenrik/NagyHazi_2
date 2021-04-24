@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NHF4: vonat.cpp Forrásfájl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">NHF4
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Keresés');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">vonat.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="vonat_8cpp.html">Ugrás a fájl dokumentációjához.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="vonat_8hpp.html">vonat.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="vonat_8cpp.html#ab7a348c97cdd6d35161d992f1f9fc1d3">    7</a></span>&#160;ostream&amp; <a class="code" href="vonat_8cpp.html#ab7a348c97cdd6d35161d992f1f9fc1d3">operator&lt;&lt;</a>(ostream&amp; os, <span class="keyword">const</span> <a class="code" href="class_vonat.html">Vonat</a>&amp; v) {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keywordflow">if</span>(&amp;os == &amp;cout) {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; v.<a class="code" href="class_vonat.html#a9947f19aae2cc04cb237dc63682225a4">get_vsz</a>() &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; v.<a class="code" href="class_vonat.html#adb14295e66f2dbeaeb77e489837f4b34">get_ind_dt</a>() &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; v.<a class="code" href="class_vonat.html#ad8004c6ac632f5cc727c76d3a632b9dc">get_ind_all</a>() &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; v.<a class="code" href="class_vonat.html#abc1716c854ad4ee797ce5a80932f6f9e">get_erkez_dt</a>()</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        &lt;&lt; <span class="charliteral">&#39; &#39;</span>&lt;&lt; v.<a class="code" href="class_vonat.html#aef3ad18224c4544bec477d2c6c3bb88e">get_erkez_all</a>() &lt;&lt; endl;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; v.<a class="code" href="class_vonat.html#a9947f19aae2cc04cb237dc63682225a4">get_vsz</a>() &lt;&lt; <span class="charliteral">&#39;#&#39;</span> &lt;&lt; v.<a class="code" href="class_vonat.html#adb14295e66f2dbeaeb77e489837f4b34">get_ind_dt</a>() &lt;&lt; <span class="charliteral">&#39;#&#39;</span> &lt;&lt; v.<a class="code" href="class_vonat.html#abc1716c854ad4ee797ce5a80932f6f9e">get_erkez_dt</a>() &lt;&lt; <span class="charliteral">&#39;#&#39;</span> &lt;&lt; v.<a class="code" href="class_vonat.html#ad8004c6ac632f5cc727c76d3a632b9dc">get_ind_all</a>()</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        &lt;&lt; <span class="charliteral">&#39;#&#39;</span>&lt;&lt; v.<a class="code" href="class_vonat.html#aef3ad18224c4544bec477d2c6c3bb88e">get_erkez_all</a>() &lt;&lt; endl;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_vonat.html#a2c533d61b98124692333b344a0b91462">   17</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_vonat.html#a2c533d61b98124692333b344a0b91462">Vonat::operator==</a>(<span class="keyword">const</span> <a class="code" href="class_vonat.html">Vonat</a> &amp;v)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">if</span>(this-&gt;vonatszam == v.<a class="code" href="class_vonat.html#a9947f19aae2cc04cb237dc63682225a4">get_vsz</a>()) {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_jaratok.html#a6f66ce9132b3315fca6f13199286d074">   25</a></span>&#160;<a class="code" href="class_vonat.html">Vonat</a> <a class="code" href="class_jaratok.html#a6f66ce9132b3315fca6f13199286d074">Jaratok::operator[]</a>(<span class="keywordtype">size_t</span> i)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span>(i &lt; 0 || i &gt;= meret) {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">throw</span> <span class="stringliteral">&quot;KIVÉTEL&quot;</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> jaratok[i];</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_jaratok.html#af08c0ea7b6425836fb3123ce6122af12">   32</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_jaratok.html#af08c0ea7b6425836fb3123ce6122af12">Jaratok::add</a>(<span class="keyword">const</span> <a class="code" href="class_vonat.html">Vonat</a>&amp; v) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_vonat.html">Vonat</a>* temp = <span class="keyword">new</span> <a class="code" href="class_vonat.html">Vonat</a>[meret+1];</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; meret; i++) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        temp[i] = jaratok[i];</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    temp[meret] = v;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">delete</span>[] jaratok;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    jaratok = temp;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    meret++;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_jaratok.html#aeee0cc3b96fbbe51849d21b4ceadd34c">   43</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_jaratok.html#aeee0cc3b96fbbe51849d21b4ceadd34c">Jaratok::remove</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* vonatszam) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; meret; i++) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">if</span>(jaratok[i].get_vsz() == vonatszam) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="class_vonat.html">Vonat</a>* temp = <span class="keyword">new</span> <a class="code" href="class_vonat.html">Vonat</a>[meret-1];</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordtype">size_t</span> idx = 0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> j = 0; j &lt; meret; j++) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="keywordflow">if</span>(jaratok[j].get_vsz() != vonatszam) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    temp[idx] = jaratok[j];</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    idx++;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            meret--;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keyword">delete</span>[] jaratok;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            jaratok = temp;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">throw</span> <span class="stringliteral">&quot;Nincs ilyen vonatszam!\n&quot;</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_jaratok.html#a0c1636b4d7cb5d608baac8bdb651b91b">   63</a></span>&#160;<span class="keywordtype">size_t</span> <a class="code" href="class_jaratok.html#a0c1636b4d7cb5d608baac8bdb651b91b">Jaratok::size</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> meret;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_jaratok.html#af780870fd497c9b6a0e11ad18ca8bda3">   67</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_jaratok.html#af780870fd497c9b6a0e11ad18ca8bda3">Jaratok::checkID</a>(<a class="code" href="class_string.html">String</a> azonosito)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; meret; i ++) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">if</span>(jaratok[i].get_vsz() == azonosito) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="vonat_8cpp.html#a2729939e7c26d46156fb369e45fcc34e">   76</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="vonat_8cpp.html#a2729939e7c26d46156fb369e45fcc34e">beolvas</a>(<a class="code" href="class_jaratok.html">Jaratok</a>&amp; j, <span class="keyword">const</span> <span class="keywordtype">char</span>* fajlnev) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    ifstream fpp;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    fpp.open(fajlnev);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">if</span>(!fpp) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        printf(<span class="stringliteral">&quot;KIVÉTEL\n&quot;</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">throw</span> <span class="stringliteral">&quot;QP4TVJ&quot;</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="class_string.html">String</a>* adatok = <span class="keyword">new</span> <a class="code" href="class_string.html">String</a>[13];</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">while</span>(<a class="code" href="string_8cpp.html#aea75e6248adb2f82cd4efa539d1a3397">getline</a>(fpp,adatok[i],<span class="charliteral">&#39;#&#39;</span>)) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">if</span>(i == 11) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <a class="code" href="string_8cpp.html#aea75e6248adb2f82cd4efa539d1a3397">getline</a>(fpp, adatok[12], <span class="charliteral">&#39;\n&#39;</span>);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <a class="code" href="class_datum.html">Datum</a> ind(<a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(adatok[1]), <a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(adatok[2]), <a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(adatok[3]), <a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(adatok[4])*60+<a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(adatok[5]));</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <a class="code" href="class_datum.html">Datum</a> erk(<a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(adatok[6]), <a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(adatok[7]), <a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(adatok[8]), <a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(adatok[9])*60+<a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(adatok[10]));</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <a class="code" href="class_vonat.html">Vonat</a> v(adatok[0], adatok[11], ind, adatok[12], erk);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            i = -1;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            j.<a class="code" href="class_jaratok.html#af08c0ea7b6425836fb3123ce6122af12">add</a>(v);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keyword">delete</span>[] adatok;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            adatok = <span class="keyword">new</span> <a class="code" href="class_string.html">String</a>[14];</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        i++;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">delete</span>[] adatok;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    fpp.close();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="vonat_8cpp.html#aa7902a7565585a9c1db649023b928a8b">  104</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="vonat_8cpp.html#aa7902a7565585a9c1db649023b928a8b">keres</a>(<a class="code" href="class_jaratok.html">Jaratok</a>&amp; j, <a class="code" href="class_string.html">String</a> honnan, <a class="code" href="class_string.html">String</a> hova, <a class="code" href="class_datum.html">Datum</a> kezdo, <a class="code" href="class_datum.html">Datum</a> vegso) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">bool</span> vanTalalat = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; j.<a class="code" href="class_jaratok.html#a0c1636b4d7cb5d608baac8bdb651b91b">size</a>(); i++) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">if</span> (strstr(j[i].get_ind_all().c_str(), honnan.<a class="code" href="class_string.html#a0274f3e61533d15086816fb7f47ccb54">c_str</a>()) != 0 &amp;&amp; strstr(j[i].get_erkez_all().c_str(), hova.<a class="code" href="class_string.html#a0274f3e61533d15086816fb7f47ccb54">c_str</a>()) != NULL) {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">if</span> (j[i].get_ind_dt() &gt;= kezdo &amp;&amp; j[i].get_erkez_dt() &lt;= vegso) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                cout &lt;&lt; j[i];</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                vanTalalat = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">if</span>(!vanTalalat) {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Nem található járat a megadott keresési feltételek szerint.&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="vonat_8cpp.html#a0ff7ab3471ebba8730452643deacc544">  119</a></span>&#160;ostream&amp; <a class="code" href="vonat_8cpp.html#ab7a348c97cdd6d35161d992f1f9fc1d3">operator&lt;&lt;</a>(ostream&amp; os, <span class="keyword">const</span> <a class="code" href="class_jaratok.html">Jaratok</a>&amp; j) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; j.<a class="code" href="class_jaratok.html#a0c1636b4d7cb5d608baac8bdb651b91b">size</a>(); i++) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        os &lt;&lt; j[i];</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
+<div class="ttc" id="aclass_datum_html"><div class="ttname"><a href="class_datum.html">Datum</a></div><div class="ttdef"><b>Definition:</b> <a href="datum_8hpp_source.html#l00008">datum.hpp:8</a></div></div>
+<div class="ttc" id="aclass_jaratok_html"><div class="ttname"><a href="class_jaratok.html">Jaratok</a></div><div class="ttdef"><b>Definition:</b> <a href="vonat_8hpp_source.html#l00035">vonat.hpp:35</a></div></div>
+<div class="ttc" id="aclass_jaratok_html_a0c1636b4d7cb5d608baac8bdb651b91b"><div class="ttname"><a href="class_jaratok.html#a0c1636b4d7cb5d608baac8bdb651b91b">Jaratok::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdef"><b>Definition:</b> <a href="vonat_8cpp_source.html#l00063">vonat.cpp:63</a></div></div>
+<div class="ttc" id="aclass_jaratok_html_a6f66ce9132b3315fca6f13199286d074"><div class="ttname"><a href="class_jaratok.html#a6f66ce9132b3315fca6f13199286d074">Jaratok::operator[]</a></div><div class="ttdeci">Vonat operator[](size_t i) const</div><div class="ttdoc">Járatok.</div><div class="ttdef"><b>Definition:</b> <a href="vonat_8cpp_source.html#l00025">vonat.cpp:25</a></div></div>
+<div class="ttc" id="aclass_jaratok_html_aeee0cc3b96fbbe51849d21b4ceadd34c"><div class="ttname"><a href="class_jaratok.html#aeee0cc3b96fbbe51849d21b4ceadd34c">Jaratok::remove</a></div><div class="ttdeci">void remove(const char *vonatszam)</div><div class="ttdef"><b>Definition:</b> <a href="vonat_8cpp_source.html#l00043">vonat.cpp:43</a></div></div>
+<div class="ttc" id="aclass_jaratok_html_af08c0ea7b6425836fb3123ce6122af12"><div class="ttname"><a href="class_jaratok.html#af08c0ea7b6425836fb3123ce6122af12">Jaratok::add</a></div><div class="ttdeci">void add(const Vonat &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="vonat_8cpp_source.html#l00032">vonat.cpp:32</a></div></div>
+<div class="ttc" id="aclass_jaratok_html_af780870fd497c9b6a0e11ad18ca8bda3"><div class="ttname"><a href="class_jaratok.html#af780870fd497c9b6a0e11ad18ca8bda3">Jaratok::checkID</a></div><div class="ttdeci">bool checkID(String azonosito) const</div><div class="ttdef"><b>Definition:</b> <a href="vonat_8cpp_source.html#l00067">vonat.cpp:67</a></div></div>
+<div class="ttc" id="aclass_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdef"><b>Definition:</b> <a href="string_8hpp_source.html#l00006">string.hpp:6</a></div></div>
+<div class="ttc" id="aclass_string_html_a0274f3e61533d15086816fb7f47ccb54"><div class="ttname"><a href="class_string.html#a0274f3e61533d15086816fb7f47ccb54">String::c_str</a></div><div class="ttdeci">const char * c_str() const</div><div class="ttdoc">C-sztringet ad vissza.</div><div class="ttdef"><b>Definition:</b> <a href="string_8hpp_source.html#l00019">string.hpp:19</a></div></div>
+<div class="ttc" id="aclass_vonat_html"><div class="ttname"><a href="class_vonat.html">Vonat</a></div><div class="ttdef"><b>Definition:</b> <a href="vonat_8hpp_source.html#l00009">vonat.hpp:9</a></div></div>
+<div class="ttc" id="aclass_vonat_html_a2c533d61b98124692333b344a0b91462"><div class="ttname"><a href="class_vonat.html#a2c533d61b98124692333b344a0b91462">Vonat::operator==</a></div><div class="ttdeci">bool operator==(const Vonat &amp;v) const</div><div class="ttdef"><b>Definition:</b> <a href="vonat_8cpp_source.html#l00017">vonat.cpp:17</a></div></div>
+<div class="ttc" id="aclass_vonat_html_a9947f19aae2cc04cb237dc63682225a4"><div class="ttname"><a href="class_vonat.html#a9947f19aae2cc04cb237dc63682225a4">Vonat::get_vsz</a></div><div class="ttdeci">String get_vsz() const</div><div class="ttdef"><b>Definition:</b> <a href="vonat_8hpp_source.html#l00025">vonat.hpp:25</a></div></div>
+<div class="ttc" id="aclass_vonat_html_abc1716c854ad4ee797ce5a80932f6f9e"><div class="ttname"><a href="class_vonat.html#abc1716c854ad4ee797ce5a80932f6f9e">Vonat::get_erkez_dt</a></div><div class="ttdeci">Datum get_erkez_dt() const</div><div class="ttdef"><b>Definition:</b> <a href="vonat_8hpp_source.html#l00029">vonat.hpp:29</a></div></div>
+<div class="ttc" id="aclass_vonat_html_ad8004c6ac632f5cc727c76d3a632b9dc"><div class="ttname"><a href="class_vonat.html#ad8004c6ac632f5cc727c76d3a632b9dc">Vonat::get_ind_all</a></div><div class="ttdeci">String get_ind_all() const</div><div class="ttdef"><b>Definition:</b> <a href="vonat_8hpp_source.html#l00026">vonat.hpp:26</a></div></div>
+<div class="ttc" id="aclass_vonat_html_adb14295e66f2dbeaeb77e489837f4b34"><div class="ttname"><a href="class_vonat.html#adb14295e66f2dbeaeb77e489837f4b34">Vonat::get_ind_dt</a></div><div class="ttdeci">Datum get_ind_dt() const</div><div class="ttdef"><b>Definition:</b> <a href="vonat_8hpp_source.html#l00027">vonat.hpp:27</a></div></div>
+<div class="ttc" id="aclass_vonat_html_aef3ad18224c4544bec477d2c6c3bb88e"><div class="ttname"><a href="class_vonat.html#aef3ad18224c4544bec477d2c6c3bb88e">Vonat::get_erkez_all</a></div><div class="ttdeci">String get_erkez_all() const</div><div class="ttdef"><b>Definition:</b> <a href="vonat_8hpp_source.html#l00028">vonat.hpp:28</a></div></div>
+<div class="ttc" id="astring_8cpp_html_a406d0690caa9817062e7abb20615b34e"><div class="ttname"><a href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a></div><div class="ttdeci">int stoi(String &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="string_8cpp_source.html#l00120">string.cpp:120</a></div></div>
+<div class="ttc" id="astring_8cpp_html_aea75e6248adb2f82cd4efa539d1a3397"><div class="ttname"><a href="string_8cpp.html#aea75e6248adb2f82cd4efa539d1a3397">getline</a></div><div class="ttdeci">bool getline(std::istream &amp;is, String &amp;s, char d)</div><div class="ttdef"><b>Definition:</b> <a href="string_8cpp_source.html#l00109">string.cpp:109</a></div></div>
+<div class="ttc" id="avonat_8cpp_html_a2729939e7c26d46156fb369e45fcc34e"><div class="ttname"><a href="vonat_8cpp.html#a2729939e7c26d46156fb369e45fcc34e">beolvas</a></div><div class="ttdeci">void beolvas(Jaratok &amp;j, const char *fajlnev)</div><div class="ttdef"><b>Definition:</b> <a href="vonat_8cpp_source.html#l00076">vonat.cpp:76</a></div></div>
+<div class="ttc" id="avonat_8cpp_html_aa7902a7565585a9c1db649023b928a8b"><div class="ttname"><a href="vonat_8cpp.html#aa7902a7565585a9c1db649023b928a8b">keres</a></div><div class="ttdeci">void keres(Jaratok &amp;j, String honnan, String hova, Datum kezdo, Datum vegso)</div><div class="ttdef"><b>Definition:</b> <a href="vonat_8cpp_source.html#l00104">vonat.cpp:104</a></div></div>
+<div class="ttc" id="avonat_8cpp_html_ab7a348c97cdd6d35161d992f1f9fc1d3"><div class="ttname"><a href="vonat_8cpp.html#ab7a348c97cdd6d35161d992f1f9fc1d3">operator&lt;&lt;</a></div><div class="ttdeci">ostream &amp; operator&lt;&lt;(ostream &amp;os, const Vonat &amp;v)</div><div class="ttdoc">Vonat.</div><div class="ttdef"><b>Definition:</b> <a href="vonat_8cpp_source.html#l00007">vonat.cpp:7</a></div></div>
+<div class="ttc" id="avonat_8hpp_html"><div class="ttname"><a href="vonat_8hpp.html">vonat.hpp</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Készítette&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

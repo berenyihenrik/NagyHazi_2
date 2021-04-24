@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NHF4: string.cpp Forrásfájl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">NHF4
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Keresés');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">string.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="string_8cpp.html">Ugrás a fájl dokumentációjához.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// MSC ne adjon figyelmeztető üzenetet a C sztringkezelő függvényeire</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">  #define _CRT_SECURE_NO_WARNINGS</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;memtrace.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="string_8hpp.html">string.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_string.html#a81cba8739e68d104ba62222b1950fdd7">   15</a></span>&#160;<a class="code" href="class_string.html#a8a7ef356e05eb9b1ea1ab518baee3095">String::String</a>(<span class="keywordtype">char</span> param) {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    len = 1;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    pData = <span class="keyword">new</span> <span class="keywordtype">char</span>[2];</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    pData[0] = param;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    pData[1] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_string.html#a076e0f563f1fc96914c175282c54e0dc">   22</a></span>&#160;<a class="code" href="class_string.html#a8a7ef356e05eb9b1ea1ab518baee3095">String::String</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* cstring) {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    len = strlen(cstring);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    pData = <span class="keyword">new</span> <span class="keywordtype">char</span>[len+1];</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; cstring[i] != <span class="charliteral">&#39;\0&#39;</span>; i++) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        pData[i] = cstring[i];</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    pData[len] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_string.html#a50ec7bf093552bdd2f467225c185490a">   34</a></span>&#160;<a class="code" href="class_string.html#a8a7ef356e05eb9b1ea1ab518baee3095">String::String</a>(<span class="keyword">const</span> <a class="code" href="class_string.html">String</a> &amp;s) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    len = s.len;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    pData = <span class="keyword">new</span> <span class="keywordtype">char</span>[len+1];</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; len; i++) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        pData[i] = s.pData[i];</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    pData[len] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_string.html#ac40b2a3fb58c2d8556f5e6ff73510036">   44</a></span>&#160;<a class="code" href="class_string.html#ac40b2a3fb58c2d8556f5e6ff73510036">String::~String</a>() {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">delete</span>[] pData;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_string.html#a803e6112834d4c0cdb0da6c6a4000e6e">   49</a></span>&#160;<a class="code" href="class_string.html">String</a>&amp; <a class="code" href="class_string.html#a803e6112834d4c0cdb0da6c6a4000e6e">String::operator=</a>(<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; rhs_s) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;rhs_s) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">delete</span>[] pData;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        len = rhs_s.len;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        pData = <span class="keyword">new</span> <span class="keywordtype">char</span>[len+1];</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        strcpy(pData, rhs_s.pData);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_string.html#a28a020f061e5f25317af47488bfb7de8">   59</a></span>&#160;<a class="code" href="class_string.html">String</a> <a class="code" href="class_string.html#a28a020f061e5f25317af47488bfb7de8">String::operator+</a>(<span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; rhs_s)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="class_string.html">String</a> temp;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    temp.len = len + rhs_s.len;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">delete</span>[] temp.pData;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    temp.pData = <span class="keyword">new</span> <span class="keywordtype">char</span>[temp.len+1];</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span>(len &gt; 0) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        strcpy(temp.pData, pData);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        strcat(temp.pData, rhs_s.pData);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        strcpy(temp.pData, rhs_s.pData);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> temp;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_string.html#a56acae403d3421fa33ca87e480668bfd">   73</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_string.html#a56acae403d3421fa33ca87e480668bfd">String::operator==</a>(<span class="keyword">const</span> <a class="code" href="class_string.html">String</a> &amp;s)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">if</span>(strcmp(this-&gt;c_str(), s.<a class="code" href="class_string.html#a0274f3e61533d15086816fb7f47ccb54">c_str</a>()) == 0) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_string.html#a77ee89325fe9026596b9327359f0fa9c">   80</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_string.html#a77ee89325fe9026596b9327359f0fa9c">String::operator!=</a>(<span class="keyword">const</span> <a class="code" href="class_string.html">String</a> &amp;s)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == s);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="string_8cpp.html#ac04c27d84a9668fbcec25e6c46c3c4af">   85</a></span>&#160;ostream&amp; <a class="code" href="string_8cpp.html#ac04c27d84a9668fbcec25e6c46c3c4af">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="class_string.html">String</a>&amp; s) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> os &lt;&lt; s.<a class="code" href="class_string.html#a0274f3e61533d15086816fb7f47ccb54">c_str</a>() ;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="string_8cpp.html#aea8ed420ad5e70828bc42b0fb9b49366">   90</a></span>&#160;std::istream&amp; <a class="code" href="string_8cpp.html#aea8ed420ad5e70828bc42b0fb9b49366">operator&gt;&gt;</a>(std::istream&amp; is, <a class="code" href="class_string.html">String</a>&amp; s0) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> ch;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    s0 = <a class="code" href="class_string.html">String</a>(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    std::ios_base::fmtflags fl = is.flags();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    is.setf(ios_base::skipws);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">while</span> (is &gt;&gt; ch) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        is.unsetf(ios_base::skipws);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">if</span> (ch == <span class="charliteral">&#39;\n&#39;</span>) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            is.putback(ch);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            s0 = s0 + ch;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    is.setf(fl);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> is;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="string_8cpp.html#aea75e6248adb2f82cd4efa539d1a3397">  109</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="string_8cpp.html#aea75e6248adb2f82cd4efa539d1a3397">getline</a>(std::istream&amp; is, <a class="code" href="class_string.html">String</a>&amp; s, <span class="keywordtype">char</span> d) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">char</span> current;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">while</span>(is.get(current)) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">if</span>(current == d) {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        s = s + current;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">  120</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a>(<a class="code" href="class_string.html">String</a>&amp; s) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">return</span> atoi(s.<a class="code" href="class_string.html#a0274f3e61533d15086816fb7f47ccb54">c_str</a>());</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+<div class="ttc" id="aclass_string_html"><div class="ttname"><a href="class_string.html">String</a></div><div class="ttdef"><b>Definition:</b> <a href="string_8hpp_source.html#l00006">string.hpp:6</a></div></div>
+<div class="ttc" id="aclass_string_html_a0274f3e61533d15086816fb7f47ccb54"><div class="ttname"><a href="class_string.html#a0274f3e61533d15086816fb7f47ccb54">String::c_str</a></div><div class="ttdeci">const char * c_str() const</div><div class="ttdoc">C-sztringet ad vissza.</div><div class="ttdef"><b>Definition:</b> <a href="string_8hpp_source.html#l00019">string.hpp:19</a></div></div>
+<div class="ttc" id="aclass_string_html_a28a020f061e5f25317af47488bfb7de8"><div class="ttname"><a href="class_string.html#a28a020f061e5f25317af47488bfb7de8">String::operator+</a></div><div class="ttdeci">String operator+(const String &amp;rhs_s) const</div><div class="ttdef"><b>Definition:</b> <a href="string_8cpp_source.html#l00059">string.cpp:59</a></div></div>
+<div class="ttc" id="aclass_string_html_a56acae403d3421fa33ca87e480668bfd"><div class="ttname"><a href="class_string.html#a56acae403d3421fa33ca87e480668bfd">String::operator==</a></div><div class="ttdeci">bool operator==(const String &amp;s) const</div><div class="ttdef"><b>Definition:</b> <a href="string_8cpp_source.html#l00073">string.cpp:73</a></div></div>
+<div class="ttc" id="aclass_string_html_a77ee89325fe9026596b9327359f0fa9c"><div class="ttname"><a href="class_string.html#a77ee89325fe9026596b9327359f0fa9c">String::operator!=</a></div><div class="ttdeci">bool operator!=(const String &amp;s) const</div><div class="ttdef"><b>Definition:</b> <a href="string_8cpp_source.html#l00080">string.cpp:80</a></div></div>
+<div class="ttc" id="aclass_string_html_a803e6112834d4c0cdb0da6c6a4000e6e"><div class="ttname"><a href="class_string.html#a803e6112834d4c0cdb0da6c6a4000e6e">String::operator=</a></div><div class="ttdeci">String &amp; operator=(const String &amp;rhs_s)</div><div class="ttdoc">operator=</div><div class="ttdef"><b>Definition:</b> <a href="string_8cpp_source.html#l00049">string.cpp:49</a></div></div>
+<div class="ttc" id="aclass_string_html_a8a7ef356e05eb9b1ea1ab518baee3095"><div class="ttname"><a href="class_string.html#a8a7ef356e05eb9b1ea1ab518baee3095">String::String</a></div><div class="ttdeci">String()</div><div class="ttdoc">Paraméter nélküli konstruktor:</div><div class="ttdef"><b>Definition:</b> <a href="string_8hpp_source.html#l00011">string.hpp:11</a></div></div>
+<div class="ttc" id="aclass_string_html_ac40b2a3fb58c2d8556f5e6ff73510036"><div class="ttname"><a href="class_string.html#ac40b2a3fb58c2d8556f5e6ff73510036">String::~String</a></div><div class="ttdeci">~String()</div><div class="ttdoc">Destruktor (disposeString)</div><div class="ttdef"><b>Definition:</b> <a href="string_8cpp_source.html#l00044">string.cpp:44</a></div></div>
+<div class="ttc" id="astring_8cpp_html_a406d0690caa9817062e7abb20615b34e"><div class="ttname"><a href="string_8cpp.html#a406d0690caa9817062e7abb20615b34e">stoi</a></div><div class="ttdeci">int stoi(String &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="string_8cpp_source.html#l00120">string.cpp:120</a></div></div>
+<div class="ttc" id="astring_8cpp_html_ac04c27d84a9668fbcec25e6c46c3c4af"><div class="ttname"><a href="string_8cpp.html#ac04c27d84a9668fbcec25e6c46c3c4af">operator&lt;&lt;</a></div><div class="ttdeci">ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const String &amp;s)</div><div class="ttdoc">&lt;&lt; operator, ami kiír az ostream-re</div><div class="ttdef"><b>Definition:</b> <a href="string_8cpp_source.html#l00085">string.cpp:85</a></div></div>
+<div class="ttc" id="astring_8cpp_html_aea75e6248adb2f82cd4efa539d1a3397"><div class="ttname"><a href="string_8cpp.html#aea75e6248adb2f82cd4efa539d1a3397">getline</a></div><div class="ttdeci">bool getline(std::istream &amp;is, String &amp;s, char d)</div><div class="ttdef"><b>Definition:</b> <a href="string_8cpp_source.html#l00109">string.cpp:109</a></div></div>
+<div class="ttc" id="astring_8cpp_html_aea8ed420ad5e70828bc42b0fb9b49366"><div class="ttname"><a href="string_8cpp.html#aea8ed420ad5e70828bc42b0fb9b49366">operator&gt;&gt;</a></div><div class="ttdeci">std::istream &amp; operator&gt;&gt;(std::istream &amp;is, String &amp;s0)</div><div class="ttdoc">operator, ami beolvas az istreamrol egy szot</div><div class="ttdef"><b>Definition:</b> <a href="string_8cpp_source.html#l00090">string.cpp:90</a></div></div>
+<div class="ttc" id="astring_8hpp_html"><div class="ttname"><a href="string_8hpp.html">string.hpp</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Készítette&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

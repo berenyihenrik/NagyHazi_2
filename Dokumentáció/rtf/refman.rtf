@@ -1,0 +1,3834 @@
+{\rtf1\ansi\ansicpg1250\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\info 
+{\title {\comment NHF4 }NHF4}
+{\comment K\'E9sz\'EDtette doxygen1.9.1.}
+{\creatim \yr2021\mo4\dy24\hr20\min17\sec18}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt NHF4}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Verzi\'F3 \par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt Szombat \'C1prilis 24 2021 }}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Tartalomjegyz\'E9k\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbknone
+{\pard\widctlpar\brdrb\brdrs\brdrw75\brsp20 \adjustright \par}
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Oszt\'E1lymutat\'F3\par \pard\plain 
+{\tc \v Oszt\'E1lymutat\'F3}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Oszt\'E1lylista\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Az \'F6sszes oszt\'E1ly, strukt\'FAra, uni\'F3 \'E9s interf\'E9sz list\'E1ja r\'F6vid le\'EDr\'E1sokkal:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b Datum} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Jaratok} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABZ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Jegy} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Jegyek} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACX \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b String} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Vonat} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADU \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbknone
+{\pard\widctlpar\brdrb\brdrs\brdrw75\brsp20 \adjustright \par}
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+F\'E1jlmutat\'F3\par \pard\plain 
+{\tc \v F\'E1jlmutat\'F3}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+F\'E1jllista\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Az \'F6sszes f\'E1jl list\'E1ja r\'F6vid le\'EDr\'E1sokkal:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b datum.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b datum.hpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b jegy.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b jegy.hpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAK \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b main.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b memtrace.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAQ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b menu.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b menu.hpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b string.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAV \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b string.hpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b vonat.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b vonat.hpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABK \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbknone
+{\pard\widctlpar\brdrb\brdrs\brdrw75\brsp20 \adjustright \par}
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Oszt\'E1lyok dokument\'E1ci\'F3ja{\tc \v Oszt\'E1lyok dokument\'E1ci\'F3ja}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Datum oszt\'E1lyreferencia\par \pard\plain 
+{\tc\tcl2 \v Datum}
+{\xe \v Datum}
+{\bkmkstart AAAAAAAABP}
+{\bkmkend AAAAAAAABP}
+\par
+{
+{\f2 #include <datum.hpp>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Publikus tagf\'FCggv\'E9nyek\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Datum} (int ev, int honap, int nap, int idopont)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Datum} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b get_ev} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b get_honap} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b get_nap} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b get_idopont} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b operator>=} ({\b Datum} &datum2) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b operator<=} ({\b Datum} &datum2) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b operator==} (const {\b Datum} &datum2) const\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+R\'E9szletes le\'EDr\'E1s\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Defin\'EDci\'F3 a(z) datum.hpp f\'E1jl 8. sor\'E1ban.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Konstruktorok \'E9s destruktorok dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v Datum\:Datum}
+{\xe \v Datum\:Datum}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Datum::Datum (int  {\i ev}, int  {\i honap}, int  {\i nap}, int  {\i idopont}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABQ}
+{\bkmkend AAAAAAAABQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) datum.hpp f\'E1jl 15. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 15 :ev(ev), honap(honap), nap(nap), idopont(idopont) \{\}\par
+}
+}
+{\xe \v Datum\:Datum}
+{\xe \v Datum\:Datum}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Datum::Datum (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABR}
+{\bkmkend AAAAAAAABR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) datum.hpp f\'E1jl 17. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 17 \{\}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Tagf\'FCggv\'E9nyek dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v get_ev\:Datum}
+{\xe \v Datum\:get_ev}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int Datum::get_ev () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABS}
+{\bkmkend AAAAAAAABS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) datum.hpp f\'E1jl 19. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 19 \{{\cf19 return} ev;\}\par
+}
+}
+{\xe \v get_honap\:Datum}
+{\xe \v Datum\:get_honap}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int Datum::get_honap () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) datum.hpp f\'E1jl 20. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 20 \{{\cf19 return} honap;\}\par
+}
+}
+{\xe \v get_idopont\:Datum}
+{\xe \v Datum\:get_idopont}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int Datum::get_idopont () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABU}
+{\bkmkend AAAAAAAABU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) datum.hpp f\'E1jl 22. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 22 \{{\cf19 return} idopont;\}\par
+}
+}
+{\xe \v get_nap\:Datum}
+{\xe \v Datum\:get_nap}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int Datum::get_nap () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABV}
+{\bkmkend AAAAAAAABV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) datum.hpp f\'E1jl 21. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 21 \{{\cf19 return} nap;\}\par
+}
+}
+{\xe \v operator<=\:Datum}
+{\xe \v Datum\:operator<=}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool Datum::operator<= ({\b Datum} &  {\i datum2}) const}}
+\par
+{\bkmkstart AAAAAAAABW}
+{\bkmkend AAAAAAAABW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) datum.cpp f\'E1jl 29. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 29                                          \{\par
+30     {\cf19 if}(this->ev == datum2.ev && this->honap == datum2.honap && this->nap == datum2.nap && this->idopont == datum2. idopont) \{\par
+31         {\cf19 return} {\cf17 true};\par
+32     \}\par
+33     {\cf19 return} !(*{\cf17 this} >= datum2);\par
+34 \}\par
+}
+}
+{\xe \v operator==\:Datum}
+{\xe \v Datum\:operator==}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool Datum::operator== (const {\b Datum} &  {\i datum2}) const}}
+\par
+{\bkmkstart AAAAAAAABX}
+{\bkmkend AAAAAAAABX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) datum.cpp f\'E1jl 36. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 36                                                 \{\par
+37     {\cf19 if}(this->ev == datum2.ev && this->honap == datum2.honap && this->nap == datum2.nap && this->idopont == datum2.idopont) \{\par
+38         {\cf19 return} {\cf17 true};\par
+39     \}\par
+40     {\cf19 return} {\cf17 false};\par
+41 \}\par
+}
+}
+{\xe \v operator>=\:Datum}
+{\xe \v Datum\:operator>=}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool Datum::operator>= ({\b Datum} &  {\i datum2}) const}}
+\par
+{\bkmkstart AAAAAAAABY}
+{\bkmkend AAAAAAAABY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) datum.cpp f\'E1jl 3. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 3                                          \{\par
+4     {\cf19 if}(this->ev < datum2.ev) \{\par
+5         {\cf19 return} {\cf17 false};\par
+6     \} {\cf19 else} {\cf19 if}(this->ev > datum2.ev) \{\par
+7         {\cf19 return} {\cf17 true};\par
+8     \}\par
+9 \par
+10     {\cf19 if}(this->honap < datum2.honap) \{\par
+11         {\cf19 return} {\cf17 false};\par
+12     \}{\cf19 else} {\cf19 if}(this->honap > datum2.honap) \{\par
+13         {\cf19 return} {\cf17 true};\par
+14     \}\par
+15     {\cf19 else} {\cf19 if}(this->nap < datum2.nap) \{\par
+16         {\cf19 return} {\cf17 false};\par
+17     \}{\cf19 else} {\cf19 if}(this->nap > datum2.nap) \{\par
+18         {\cf19 return} {\cf17 true};\par
+19     \}\par
+20     {\cf19 else} {\cf19 if}(this->idopont < datum2.idopont) \{\par
+21         {\cf19 return} {\cf17 false};\par
+22     \}{\cf19 else} {\cf19 if}(this->idopont > datum2.idopont) \{\par
+23         {\cf19 return} {\cf17 true};\par
+24     \}\par
+25 \par
+26     {\cf19 return} {\cf17 true};\par
+27 \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+Ez a dokument\'E1ci\'F3 az oszt\'E1lyr\'F3l a k\'F6vetkez\'F5 f\'E1jlok alapj\'E1n k\'E9sz\'FClt:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b datum.hpp}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b datum.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbknone
+{\pard\widctlpar\brdrb\brdremboss\brdrw15\brsp20 \adjustright \par}
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Jaratok oszt\'E1lyreferencia\par \pard\plain 
+{\tc\tcl2 \v Jaratok}
+{\xe \v Jaratok}
+{\bkmkstart AAAAAAAABZ}
+{\bkmkend AAAAAAAABZ}
+\par
+{
+{\f2 #include <vonat.hpp>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Publikus tagf\'FCggv\'E9nyek\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Jaratok} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Vonat} {\b operator[]} (size_t i) const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+J\'E1ratok. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b add} (const {\b Vonat} &v)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b remove} (const char *vonatszam)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+size_t {\b size} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b checkID} ({\b String} azonosito) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~Jaratok} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+R\'E9szletes le\'EDr\'E1s\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Defin\'EDci\'F3 a(z) vonat.hpp f\'E1jl 35. sor\'E1ban.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Konstruktorok \'E9s destruktorok dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v Jaratok\:Jaratok}
+{\xe \v Jaratok\:Jaratok}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Jaratok::Jaratok (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACA}
+{\bkmkend AAAAAAAACA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) vonat.hpp f\'E1jl 40. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 40               \{\par
+41         jaratok = {\cf17 new} Vonat[0];\par
+42         meret = 0;\par
+43     \}\par
+}
+}
+{\xe \v ~Jaratok\:Jaratok}
+{\xe \v Jaratok\:~Jaratok}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Jaratok::~Jaratok (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACB}
+{\bkmkend AAAAAAAACB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) vonat.hpp f\'E1jl 55. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 55                \{\par
+56         {\cf17 delete}[] jaratok;\par
+57     \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Tagf\'FCggv\'E9nyek dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v add\:Jaratok}
+{\xe \v Jaratok\:add}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Jaratok::add (const {\b Vonat} &  {\i v})}}
+\par
+{\bkmkstart AAAAAAAACC}
+{\bkmkend AAAAAAAACC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) vonat.cpp f\'E1jl 32. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 32                                 \{\par
+33     Vonat* temp = {\cf17 new} Vonat[meret+1];\par
+34     {\cf19 for}({\cf18 size_t} i = 0; i < meret; i++) \{\par
+35         temp[i] = jaratok[i];\par
+36     \}\par
+37     temp[meret] = v;\par
+38     {\cf17 delete}[] jaratok;\par
+39     jaratok = temp;\par
+40     meret++;\par
+41 \}\par
+}
+}
+{\xe \v checkID\:Jaratok}
+{\xe \v Jaratok\:checkID}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool Jaratok::checkID ({\b String}  {\i azonosito}) const}}
+\par
+{\bkmkstart AAAAAAAACD}
+{\bkmkend AAAAAAAACD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) vonat.cpp f\'E1jl 67. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 67                                            \{\par
+68     {\cf19 for}({\cf18 size_t} i = 0; i < meret; i ++) \{\par
+69         {\cf19 if}(jaratok[i].get_vsz() == azonosito) \{\par
+70             {\cf19 return} {\cf17 true};\par
+71         \}\par
+72     \}\par
+73     {\cf19 return} {\cf17 false};\par
+74 \}\par
+}
+}
+{\xe \v operator[]\:Jaratok}
+{\xe \v Jaratok\:operator[]}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Vonat} Jaratok::operator[] (size_t  {\i i}) const}}
+\par
+{\bkmkstart AAAAAAAACE}
+{\bkmkend AAAAAAAACE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+J\'E1ratok. }}\par
+{
+Defin\'EDci\'F3 a(z) vonat.cpp f\'E1jl 25. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 25                                        \{\par
+26     {\cf19 if}(i < 0 || i >= meret) \{\par
+27         {\cf19 throw} {\cf22 "KIV\'C9TEL"};\par
+28     \}\par
+29     {\cf19 return} jaratok[i];\par
+30 \}\par
+}
+}
+{\xe \v remove\:Jaratok}
+{\xe \v Jaratok\:remove}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Jaratok::remove (const char *  {\i vonatszam})}}
+\par
+{\bkmkstart AAAAAAAACF}
+{\bkmkend AAAAAAAACF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) vonat.cpp f\'E1jl 43. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 43                                           \{\par
+44     {\cf19 for}({\cf18 size_t} i = 0; i < meret; i++) \{\par
+45         {\cf19 if}(jaratok[i].get_vsz() == vonatszam) \{\par
+46             Vonat* temp = {\cf17 new} Vonat[meret-1];\par
+47             {\cf18 size_t} idx = 0;\par
+48             {\cf19 for}({\cf18 size_t} j = 0; j < meret; j++) \{\par
+49                 {\cf19 if}(jaratok[j].get_vsz() != vonatszam) \{\par
+50                     temp[idx] = jaratok[j];\par
+51                     idx++;\par
+52                 \}\par
+53             \}\par
+54             meret--;\par
+55             {\cf17 delete}[] jaratok;\par
+56             jaratok = temp;\par
+57             {\cf19 return};\par
+58         \}\par
+59     \}\par
+60     {\cf19 throw} {\cf22 "Nincs ilyen vonatszam!\\n"};\par
+61 \}\par
+}
+}
+{\xe \v size\:Jaratok}
+{\xe \v Jaratok\:size}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+size_t Jaratok::size () const}}
+\par
+{\bkmkstart AAAAAAAACG}
+{\bkmkend AAAAAAAACG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) vonat.cpp f\'E1jl 63. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 63                           \{\par
+64     {\cf19 return} meret;\par
+65 \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+Ez a dokument\'E1ci\'F3 az oszt\'E1lyr\'F3l a k\'F6vetkez\'F5 f\'E1jlok alapj\'E1n k\'E9sz\'FClt:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b vonat.hpp}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b vonat.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbknone
+{\pard\widctlpar\brdrb\brdremboss\brdrw15\brsp20 \adjustright \par}
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Jegy oszt\'E1lyreferencia\par \pard\plain 
+{\tc\tcl2 \v Jegy}
+{\xe \v Jegy}
+{\bkmkstart AAAAAAAACH}
+{\bkmkend AAAAAAAACH}
+\par
+{
+{\f2 #include <jegy.hpp>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Publikus tagf\'FCggv\'E9nyek\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Jegy} ({\b String} nev, int ksz, int hely, {\b Vonat} v)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Jegy} ({\b String} nev, int ksz, int hely, {\b String} vonatszam, {\b Jaratok} &ja)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Jegy} (const {\b Jegy} &j)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Jegy} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Jegy} & {\b operator=} (const {\b Jegy} j)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b operator==} (const {\b Jegy} &j) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b String} {\b get_nev} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b String} {\b get_vsz} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b get_ksz} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b get_hely} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b String} {\b get_ind_all} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Datum} {\b get_ind_dt} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b String} {\b get_erkez_all} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Datum} {\b get_erkez_dt} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Vonat} {\b get_vonat} () const\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+R\'E9szletes le\'EDr\'E1s\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Defin\'EDci\'F3 a(z) jegy.hpp f\'E1jl 9. sor\'E1ban.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Konstruktorok \'E9s destruktorok dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v Jegy\:Jegy}
+{\xe \v Jegy\:Jegy}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Jegy::Jegy ({\b String}  {\i nev}, int  {\i ksz}, int  {\i hely}, {\b Vonat}  {\i v}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACI}
+{\bkmkend AAAAAAAACI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.hpp f\'E1jl 18. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 18 :nev(nev), kocsiszam(ksz), hely(hely), vonat(v) \{\}\par
+}
+}
+{\xe \v Jegy\:Jegy}
+{\xe \v Jegy\:Jegy}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Jegy::Jegy ({\b String}  {\i nev}, int  {\i ksz}, int  {\i hely}, {\b String}  {\i vonatszam}, {\b Jaratok} &  {\i ja}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACJ}
+{\bkmkend AAAAAAAACJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.hpp f\'E1jl 20. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 20                                                                       :nev(nev), kocsiszam(ksz), hely(hely) \{\par
+21         {\cf19 for}({\cf18 size_t} i = 0; i < ja.size(); i ++) \{\par
+22             {\cf19 if}(vonatszam == ja[i].get_vsz()) \{\par
+23                 this->vonat = ja[i];\par
+24                 {\cf19 break};\par
+25             \}\par
+26         \}\par
+27     \}\par
+}
+}
+{\xe \v Jegy\:Jegy}
+{\xe \v Jegy\:Jegy}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Jegy::Jegy (const {\b Jegy} &  {\i j}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACK}
+{\bkmkend AAAAAAAACK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.hpp f\'E1jl 29. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 29                         \{\par
+30         this->nev = j.get_nev();\par
+31         this->kocsiszam = j.get_ksz();\par
+32         this->hely = j.get_hely();\par
+33         this->vonat = j.get_vonat();\par
+34     \}\par
+}
+}
+{\xe \v Jegy\:Jegy}
+{\xe \v Jegy\:Jegy}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Jegy::Jegy (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACL}
+{\bkmkend AAAAAAAACL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.hpp f\'E1jl 36. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 36 \{\}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Tagf\'FCggv\'E9nyek dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v get_erkez_all\:Jegy}
+{\xe \v Jegy\:get_erkez_all}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b String} Jegy::get_erkez_all () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACM}
+{\bkmkend AAAAAAAACM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.hpp f\'E1jl 48. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 48 \{{\cf19 return} vonat.get_erkez_all();\}\par
+}
+}
+{\xe \v get_erkez_dt\:Jegy}
+{\xe \v Jegy\:get_erkez_dt}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Datum} Jegy::get_erkez_dt () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACN}
+{\bkmkend AAAAAAAACN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.hpp f\'E1jl 49. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 49 \{{\cf19 return} vonat.get_erkez_dt();\}\par
+}
+}
+{\xe \v get_hely\:Jegy}
+{\xe \v Jegy\:get_hely}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int Jegy::get_hely () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACO}
+{\bkmkend AAAAAAAACO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.hpp f\'E1jl 45. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 45 \{{\cf19 return} hely;\}\par
+}
+}
+{\xe \v get_ind_all\:Jegy}
+{\xe \v Jegy\:get_ind_all}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b String} Jegy::get_ind_all () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACP}
+{\bkmkend AAAAAAAACP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.hpp f\'E1jl 46. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 46 \{{\cf19 return} vonat.get_ind_all();\}\par
+}
+}
+{\xe \v get_ind_dt\:Jegy}
+{\xe \v Jegy\:get_ind_dt}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Datum} Jegy::get_ind_dt () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACQ}
+{\bkmkend AAAAAAAACQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.hpp f\'E1jl 47. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 47 \{{\cf19 return} vonat.get_ind_dt();\}\par
+}
+}
+{\xe \v get_ksz\:Jegy}
+{\xe \v Jegy\:get_ksz}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int Jegy::get_ksz () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACR}
+{\bkmkend AAAAAAAACR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.hpp f\'E1jl 44. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 44 \{{\cf19 return} kocsiszam;\}\par
+}
+}
+{\xe \v get_nev\:Jegy}
+{\xe \v Jegy\:get_nev}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b String} Jegy::get_nev () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACS}
+{\bkmkend AAAAAAAACS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.hpp f\'E1jl 42. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 42 \{{\cf19 return} nev;\}\par
+}
+}
+{\xe \v get_vonat\:Jegy}
+{\xe \v Jegy\:get_vonat}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Vonat} Jegy::get_vonat () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACT}
+{\bkmkend AAAAAAAACT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.hpp f\'E1jl 50. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 50 \{{\cf19 return} vonat;\}\par
+}
+}
+{\xe \v get_vsz\:Jegy}
+{\xe \v Jegy\:get_vsz}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b String} Jegy::get_vsz () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACU}
+{\bkmkend AAAAAAAACU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.hpp f\'E1jl 43. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 43 \{{\cf19 return} vonat.get_vsz();\}\par
+}
+}
+{\xe \v operator=\:Jegy}
+{\xe \v Jegy\:operator=}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Jegy} & Jegy::operator= (const {\b Jegy}  {\i j})}}
+\par
+{\bkmkstart AAAAAAAACV}
+{\bkmkend AAAAAAAACV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.cpp f\'E1jl 14. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 14                                   \{\par
+15     {\cf19 if}({\cf17 this} != &j) \{\par
+16         this->nev = j.get_nev();\par
+17         this->kocsiszam = j.get_ksz();\par
+18         this->hely = j.get_hely();\par
+19         this->vonat = j.get_vonat();\par
+20     \}\par
+21     {\cf19 return} *{\cf17 this};\par
+22 \}\par
+}
+}
+{\xe \v operator==\:Jegy}
+{\xe \v Jegy\:operator==}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool Jegy::operator== (const {\b Jegy} &  {\i j}) const}}
+\par
+{\bkmkstart AAAAAAAACW}
+{\bkmkend AAAAAAAACW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.cpp f\'E1jl 24. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 24                                          \{\par
+25     {\cf19 if}(this->nev == j.get_nev() && this->kocsiszam == j.get_ksz() && this->hely == j.get_hely() && this->vonat == j.vonat) \{\par
+26         {\cf19 return} {\cf17 true};\par
+27     \}\par
+28     {\cf19 return} {\cf17 false};\par
+29 \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+Ez a dokument\'E1ci\'F3 az oszt\'E1lyr\'F3l a k\'F6vetkez\'F5 f\'E1jlok alapj\'E1n k\'E9sz\'FClt:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b jegy.hpp}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b jegy.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbknone
+{\pard\widctlpar\brdrb\brdremboss\brdrw15\brsp20 \adjustright \par}
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Jegyek oszt\'E1lyreferencia\par \pard\plain 
+{\tc\tcl2 \v Jegyek}
+{\xe \v Jegyek}
+{\bkmkstart AAAAAAAACX}
+{\bkmkend AAAAAAAACX}
+\par
+{
+{\f2 #include <jegy.hpp>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Publikus tagf\'FCggv\'E9nyek\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Jegyek} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Jegy} {\b operator[]} (size_t i) const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Jegyek}. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b add} (const {\b Jegy} &j)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b remove} (const char *nev)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b checkSeat} ({\b String} azonosito, int kocsiszam, int ulohely) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+size_t {\b size} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~Jegyek} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+R\'E9szletes le\'EDr\'E1s\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Defin\'EDci\'F3 a(z) jegy.hpp f\'E1jl 55. sor\'E1ban.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Konstruktorok \'E9s destruktorok dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v Jegyek\:Jegyek}
+{\xe \v Jegyek\:Jegyek}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Jegyek::Jegyek (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACY}
+{\bkmkend AAAAAAAACY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.hpp f\'E1jl 60. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 60              \{\par
+61         jegyek = {\cf17 new} Jegy[0];\par
+62         meret = 0;\par
+63     \}\par
+}
+}
+{\xe \v ~Jegyek\:Jegyek}
+{\xe \v Jegyek\:~Jegyek}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Jegyek::~Jegyek (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACZ}
+{\bkmkend AAAAAAAACZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.hpp f\'E1jl 75. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 75               \{\par
+76         {\cf17 delete}[] jegyek;\par
+77     \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Tagf\'FCggv\'E9nyek dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v add\:Jegyek}
+{\xe \v Jegyek\:add}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Jegyek::add (const {\b Jegy} &  {\i j})}}
+\par
+{\bkmkstart AAAAAAAADA}
+{\bkmkend AAAAAAAADA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.cpp f\'E1jl 36. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 36                               \{\par
+37     Jegy* temp = {\cf17 new} Jegy[meret+1];\par
+38     {\cf19 for}({\cf18 size_t} i = 0; i < meret; i++) \{\par
+39         temp[i] = jegyek[i];\par
+40     \}\par
+41     temp[meret] = j;\par
+42     {\cf17 delete}[] jegyek;\par
+43     jegyek = temp;\par
+44     meret++;\par
+45 \}\par
+}
+}
+{\xe \v checkSeat\:Jegyek}
+{\xe \v Jegyek\:checkSeat}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool Jegyek::checkSeat ({\b String}  {\i azonosito}, int  {\i kocsiszam}, int  {\i ulohely}) const}}
+\par
+{\bkmkstart AAAAAAAADB}
+{\bkmkend AAAAAAAADB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.cpp f\'E1jl 67. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 67                                                                          \{\par
+68     {\cf19 for}({\cf18 size_t} i = 0; i < meret; i++) \{\par
+69         {\cf19 if}(jegyek[i].get_vsz() == azonosito && jegyek[i].get_ksz() == kocsiszam && jegyek[i].get_hely() == ulohely) \{\par
+70             {\cf19 return} {\cf17 true};\par
+71         \}\par
+72     \}\par
+73     {\cf19 return} {\cf17 false};\par
+74 \}\par
+}
+}
+{\xe \v operator[]\:Jegyek}
+{\xe \v Jegyek\:operator[]}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Jegy} Jegyek::operator[] (size_t  {\i i}) const}}
+\par
+{\bkmkstart AAAAAAAADC}
+{\bkmkend AAAAAAAADC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Jegyek}. }}\par
+{
+Defin\'EDci\'F3 a(z) jegy.cpp f\'E1jl 32. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 32                                       \{\par
+33     {\cf19 return} jegyek[i];\par
+34 \}\par
+}
+}
+{\xe \v remove\:Jegyek}
+{\xe \v Jegyek\:remove}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Jegyek::remove (const char *  {\i nev})}}
+\par
+{\bkmkstart AAAAAAAADD}
+{\bkmkend AAAAAAAADD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.cpp f\'E1jl 47. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 47                                    \{\par
+48     {\cf19 for}({\cf18 size_t} i = 0; i < meret; i++) \{\par
+49         {\cf19 if}(jegyek[i].get_nev() == nev) \{\par
+50             Jegy* temp = {\cf17 new} Jegy[meret-1];\par
+51             {\cf18 size_t} idx = 0;\par
+52             {\cf19 for}({\cf18 size_t} j = 0; j < meret; j++) \{\par
+53                 {\cf19 if}(jegyek[j].get_nev() != nev) \{\par
+54                     temp[idx] = jegyek[j];\par
+55                     idx++;\par
+56                 \}\par
+57             \}\par
+58             meret--;\par
+59             {\cf17 delete}[] jegyek;\par
+60             jegyek = temp;\par
+61             {\cf19 return};\par
+62         \}\par
+63     \}\par
+64     {\cf19 throw} {\cf22 "Ilyen n\'E9ven nincs foglal\'E1s!"};\par
+65 \}\par
+}
+}
+{\xe \v size\:Jegyek}
+{\xe \v Jegyek\:size}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+size_t Jegyek::size () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADE}
+{\bkmkend AAAAAAAADE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.hpp f\'E1jl 73. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 73 \{{\cf19 return} meret;\}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+Ez a dokument\'E1ci\'F3 az oszt\'E1lyr\'F3l a k\'F6vetkez\'F5 f\'E1jlok alapj\'E1n k\'E9sz\'FClt:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b jegy.hpp}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b jegy.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbknone
+{\pard\widctlpar\brdrb\brdremboss\brdrw15\brsp20 \adjustright \par}
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+String oszt\'E1lyreferencia\par \pard\plain 
+{\tc\tcl2 \v String}
+{\xe \v String}
+{\bkmkstart AAAAAAAADF}
+{\bkmkend AAAAAAAADF}
+\par
+{
+{\f2 #include <string.hpp>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Publikus tagf\'FCggv\'E9nyek\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b String} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Param\'E9ter n\'E9lk\'FCli konstruktor: }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+size_t {\b size} () const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sztring hossz\'E1t adja vissza. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char * {\b c_str} () const\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+C-sztringet ad vissza. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b String} (char param)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Konstruktorok: egy char karakterb\'F5l (createString) egy null\'E1val lez\'E1rt char sorozatb\'F3l (createString) }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b String} (const char *cstring)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b String} (const {\b String} &s)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+M\'E1sol\'F3 konstruktor: String-b\'F5l k\'E9sz\'EDt (createString) }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b String} & {\b operator=} (const {\b String} &rhs_s)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+operator= }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b String} {\b operator+} (const {\b String} &rhs_s) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b String} {\b operator+} (const char rhs_c) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b String} & {\b operator+=} (const {\b String} &rhs_s)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b String} & {\b operator+=} (const char rhs_s)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b operator==} (const {\b String} &s) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b operator!=} (const {\b String} &s) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~String} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Destruktor (disposeString) }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+R\'E9szletes le\'EDr\'E1s\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Defin\'EDci\'F3 a(z) string.hpp f\'E1jl 6. sor\'E1ban.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Konstruktorok \'E9s destruktorok dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v String\:String}
+{\xe \v String\:String}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+String::String (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADG}
+{\bkmkend AAAAAAAADG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Param\'E9ter n\'E9lk\'FCli konstruktor: }}\par
+{
+Defin\'EDci\'F3 a(z) string.hpp f\'E1jl 11. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 11 :pData(NULL), len(0) \{\}\par
+}
+}
+{\xe \v String\:String}
+{\xe \v String\:String}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+String::String (char  {\i param})}}
+\par
+{\bkmkstart AAAAAAAADH}
+{\bkmkend AAAAAAAADH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Konstruktorok: egy char karakterb\'F5l (createString) egy null\'E1val lez\'E1rt char sorozatb\'F3l (createString) }}\par
+{
+Defin\'EDci\'F3 a(z) string.cpp f\'E1jl 15. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 15                          \{\par
+16     len = 1;\par
+17     pData = {\cf17 new} {\cf18 char}[2];\par
+18     pData[0] = param;\par
+19     pData[1] = {\cf23 '\\0'};\par
+20 \}\par
+}
+}
+{\xe \v String\:String}
+{\xe \v String\:String}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+String::String (const char *  {\i cstring})}}
+\par
+{\bkmkstart AAAAAAAADI}
+{\bkmkend AAAAAAAADI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) string.cpp f\'E1jl 22. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 22                                   \{\par
+23     len = strlen(cstring);\par
+24     pData = {\cf17 new} {\cf18 char}[len+1];\par
+25     {\cf19 for}({\cf18 int} i = 0; cstring[i] != {\cf23 '\\0'}; i++) \{\par
+26         pData[i] = cstring[i];\par
+27     \}\par
+28     pData[len] = {\cf23 '\\0'};\par
+29 \}\par
+}
+}
+{\xe \v String\:String}
+{\xe \v String\:String}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+String::String (const {\b String} &  {\i s})}}
+\par
+{\bkmkstart AAAAAAAADJ}
+{\bkmkend AAAAAAAADJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+M\'E1sol\'F3 konstruktor: String-b\'F5l k\'E9sz\'EDt (createString) }}\par
+{
+Defin\'EDci\'F3 a(z) string.cpp f\'E1jl 34. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 34                               \{\par
+35     len = s.len;\par
+36     pData = {\cf17 new} {\cf18 char}[len+1];\par
+37     {\cf19 for}({\cf18 size_t} i = 0; i < len; i++) \{\par
+38         pData[i] = s.pData[i];\par
+39     \}\par
+40     pData[len] = {\cf23 '\\0'};\par
+41 \}\par
+}
+}
+{\xe \v ~String\:String}
+{\xe \v String\:~String}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+String::~String ()}}
+\par
+{\bkmkstart AAAAAAAADK}
+{\bkmkend AAAAAAAADK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Destruktor (disposeString) }}\par
+{
+Defin\'EDci\'F3 a(z) string.cpp f\'E1jl 44. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 44                 \{\par
+45     {\cf17 delete}[] pData;\par
+46 \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Tagf\'FCggv\'E9nyek dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v c_str\:String}
+{\xe \v String\:c_str}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char* String::c_str () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADL}
+{\bkmkend AAAAAAAADL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+C-sztringet ad vissza. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Visszat\'E9r\'E9si \'E9rt\'E9k\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+pointer a t\'E1rolt, vagy azzal azonos tartalm\'FA null\'E1val lez\'E1rt sztring-re. \par
+}}}{
+Defin\'EDci\'F3 a(z) string.hpp f\'E1jl 19. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 19                               \{\par
+20     {\cf19 if}(pData != NULL) \{\par
+21         {\cf19 return} pData;\par
+22     \}\par
+23     {\cf19 return} {\cf22 "\\0"};\par
+24 \}\par
+}
+}
+{\xe \v operator!=\:String}
+{\xe \v String\:operator!=}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool String::operator!= (const {\b String} &  {\i s}) const}}
+\par
+{\bkmkstart AAAAAAAADM}
+{\bkmkend AAAAAAAADM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) string.cpp f\'E1jl 80. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 80                                             \{\par
+81     {\cf19 return} !(*{\cf17 this} == s);\par
+82 \}\par
+}
+}
+{\xe \v operator+\:String}
+{\xe \v String\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b String} String::operator+ (const char  {\i rhs_c}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADN}
+{\bkmkend AAAAAAAADN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) string.hpp f\'E1jl 33. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 33 \{ {\cf19 return} *{\cf17 this} + String(rhs_c);\}\par
+}
+}
+{\xe \v operator+\:String}
+{\xe \v String\:operator+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b String} String::operator+ (const {\b String} &  {\i rhs_s}) const}}
+\par
+{\bkmkstart AAAAAAAADO}
+{\bkmkend AAAAAAAADO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) string.cpp f\'E1jl 59. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 59                                                   \{\par
+60     String temp;\par
+61     temp.len = len + rhs_s.len;\par
+62     {\cf17 delete}[] temp.pData;\par
+63     temp.pData = {\cf17 new} {\cf18 char}[temp.len+1];\par
+64     {\cf19 if}(len > 0) \{\par
+65         strcpy(temp.pData, pData);\par
+66         strcat(temp.pData, rhs_s.pData);\par
+67     \} {\cf19 else} \{\par
+68         strcpy(temp.pData, rhs_s.pData);\par
+69     \}\par
+70     {\cf19 return} temp;\par
+71 \}\par
+}
+}
+{\xe \v operator+=\:String}
+{\xe \v String\:operator+=}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b String}& String::operator+= (const char  {\i rhs_s}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADP}
+{\bkmkend AAAAAAAADP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) string.hpp f\'E1jl 39. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 39                                      \{\par
+40     *{\cf17 this} = *{\cf17 this} + rhs_s;\par
+41     {\cf19 return} *{\cf17 this};\par
+42 \}\par
+}
+}
+{\xe \v operator+=\:String}
+{\xe \v String\:operator+=}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b String}& String::operator+= (const {\b String} &  {\i rhs_s}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADQ}
+{\bkmkend AAAAAAAADQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) string.hpp f\'E1jl 35. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 35                                         \{\par
+36     *{\cf17 this} = *{\cf17 this} + rhs_s;\par
+37     {\cf19 return} *{\cf17 this};\par
+38 \}\par
+}
+}
+{\xe \v operator=\:String}
+{\xe \v String\:operator=}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b String} & String::operator= (const {\b String} &  {\i rhs_s})}}
+\par
+{\bkmkstart AAAAAAAADR}
+{\bkmkend AAAAAAAADR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+operator= }}\par
+{
+Defin\'EDci\'F3 a(z) string.cpp f\'E1jl 49. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 49                                              \{\par
+50     {\cf19 if} ({\cf17 this} != &rhs_s) \{\par
+51         {\cf17 delete}[] pData;\par
+52         len = rhs_s.len;\par
+53         pData = {\cf17 new} {\cf18 char}[len+1];\par
+54         strcpy(pData, rhs_s.pData);\par
+55     \}\par
+56     {\cf19 return} *{\cf17 this};\par
+57 \}\par
+}
+}
+{\xe \v operator==\:String}
+{\xe \v String\:operator==}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool String::operator== (const {\b String} &  {\i s}) const}}
+\par
+{\bkmkstart AAAAAAAADS}
+{\bkmkend AAAAAAAADS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) string.cpp f\'E1jl 73. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 73                                              \{\par
+74     {\cf19 if}(strcmp(this->c_str(), s.c_str()) == 0) \{\par
+75         {\cf19 return} {\cf17 true};\par
+76     \}\par
+77     {\cf19 return} {\cf17 false};\par
+78 \}\par
+}
+}
+{\xe \v size\:String}
+{\xe \v String\:size}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+size_t String::size () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADT}
+{\bkmkend AAAAAAAADT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sztring hossz\'E1t adja vissza. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Visszat\'E9r\'E9si \'E9rt\'E9k\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+sztring t\'E9nyleges hossza (lez\'E1r\'F3 nulla n\'E9lk\'FCl). \par
+}}}{
+Defin\'EDci\'F3 a(z) string.hpp f\'E1jl 15. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 15 \{ {\cf19 return} len; \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+Ez a dokument\'E1ci\'F3 az oszt\'E1lyr\'F3l a k\'F6vetkez\'F5 f\'E1jlok alapj\'E1n k\'E9sz\'FClt:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b string.hpp}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b string.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbknone
+{\pard\widctlpar\brdrb\brdremboss\brdrw15\brsp20 \adjustright \par}
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Vonat oszt\'E1lyreferencia\par \pard\plain 
+{\tc\tcl2 \v Vonat}
+{\xe \v Vonat}
+{\bkmkstart AAAAAAAADU}
+{\bkmkend AAAAAAAADU}
+\par
+{
+{\f2 #include <vonat.hpp>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Publikus tagf\'FCggv\'E9nyek\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Vonat} ({\b String} vsz, {\b String} ind_all, {\b Datum} ind_dt, {\b String} erk_all, {\b Datum} erk_dt)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Vonat} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b operator==} (const {\b Vonat} &v) const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b String} {\b get_vsz} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b String} {\b get_ind_all} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Datum} {\b get_ind_dt} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b String} {\b get_erkez_all} () const\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Datum} {\b get_erkez_dt} () const\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+R\'E9szletes le\'EDr\'E1s\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Defin\'EDci\'F3 a(z) vonat.hpp f\'E1jl 9. sor\'E1ban.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Konstruktorok \'E9s destruktorok dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v Vonat\:Vonat}
+{\xe \v Vonat\:Vonat}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Vonat::Vonat ({\b String}  {\i vsz}, {\b String}  {\i ind_all}, {\b Datum}  {\i ind_dt}, {\b String}  {\i erk_all}, {\b Datum}  {\i erk_dt}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADV}
+{\bkmkend AAAAAAAADV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) vonat.hpp f\'E1jl 19. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 19 :vonatszam(vsz), indul_allomas(ind_all), indul_datum(ind_dt), erkez_allomas(erk_all), erkez_datum(erk_dt) \{\}\par
+}
+}
+{\xe \v Vonat\:Vonat}
+{\xe \v Vonat\:Vonat}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Vonat::Vonat (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADW}
+{\bkmkend AAAAAAAADW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) vonat.hpp f\'E1jl 21. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 21 \{\}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Tagf\'FCggv\'E9nyek dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v get_erkez_all\:Vonat}
+{\xe \v Vonat\:get_erkez_all}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b String} Vonat::get_erkez_all () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADX}
+{\bkmkend AAAAAAAADX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) vonat.hpp f\'E1jl 28. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 28 \{{\cf19 return} erkez_allomas;\}\par
+}
+}
+{\xe \v get_erkez_dt\:Vonat}
+{\xe \v Vonat\:get_erkez_dt}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Datum} Vonat::get_erkez_dt () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADY}
+{\bkmkend AAAAAAAADY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) vonat.hpp f\'E1jl 29. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 29 \{{\cf19 return} erkez_datum;\}\par
+}
+}
+{\xe \v get_ind_all\:Vonat}
+{\xe \v Vonat\:get_ind_all}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b String} Vonat::get_ind_all () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADZ}
+{\bkmkend AAAAAAAADZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) vonat.hpp f\'E1jl 26. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 26 \{{\cf19 return} indul_allomas;\}\par
+}
+}
+{\xe \v get_ind_dt\:Vonat}
+{\xe \v Vonat\:get_ind_dt}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Datum} Vonat::get_ind_dt () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAEA}
+{\bkmkend AAAAAAAAEA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) vonat.hpp f\'E1jl 27. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 27 \{{\cf19 return} indul_datum;\}\par
+}
+}
+{\xe \v get_vsz\:Vonat}
+{\xe \v Vonat\:get_vsz}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b String} Vonat::get_vsz () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAEB}
+{\bkmkend AAAAAAAAEB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) vonat.hpp f\'E1jl 25. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 25 \{{\cf19 return} vonatszam;\}\par
+}
+}
+{\xe \v operator==\:Vonat}
+{\xe \v Vonat\:operator==}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool Vonat::operator== (const {\b Vonat} &  {\i v}) const}}
+\par
+{\bkmkstart AAAAAAAAEC}
+{\bkmkend AAAAAAAAEC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) vonat.cpp f\'E1jl 17. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 17                                            \{\par
+18     {\cf19 if}(this->vonatszam == v.get_vsz()) \{\par
+19         {\cf19 return} {\cf17 true};\par
+20     \}\par
+21     {\cf19 return} {\cf17 false};\par
+22 \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+Ez a dokument\'E1ci\'F3 az oszt\'E1lyr\'F3l a k\'F6vetkez\'F5 f\'E1jlok alapj\'E1n k\'E9sz\'FClt:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b vonat.hpp}\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b vonat.cpp}\par
+}
+\pard\plain \sect\sbknone
+{\pard\widctlpar\brdrb\brdrs\brdrw75\brsp20 \adjustright \par}
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+F\'E1jlok dokument\'E1ci\'F3ja{\tc \v F\'E1jlok dokument\'E1ci\'F3ja}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+datum.cpp f\'E1jlreferencia\par \pard\plain 
+{\tc\tcl2 \v datum.cpp}
+{\xe \v datum.cpp}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "datum.hpp"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+F\'FCggv\'E9nyek\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ostream & {\b operator<<} (ostream &os, const {\b Datum} &d)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+D\'E1tum ki\'EDr\'E1sa. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+istream & {\b operator>>} (istream &is, {\b Datum} &d)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+D\'E1tum beolvas\'E1sa, beolvas\'E1s k\'F6zben ki\'EDrja cout-ra, hogy milyen adatot v\'E1r ezzel seg\'EDtve a felhaszn\'E1l\'F3t. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+F\'FCggv\'E9nyek dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v operator<<\:datum.cpp}
+{\xe \v datum.cpp\:operator<<}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+ostream& operator<< (ostream &  {\i os}, const {\b Datum} &  {\i d})}}
+\par
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+D\'E1tum ki\'EDr\'E1sa. }}\par
+{
+Defin\'EDci\'F3 a(z) datum.cpp f\'E1jl 43. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 43                                                  \{\par
+44     {\cf18 int} ora = d.get_idopont()/60;\par
+45     {\cf18 int} perc = d.get_idopont() - ora*60;\par
+46     {\cf19 if}(&os == &cout) \{\par
+47         os << d.get_ev() << {\cf23 '/'} << d.get_honap() << {\cf23 '/'} << d.get_nap() << {\cf23 ' '} << ora << {\cf23 ':'};\par
+48     \} {\cf19 else} \{\par
+49         os << d.get_ev() << {\cf23 '#'} << d.get_honap() << {\cf23 '#'} << d.get_nap() << {\cf23 '#'} << ora << {\cf23 '#'};\par
+50     \}\par
+51     {\cf19 if}(perc < 10) \{\par
+52         os << {\cf23 '0'};\par
+53     \}\par
+54     {\cf19 return} os << perc;\par
+55 \}\par
+}
+}
+{\xe \v operator>>\:datum.cpp}
+{\xe \v datum.cpp\:operator>>}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+istream& operator>> (istream &  {\i is}, {\b Datum} &  {\i d})}}
+\par
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+D\'E1tum beolvas\'E1sa, beolvas\'E1s k\'F6zben ki\'EDrja cout-ra, hogy milyen adatot v\'E1r ezzel seg\'EDtve a felhaszn\'E1l\'F3t. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+D\'E1tum beolvas\'E1sa. \par
+}{
+Defin\'EDci\'F3 a(z) datum.cpp f\'E1jl 58. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 58                                            \{\par
+59     String ev;\par
+60     String honap;\par
+61     String nap;\par
+62     String ora;\par
+63     String perc;\par
+64 \par
+65     cout << {\cf22 "\'C9v:"};\par
+66     is >> ev;\par
+67     {\cf19 while}(stoi(ev) < 2021) \{\par
+68         cout << {\cf22 "Hib\'E1s \'E9vsz\'E1m, k\'E9rlek 2021 vagy k\'E9s\'F5bbi \'E9vszamot adj meg!"} << endl;\par
+69         is >> ev;\par
+70     \}\par
+71 \par
+72     cout << {\cf22 "Honap:"};\par
+73     is >> honap;\par
+74     {\cf19 while}(stoi(honap) < 1 || stoi(honap) > 12) \{\par
+75         cout << {\cf22 "Hib\'E1s h\'F3nap, k\'E9rlek 1 \'E9s 12 k\'F6z\'F6tti sz\'E1mot adj meg!"} << endl;\par
+76         is >> honap;\par
+77     \}\par
+78 \par
+79     cout << {\cf22 "Nap:"};\par
+80     is >> nap;\par
+81     {\cf19 while}(stoi(nap) < 1 || stoi(nap) > 31) \{\par
+82         cout << {\cf22 "Hib\'E1s nap, k\'E9rlek 1 \'E9s 31 k\'F6z\'F6tti sz\'E1mot adj meg!"} << endl;\par
+83         is >> nap;\par
+84     \}\par
+85 \par
+86     cout << {\cf22 "\'D3ra:"};\par
+87     is >> ora;\par
+88     {\cf19 while}(stoi(ora) < 0 || stoi(ora) > 24) \{\par
+89         cout << {\cf22 "Hib\'E1s \'F3ra, k\'E9rlek 0 \'E9s 24 k\'F6z\'F6tti sz\'E1mot adj meg!"} << endl;\par
+90         is >> ora;\par
+91     \}\par
+92 \par
+93     cout << {\cf22 "Perc:"};\par
+94     is >> perc;\par
+95     {\cf19 while}(stoi(perc) < 0 || stoi(perc) > 60) \{\par
+96         cout << {\cf22 "Hib\'E1s perc, k\'E9rlek 0 \'E9s 60 k\'F6z\'F6tti sz\'E1mot adj meg!"} << endl;\par
+97         is >> perc;\par
+98     \}\par
+99 \par
+100     d = Datum(stoi(ev),stoi(honap), stoi(nap), stoi(ora)*60+stoi(perc));\par
+101 \par
+102     {\cf19 return} is;\par
+103 \}\par
+}
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbknone
+{\pard\widctlpar\brdrb\brdremboss\brdrw15\brsp20 \adjustright \par}
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+datum.hpp f\'E1jlreferencia\par \pard\plain 
+{\tc\tcl2 \v datum.hpp}
+{\xe \v datum.hpp}
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <iostream>}\par
+{\f2 #include <fstream>}\par
+{\f2 #include "string.hpp"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Oszt\'E1lyok\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Datum}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+F\'FCggv\'E9nyek\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ostream & {\b operator<<} (ostream &os, const {\b Datum} &d)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+D\'E1tum ki\'EDr\'E1sa. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+istream & {\b operator>>} (istream &is, {\b Datum} &d)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+D\'E1tum beolvas\'E1sa. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+F\'FCggv\'E9nyek dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v operator<<\:datum.hpp}
+{\xe \v datum.hpp\:operator<<}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+ostream& operator<< (ostream &  {\i os}, const {\b Datum} &  {\i d})}}
+\par
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+D\'E1tum ki\'EDr\'E1sa. }}\par
+{
+Defin\'EDci\'F3 a(z) datum.cpp f\'E1jl 43. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 43                                                  \{\par
+44     {\cf18 int} ora = d.get_idopont()/60;\par
+45     {\cf18 int} perc = d.get_idopont() - ora*60;\par
+46     {\cf19 if}(&os == &cout) \{\par
+47         os << d.get_ev() << {\cf23 '/'} << d.get_honap() << {\cf23 '/'} << d.get_nap() << {\cf23 ' '} << ora << {\cf23 ':'};\par
+48     \} {\cf19 else} \{\par
+49         os << d.get_ev() << {\cf23 '#'} << d.get_honap() << {\cf23 '#'} << d.get_nap() << {\cf23 '#'} << ora << {\cf23 '#'};\par
+50     \}\par
+51     {\cf19 if}(perc < 10) \{\par
+52         os << {\cf23 '0'};\par
+53     \}\par
+54     {\cf19 return} os << perc;\par
+55 \}\par
+}
+}
+{\xe \v operator>>\:datum.hpp}
+{\xe \v datum.hpp\:operator>>}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+istream& operator>> (istream &  {\i is}, {\b Datum} &  {\i d})}}
+\par
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+D\'E1tum beolvas\'E1sa. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+D\'E1tum beolvas\'E1sa. \par
+}{
+Defin\'EDci\'F3 a(z) datum.cpp f\'E1jl 58. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 58                                            \{\par
+59     String ev;\par
+60     String honap;\par
+61     String nap;\par
+62     String ora;\par
+63     String perc;\par
+64 \par
+65     cout << {\cf22 "\'C9v:"};\par
+66     is >> ev;\par
+67     {\cf19 while}(stoi(ev) < 2021) \{\par
+68         cout << {\cf22 "Hib\'E1s \'E9vsz\'E1m, k\'E9rlek 2021 vagy k\'E9s\'F5bbi \'E9vszamot adj meg!"} << endl;\par
+69         is >> ev;\par
+70     \}\par
+71 \par
+72     cout << {\cf22 "Honap:"};\par
+73     is >> honap;\par
+74     {\cf19 while}(stoi(honap) < 1 || stoi(honap) > 12) \{\par
+75         cout << {\cf22 "Hib\'E1s h\'F3nap, k\'E9rlek 1 \'E9s 12 k\'F6z\'F6tti sz\'E1mot adj meg!"} << endl;\par
+76         is >> honap;\par
+77     \}\par
+78 \par
+79     cout << {\cf22 "Nap:"};\par
+80     is >> nap;\par
+81     {\cf19 while}(stoi(nap) < 1 || stoi(nap) > 31) \{\par
+82         cout << {\cf22 "Hib\'E1s nap, k\'E9rlek 1 \'E9s 31 k\'F6z\'F6tti sz\'E1mot adj meg!"} << endl;\par
+83         is >> nap;\par
+84     \}\par
+85 \par
+86     cout << {\cf22 "\'D3ra:"};\par
+87     is >> ora;\par
+88     {\cf19 while}(stoi(ora) < 0 || stoi(ora) > 24) \{\par
+89         cout << {\cf22 "Hib\'E1s \'F3ra, k\'E9rlek 0 \'E9s 24 k\'F6z\'F6tti sz\'E1mot adj meg!"} << endl;\par
+90         is >> ora;\par
+91     \}\par
+92 \par
+93     cout << {\cf22 "Perc:"};\par
+94     is >> perc;\par
+95     {\cf19 while}(stoi(perc) < 0 || stoi(perc) > 60) \{\par
+96         cout << {\cf22 "Hib\'E1s perc, k\'E9rlek 0 \'E9s 60 k\'F6z\'F6tti sz\'E1mot adj meg!"} << endl;\par
+97         is >> perc;\par
+98     \}\par
+99 \par
+100     d = Datum(stoi(ev),stoi(honap), stoi(nap), stoi(ora)*60+stoi(perc));\par
+101 \par
+102     {\cf19 return} is;\par
+103 \}\par
+}
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbknone
+{\pard\widctlpar\brdrb\brdremboss\brdrw15\brsp20 \adjustright \par}
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+jegy.cpp f\'E1jlreferencia\par \pard\plain 
+{\tc\tcl2 \v jegy.cpp}
+{\xe \v jegy.cpp}
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "jegy.hpp"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+F\'FCggv\'E9nyek\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ostream & {\b operator<<} (ostream &os, const {\b Jegy} &j)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Jegy}. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b beolvas} ({\b Jaratok} &ja, {\b Jegyek} &je, const char *fajlnev)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ostream & {\b operator<<} (ostream &os, const {\b Jegyek} &j)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+F\'FCggv\'E9nyek dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v beolvas\:jegy.cpp}
+{\xe \v jegy.cpp\:beolvas}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void beolvas ({\b Jaratok} &  {\i ja}, {\b Jegyek} &  {\i je}, const char *  {\i fajlnev})}}
+\par
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.cpp f\'E1jl 76. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 76                                                            \{\par
+77     ifstream fpp;\par
+78     fpp.open(fajlnev);\par
+79     {\cf19 if}(!fpp) \{\par
+80         printf({\cf22 "KIVETEL\\n"});\par
+81         {\cf19 throw} {\cf22 "QP4TVJ"};\par
+82     \}\par
+83     String* adatok = {\cf17 new} String[4];\par
+84     Vonat v;\par
+85 \par
+86     {\cf18 int} i = 0;\par
+87     {\cf19 while}(getline(fpp,adatok[i],{\cf23 '#'})) \{\par
+88         {\cf19 if}(i == 2) \{\par
+89             getline(fpp, adatok[3], {\cf23 '\\n'});\par
+90             {\cf19 for}({\cf18 size_t} k = 0; k < ja.size(); k++) \{\par
+91                 {\cf19 if}(ja[k].get_vsz() == adatok[3]) \{\par
+92                     v = ja[k];\par
+93                     {\cf19 break};\par
+94                 \}\par
+95             \}\par
+96             Jegy j(adatok[0], stoi(adatok[1]), stoi(adatok[2]), v);\par
+97             i = -1;\par
+98             je.add(j);\par
+99             {\cf17 delete}[] adatok;\par
+100             adatok = {\cf17 new} String[4];\par
+101         \}\par
+102         i++;\par
+103     \}\par
+104     {\cf17 delete}[] adatok;\par
+105     fpp.close();\par
+106 \}\par
+}
+}
+{\xe \v operator<<\:jegy.cpp}
+{\xe \v jegy.cpp\:operator<<}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+ostream& operator<< (ostream &  {\i os}, const {\b Jegy} &  {\i j})}}
+\par
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Jegy}. }}\par
+{
+Defin\'EDci\'F3 a(z) jegy.cpp f\'E1jl 4. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 4                                                 \{\par
+5     {\cf19 if}(&os == &cout) \{\par
+6         {\cf19 return} os << j.get_nev() << {\cf23 ' '} << j.get_vsz() << {\cf23 ' '} << j.get_ksz() << {\cf23 ' '} << j.get_hely() << {\cf23 ' '}\par
+7         << j.get_ind_dt() << {\cf23 ' '} << j.get_ind_all() << {\cf23 ' '} << j.get_erkez_dt() << {\cf23 ' '} << j.get_erkez_all()\par
+8         << endl;\par
+9     \} {\cf19 else} \{\par
+10         {\cf19 return} os << j.get_nev() << {\cf23 '#'} << j.get_ksz() << {\cf23 '#'} << j.get_hely() << {\cf23 '#'}<< j.get_vsz() << endl;\par
+11     \}\par
+12 \}\par
+}
+}
+{\xe \v operator<<\:jegy.cpp}
+{\xe \v jegy.cpp\:operator<<}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+ostream& operator<< (ostream &  {\i os}, const {\b Jegyek} &  {\i j})}}
+\par
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.cpp f\'E1jl 108. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 108                                                   \{\par
+109     {\cf19 for}({\cf18 size_t} i = 0; i < j.size(); i++) \{\par
+110         os << j[i];\par
+111     \}\par
+112     {\cf19 return} os;\par
+113 \}\par
+}
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbknone
+{\pard\widctlpar\brdrb\brdremboss\brdrw15\brsp20 \adjustright \par}
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+jegy.hpp f\'E1jlreferencia\par \pard\plain 
+{\tc\tcl2 \v jegy.hpp}
+{\xe \v jegy.hpp}
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <string>}\par
+{\f2 #include "datum.hpp"}\par
+{\f2 #include "string.hpp"}\par
+{\f2 #include "vonat.hpp"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Oszt\'E1lyok\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Jegy}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Jegyek}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+F\'FCggv\'E9nyek\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ostream & {\b operator<<} (ostream &os, const {\b Jegy} &j)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Jegy}. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b beolvas} ({\b Jaratok} &ja, {\b Jegyek} &je, const char *fajlnev)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ostream & {\b operator<<} (ostream &os, const {\b Jegyek} &j)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+F\'FCggv\'E9nyek dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v beolvas\:jegy.hpp}
+{\xe \v jegy.hpp\:beolvas}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void beolvas ({\b Jaratok} &  {\i ja}, {\b Jegyek} &  {\i je}, const char *  {\i fajlnev})}}
+\par
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.cpp f\'E1jl 76. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 76                                                            \{\par
+77     ifstream fpp;\par
+78     fpp.open(fajlnev);\par
+79     {\cf19 if}(!fpp) \{\par
+80         printf({\cf22 "KIVETEL\\n"});\par
+81         {\cf19 throw} {\cf22 "QP4TVJ"};\par
+82     \}\par
+83     String* adatok = {\cf17 new} String[4];\par
+84     Vonat v;\par
+85 \par
+86     {\cf18 int} i = 0;\par
+87     {\cf19 while}(getline(fpp,adatok[i],{\cf23 '#'})) \{\par
+88         {\cf19 if}(i == 2) \{\par
+89             getline(fpp, adatok[3], {\cf23 '\\n'});\par
+90             {\cf19 for}({\cf18 size_t} k = 0; k < ja.size(); k++) \{\par
+91                 {\cf19 if}(ja[k].get_vsz() == adatok[3]) \{\par
+92                     v = ja[k];\par
+93                     {\cf19 break};\par
+94                 \}\par
+95             \}\par
+96             Jegy j(adatok[0], stoi(adatok[1]), stoi(adatok[2]), v);\par
+97             i = -1;\par
+98             je.add(j);\par
+99             {\cf17 delete}[] adatok;\par
+100             adatok = {\cf17 new} String[4];\par
+101         \}\par
+102         i++;\par
+103     \}\par
+104     {\cf17 delete}[] adatok;\par
+105     fpp.close();\par
+106 \}\par
+}
+}
+{\xe \v operator<<\:jegy.hpp}
+{\xe \v jegy.hpp\:operator<<}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+ostream& operator<< (ostream &  {\i os}, const {\b Jegy} &  {\i j})}}
+\par
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Jegy}. }}\par
+{
+Defin\'EDci\'F3 a(z) jegy.cpp f\'E1jl 4. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 4                                                 \{\par
+5     {\cf19 if}(&os == &cout) \{\par
+6         {\cf19 return} os << j.get_nev() << {\cf23 ' '} << j.get_vsz() << {\cf23 ' '} << j.get_ksz() << {\cf23 ' '} << j.get_hely() << {\cf23 ' '}\par
+7         << j.get_ind_dt() << {\cf23 ' '} << j.get_ind_all() << {\cf23 ' '} << j.get_erkez_dt() << {\cf23 ' '} << j.get_erkez_all()\par
+8         << endl;\par
+9     \} {\cf19 else} \{\par
+10         {\cf19 return} os << j.get_nev() << {\cf23 '#'} << j.get_ksz() << {\cf23 '#'} << j.get_hely() << {\cf23 '#'}<< j.get_vsz() << endl;\par
+11     \}\par
+12 \}\par
+}
+}
+{\xe \v operator<<\:jegy.hpp}
+{\xe \v jegy.hpp\:operator<<}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+ostream& operator<< (ostream &  {\i os}, const {\b Jegyek} &  {\i j})}}
+\par
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) jegy.cpp f\'E1jl 108. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 108                                                   \{\par
+109     {\cf19 for}({\cf18 size_t} i = 0; i < j.size(); i++) \{\par
+110         os << j[i];\par
+111     \}\par
+112     {\cf19 return} os;\par
+113 \}\par
+}
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbknone
+{\pard\widctlpar\brdrb\brdremboss\brdrw15\brsp20 \adjustright \par}
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+main.cpp f\'E1jlreferencia\par \pard\plain 
+{\tc\tcl2 \v main.cpp}
+{\xe \v main.cpp}
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "vonat.hpp"}\par
+{\f2 #include "jegy.hpp"}\par
+{\f2 #include "menu.hpp"}\par
+{\f2 #include "gtest_lite.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+F\'FCggv\'E9nyek\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b main} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+F\'FCggv\'E9nyek dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v main\:main.cpp}
+{\xe \v main.cpp\:main}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int main ()}}
+\par
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+TESZTEK\par
+}{
+Defin\'EDci\'F3 a(z) main.cpp f\'E1jl 9. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 9            \{\par
+10 \par
+11     Jaratok jaratok;\par
+12     beolvas(jaratok, {\cf22 "vonatok.txt"});\par
+13     Jegyek jegyek;\par
+14     beolvas(jaratok, jegyek, {\cf22 "jegyek.txt"});\par
+15 \par
+16     menu(jaratok ,jegyek);\par
+17     {\cf20 // V\'E9gleges programhoz tartoz\'F3 r\'E9sz, illetve felhaszn\'E1l\'F3i men\'FC megh\'EDv\'E1sa}\par
+18 \par
+19 \par
+20 \par
+21 \par
+22     {\cf20 /*}\par
+23 {\cf20     Az al\'E1bbi tesztek a jelenlegi programban l\'E9v\'F5 \'F6sszes f\'FCggv\'E9nyt tesztelik a f\'E1jlkezel\'E9ssel egy\'FCtt}\par
+24 {\cf20     */}\par
+25 \par
+27 \par
+28     {\cf20 // String oszt\'E1ly tesztje}\par
+29     TEST(String, Konstruktorok) \{\par
+30         String s1;  {\cf20 // Param\'E9ter n\'E9lk\'FCli konstruktor}\par
+31         EXPECT_EQ({\cf22 "\\0"}, s1.c_str());\par
+32         EXPECT_EQ(0, {\cf18 int}(s1.size()));\par
+33 \par
+34         String s2({\cf23 'c'}); {\cf20 // Konstruktor karakter param\'E9terrel}\par
+35         EXPECT_STREQ({\cf22 "c"}, s2.c_str());\par
+36         EXPECT_EQ(1, {\cf18 int}(s2.size()));\par
+37 \par
+38         String s3({\cf22 "string"}); {\cf20 // Konstruktor C string-el}\par
+39         EXPECT_STREQ({\cf22 "string"}, s3.c_str());\par
+40         EXPECT_EQ(6, {\cf18 int}(s3.size()));\par
+41 \par
+42         String s4(s3); {\cf20 // M\'E1sol\'F3 konstruktor}\par
+43         EXPECT_STREQ({\cf22 "string"}, s4.c_str());\par
+44         EXPECT_EQ(6, {\cf18 int}(s4.size()));\par
+45     \} ENDM\par
+46 \par
+47     TEST(String, operatorok) \{\par
+48         String s1({\cf22 "hello"});\par
+49         String s2({\cf22 "world"});\par
+50         s2 = s1;\par
+51         EXPECT_STREQ(s1.c_str(), s2.c_str());\par
+52 \par
+53         s2 = String({\cf22 " world"});\par
+54         EXPECT_STREQ({\cf22 " world"}, s2.c_str());\par
+55 \par
+56         String s3 = s1 + s2;\par
+57         EXPECT_STREQ({\cf22 "hello world"}, s3.c_str());\par
+58     \} ENDM\par
+59 \par
+60     TEST(String, kiir) \{\par
+61         String s1({\cf22 "Hello World!"});\par
+62         stringstream ss;\par
+63         ss << s1;\par
+64         EXPECT_STREQ({\cf22 "Hello World!"}, ss.str().c_str());\par
+65     \} ENDM\par
+66 \par
+67     TEST(String, beolvas) \{\par
+68         stringstream ss;\par
+69         ss << {\cf22 "Hello World!"};\par
+70         String s1;\par
+71         ss >> s1;\par
+72         String s2({\cf22 "Hello World!"});\par
+73         EXPECT_EQ(s1, s2);\par
+74     \} ENDM\par
+75 \par
+76     TEST(String, egyeb fuggvenyek) \{\par
+77        {\cf20 // getline}\par
+78        stringstream ss;\par
+79        ss << {\cf22 "adat1#adat2"};\par
+80        String s1;\par
+81        String s2({\cf22 "adat1"});\par
+82        getline(ss, s1, {\cf23 '#'});\par
+83        EXPECT_STREQ(s2.c_str(), s1.c_str());\par
+84        s2 = {\cf22 "adat2"};\par
+85        String s3;\par
+86        getline(ss, s3, {\cf23 '#'});\par
+87        EXPECT_STREQ(s2.c_str(), s3.c_str());\par
+88 \par
+89        {\cf20 // stoi}\par
+90        String s4({\cf22 "123"});\par
+91        {\cf18 int} i1 = stoi(s4);\par
+92        EXPECT_EQ(123, i1);\par
+93     \} ENDM\par
+94 \par
+95     {\cf20 // D\'E1tum oszt\'E1ly tesztje}\par
+96     TEST(Datum, kiir) \{\par
+97         Datum d1(2021, 05, 06, 1140);\par
+98         stringstream ss;\par
+99         ss << d1;\par
+100         EXPECT_STREQ({\cf22 "2021#5#6#19#00"}, ss.str().c_str());\par
+101     \} ENDM\par
+102 \par
+103     TEST(Datum, beolvas) \{\par
+104         stringstream ss;\par
+105         ss << {\cf22 "2021\\n12\\n10\\n15\\n30"};\par
+106         Datum d1;\par
+107         ss >> d1;\par
+108         Datum d2(2021, 12, 10, 930);\par
+109         EXPECT_EQ(d1, d2);\par
+110     \} ENDM\par
+111 \par
+112     TEST(Datum, nagyobb/kisebb egyenlo) \{\par
+113         Datum d1(2021, 05, 06, 1140);\par
+114         Datum d2(2021, 06, 01, 1100);\par
+115         EXPECT_GE(d2, d1);\par
+116         EXPECT_LE(d1, d2);\par
+117 \par
+118         Datum d3(2021, 05, 10, 1140);\par
+119         Datum d4 = d3;\par
+120         EXPECT_GE(d3, d4);\par
+121         EXPECT_LE(d3, d4);\par
+122 \par
+123         Datum d5(2021, 05, 10, 1140);\par
+124         Datum d6(2022, 05, 10, 1140);\par
+125         EXPECT_FALSE(d5 >= d6);\par
+126         EXPECT_FALSE(d6 <= d5);\par
+127         EXPECT_GE(d6, d5);\par
+128 \par
+129         Datum d7(2021, 05, 9, 1140);\par
+130         Datum d8(2021, 05, 10, 1140);\par
+131         EXPECT_FALSE(d7 >= d8);\par
+132         EXPECT_GE(d8, d7);\par
+133 \par
+134         Datum d9(2021, 05, 9, 1140);\par
+135         Datum d10(2021, 05, 9, 1141);\par
+136         EXPECT_FALSE(d9 >= d10);\par
+137         EXPECT_GE(d10, d9);\par
+138 \par
+139         {\cf20 // minden egyenl\'F5}\par
+140         Datum d11(2021, 05, 9, 1141);\par
+141         EXPECT_GE(d10, d11);\par
+142         EXPECT_LE(d10, d11);\par
+143     \} ENDM\par
+144 \par
+145     TEST(Datum, egyenloseg) \{\par
+146         Datum d1(2021, 05, 06, 1140);\par
+147         Datum d2(2021, 05, 06, 1140);\par
+148         EXPECT_EQ(d1, d2);\par
+149 \par
+150         Datum d3(2020, 01, 01, 1180);\par
+151         EXPECT_FALSE(d1 == d3);\par
+152     \} ENDM\par
+153 \par
+154     TEST(Datum, ertekadas) \{\par
+155         Datum d1(2021, 05, 06, 1140);\par
+156         Datum d2(2021, 06, 01, 1100);\par
+157         d1 = d2;\par
+158         EXPECT_EQ(d1, d2);\par
+159     \} ENDM\par
+160 \par
+161 \par
+162     {\cf20 // Vonat oszt\'E1ly tesztje}\par
+163     String azonosito = {\cf22 "AAA111"};\par
+164     String ind = {\cf22 "Budapest"};\par
+165     String erk = {\cf22 "Debrecen"};\par
+166     Datum d1(2021, 05, 06, 1140);\par
+167     Datum d2(2021, 06, 01, 1100);\par
+168     Vonat v(azonosito, ind, d1, erk, d2);\par
+169 \par
+170     TEST(Vonat, kiir) \{\par
+171         stringstream ss;\par
+172         ss << v;\par
+173         EXPECT_STREQ({\cf22 "AAA111#2021#5#6#19#00#2021#6#1#18#20#Budapest#Debrecen\\n"},ss.str().c_str());\par
+174     \} ENDM\par
+175 \par
+176     TEST(Vonat, getterek) \{\par
+177         EXPECT_STREQ({\cf22 "AAA111"},v.get_vsz().c_str());\par
+178         EXPECT_EQ(d1, v.get_ind_dt());\par
+179         EXPECT_EQ(d2, v.get_erkez_dt());\par
+180         EXPECT_STREQ({\cf22 "Budapest"}, v.get_ind_all().c_str());\par
+181         EXPECT_STREQ({\cf22 "Debrecen"}, v.get_erkez_all().c_str());\par
+182     \} ENDM\par
+183 \par
+184     TEST(Vonat, egyenloseg) \{\par
+185         String s1({\cf22 "AAA111"});\par
+186         String s2({\cf22 "BBB111"});\par
+187         Vonat v1(s1, ind, d1, erk, d2);\par
+188         Vonat v2(s1, ind, d1, erk, d2);\par
+189         Vonat v3(s2, ind, d1, erk, d2);\par
+190         EXPECT_EQ(v1, v2);\par
+191         EXPECT_FALSE(v1 == v3);\par
+192     \} ENDM\par
+193 \par
+194     {\cf20 // Jegy oszt\'E1ly tesztje}\par
+195     Jegy j({\cf22 "Berenyi Henrik Daniel"}, 10, 5, v);\par
+196 \par
+197     TEST(Jegy, kiir) \{\par
+198         stringstream ss;\par
+199         ss << j;\par
+200        EXPECT_STREQ({\cf22 "Berenyi Henrik Daniel#10#5#AAA111\\n"},ss.str().c_str()) ;\par
+201     \} ENDM\par
+202 \par
+203     TEST(Jegy, getterek) \{\par
+204         EXPECT_STREQ({\cf22 "Berenyi Henrik Daniel"}, j.get_nev().c_str());\par
+205         EXPECT_STREQ({\cf22 "AAA111"}, j.get_vsz().c_str());\par
+206         EXPECT_EQ(10, j.get_ksz());\par
+207         EXPECT_EQ(5, j.get_hely());\par
+208         EXPECT_STREQ({\cf22 "Budapest"}, j.get_ind_all().c_str());\par
+209         EXPECT_STREQ({\cf22 "Debrecen"}, j.get_erkez_all().c_str());\par
+210         EXPECT_EQ(d1, j.get_ind_dt());\par
+211         EXPECT_EQ(d2, j.get_erkez_dt());\par
+212         EXPECT_EQ(v,j.get_vonat());\par
+213     \}ENDM\par
+214 \par
+215     TEST(Jegy, ertekadas) \{\par
+216        Jegy j1(j);\par
+217        Jegy j2({\cf22 "Kovacs Endre"}, 13,2, v);\par
+218        j1 = j2;\par
+219        EXPECT_EQ(j1, j2);\par
+220     \} ENDM\par
+221 \par
+222     TEST(Jegy, egyenloseg) \{\par
+223         Jegy j1({\cf22 "Kovacs Endre"}, 13, 2, v);\par
+224         Jegy j2({\cf22 "Kovacs Endre"}, 13, 2, v);\par
+225         Jegy j3({\cf22 "Nagy Lajos"}, 13, 3, v);\par
+226         EXPECT_EQ(j1, j2);\par
+227         EXPECT_FALSE(j1 == j3);\par
+228     \} ENDM\par
+229     \par
+230     {\cf20 // J\'E1ratok es Jegyek tesztjei}\par
+231     Jaratok ja;\par
+232     EXPECT_THROW(beolvas(ja, {\cf22 "ilyen_nincs.txt"}), {\cf17 const} {\cf18 char}*); {\cf20 //ismeretlen f\'E1jl eset\'E9n kiv\'E9tel}\par
+233     EXPECT_NO_THROW(beolvas(ja, {\cf22 "vonatok.txt"})); {\cf20 //sikeres beolvas\'E1s}\par
+234 \par
+235     Jegyek je;\par
+236     EXPECT_THROW(beolvas(ja, je, {\cf22 "ilyen_nincs.txt"}), {\cf17 const} {\cf18 char}*); {\cf20 //ismeretlen f\'E1jl eset\'E9n kiv\'E9tel}\par
+237     EXPECT_NO_THROW(beolvas(ja, je, {\cf22 "jegyek.txt"})); {\cf20 //sikeres beolvas\'E1s}\par
+238 \par
+239     TEST(Jaratok, kiir) \{\par
+240         stringstream ss;\par
+241         ss << ja;\par
+242         EXPECT_STREQ({\cf22 "ABB001#2021#4#20#18#50#2021#4#20#19#00#Budapest#Sopron\\n"}\par
+243                      {\cf22 "ZBB002#2021#4#20#18#50#2021#4#20#19#00#Budapest#Debrecen\\n"}\par
+244                      {\cf22 "ZBB003#2021#4#20#18#50#2021#4#20#19#00#Budapest#Berlin\\n"}, ss.str().c_str());\par
+245     \} ENDM\par
+246 \par
+247     TEST(Jaratok, add/remove) \{\par
+248         ja.add(v);\par
+249         EXPECT_EQ(v, ja[3]);\par
+250         EXPECT_EQ({\cf18 size_t}(4), ja.size());\par
+251 \par
+252         EXPECT_THROW(ja.remove({\cf22 "AAA222"}), {\cf17 const} {\cf18 char}*);\par
+253         EXPECT_NO_THROW(ja.remove({\cf22 "AAA111"}));\par
+254     \} ENDM\par
+255 \par
+256     TEST(Jaratok, index) \{\par
+257         stringstream ss;\par
+258         ss << ja[0];\par
+259         EXPECT_STREQ({\cf22 "ABB001#2021#4#20#18#50#2021#4#20#19#00#Budapest#Sopron\\n"}, ss.str().c_str());\par
+260         EXPECT_THROW(ja[ja.size()], {\cf17 const} {\cf18 char}*);\par
+261     \} ENDM\par
+262 \par
+263     TEST(Jaratok, tovabbi_fuggvenyek) \{\par
+264         EXPECT_EQ({\cf18 size_t}(3), ja.size());\par
+265         EXPECT_TRUE(ja.checkID({\cf22 "ABB001"}));\par
+266         EXPECT_FALSE(ja.checkID({\cf22 "AAA222"}));\par
+267     \} ENDM\par
+268 \par
+269     TEST(Jegyek, kiir) \{\par
+270        stringstream ss;\par
+271        ss << je;\par
+272        EXPECT_STREQ({\cf22 "Berenyi Henrik#12#8#ABB001\\n"}\par
+273                     {\cf22 "Kiss Gabor#21#9#ZBB002\\n"}\par
+274                     {\cf22 "Kov\'E1cs Istv\'E1n#10#2#ABB001\\n"},ss.str().c_str());\par
+275     \} ENDM\par
+276 \par
+277     TEST(Jegyek, add/remove) \{\par
+278        je.add(j);\par
+279        EXPECT_EQ(j, je[3]);\par
+280        EXPECT_EQ({\cf18 size_t}(4), je.size());\par
+281 \par
+282        EXPECT_THROW(je.remove({\cf22 "nincs ilyen nev"}), {\cf17 const} {\cf18 char}*);\par
+283        EXPECT_NO_THROW(je.remove({\cf22 "Berenyi Henrik Daniel"}));\par
+284     \} ENDM\par
+285 \par
+286     TEST(Jegyek, index) \{\par
+287        stringstream ss;\par
+288        ss << je[0];\par
+289        EXPECT_STREQ({\cf22 "Berenyi Henrik#12#8#ABB001\\n"}, ss.str().c_str());\par
+290     \} ENDM\par
+291 \par
+292     TEST(Jaratok, tovabbi_fuggvenyek) \{\par
+293        EXPECT_EQ({\cf18 size_t}(3), je.size());\par
+294        EXPECT_TRUE(je.checkSeat(je[0].get_vsz(), je[0].get_ksz(), je[0].get_hely()));\par
+295        EXPECT_FALSE(je.checkSeat({\cf22 "AAA222"}, 12, 21));\par
+296     \} ENDM\par
+297 \par
+298     {\cf19 return} 0;\par
+299 \}\par
+}
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbknone
+{\pard\widctlpar\brdrb\brdremboss\brdrw15\brsp20 \adjustright \par}
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+memtrace.cpp f\'E1jlreferencia\par \pard\plain 
+{\tc\tcl2 \v memtrace.cpp}
+{\xe \v memtrace.cpp}
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <stdio.h>}\par
+{\f2 #include <stdlib.h>}\par
+{\f2 #include <string.h>}\par
+{\f2 #include <time.h>}\par
+{\f2 #include <ctype.h>}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbknone
+{\pard\widctlpar\brdrb\brdremboss\brdrw15\brsp20 \adjustright \par}
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+menu.cpp f\'E1jlreferencia\par \pard\plain 
+{\tc\tcl2 \v menu.cpp}
+{\xe \v menu.cpp}
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "menu.hpp"}\par
+{\f2 #include "vonat.hpp"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+F\'FCggv\'E9nyek\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b menu} ({\b Jaratok} &ja, {\b Jegyek} &je)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+F\'FCggv\'E9nyek dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v menu\:menu.cpp}
+{\xe \v menu.cpp\:menu}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void menu ({\b Jaratok} &  {\i ja}, {\b Jegyek} &  {\i je})}}
+\par
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) menu.cpp f\'E1jl 4. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 4                                   \{\par
+5     {\cf18 int} menupont = 0;\par
+6     {\cf19 while}(menupont != 6) \{\par
+7         cout <<\par
+8         {\cf22 "V\'E1lassz egyet az al\'E1bbi men\'FCpontok k\'F6z\'FCl:\\n"} <<\par
+9         {\cf22 "1.: J\'E1rat keres\'E9se\\n"} <<\par
+10         {\cf22 "2.: Jegy foglal\'E1sa\\n"} <<\par
+11         {\cf22 "3.: Foglal\'E1s t\'F6rl\'E9se\\n"} <<\par
+12         {\cf22 "4.: Vonat felv\'E9tele\\n"} <<\par
+13         {\cf22 "5.: Vonat t\'F6rl\'E9se\\n"} <<\par
+14         {\cf22 "6.: Kil\'E9p\'E9s\\n"};\par
+15 \par
+16         cin >> menupont;\par
+17 \par
+18         {\cf20 /* J\'E1rat keres\'E9se men\'FCpont */}\par
+19         {\cf19 if}(menupont == 1) \{\par
+20             {\cf20 /* \'DAtic\'E9lok beolvas\'E1sa */}\par
+21             cout << {\cf22 "Honnan k\'EDv\'E1n utazni?"};\par
+22             String honnan;\par
+23             cin >> honnan;\par
+24 \par
+25             String hova;\par
+26             cout << {\cf22 "Hova k\'EDv\'E1n utazni?"};\par
+27             cin >> hova;\par
+28 \par
+29             {\cf20 /* D\'E1tumok beolvas\'E1sa */}\par
+30             cout << {\cf22 "Mi legyen az indul\'E1si d\'E1tum?"} << endl;\par
+31             Datum kezdo;\par
+32             cin >> kezdo;\par
+33 \par
+34             cout << {\cf22 "Mi legyen a v\'E9gs\'F5 d\'E1tum?"} << endl;\par
+35             Datum vegso;\par
+36             cin >> vegso;\par
+37 \par
+38             {\cf20 /* J\'E1rat keres\'E9se */}\par
+39             keres(ja, honnan, hova, kezdo, vegso);\par
+40         \}\par
+41 \par
+42         {\cf20 /* Jegy foglal\'E1sa men\'FCpont */}\par
+43         {\cf19 else} {\cf19 if}(menupont == 2) \{\par
+44             cout << {\cf22 "Mi a j\'E1rat azonos\'EDt\'F3ja?"};\par
+45             String azonosito;\par
+46             cin >> azonosito;\par
+47             {\cf19 while}(!ja.checkID(azonosito)) \{\par
+48                 cout << {\cf22 "Ilyen azonos\'EDt\'F3 nem letezik, k\'E9rlek \'EDrd be \'FAjra!"} << endl;\par
+49                 cin >> azonosito;\par
+50             \}\par
+51 \par
+52             cout << {\cf22 "Milyen n\'E9vre legyen a foglal\'E1s?"};\par
+53             String nev;\par
+54             cin >> nev;\par
+55 \par
+56             cout << {\cf22 "K\'E9rlek v\'E1lassz kocsit!"};\par
+57             {\cf18 int} kocsiszam;\par
+58             cin >> kocsiszam;\par
+59 \par
+60             cout << {\cf22 "K\'E9rlek v\'E1lassz \'FCl\'F5helyet!"};\par
+61             {\cf18 int} ulohely;\par
+62             cin >> ulohely;\par
+63             {\cf19 while}(je.checkSeat(azonosito, kocsiszam, ulohely)) \{\par
+64                 cout << {\cf22 "Ez az \'FCl\'F5hely m\'E1r foglalt, k\'E9rlek v\'E1lassz m\'E1sikat!"} << endl;\par
+65                 cout << {\cf22 "K\'E9rlek v\'E1lassz kocsit!"};\par
+66                 cin >> kocsiszam;\par
+67                 cout << {\cf22 "K\'E9rlek v\'E1lassz \'FCl\'F5helyet!"};\par
+68                 cin >> ulohely;\par
+69             \}\par
+70 \par
+71             Jegy j(nev, kocsiszam, ulohely, azonosito, ja);\par
+72             je.add(j);\par
+73         \}\par
+74 \par
+75         {\cf20 /* Jegy t\'F6rl\'E9se men\'FCpont */}\par
+76         {\cf19 else} {\cf19 if}(menupont == 3) \{\par
+77             cout << {\cf22 "Milyen n\'E9ven van a foglal\'E1s?"};\par
+78             String nev;\par
+79             cin >> nev;\par
+80 \par
+81             je.remove(nev.c_str());\par
+82 \par
+83             cout << je;\par
+84         \}\par
+85 \par
+86         {\cf20 /* Vonat felv\'E9tele men\'FCpont */}\par
+87         {\cf19 else} {\cf19 if}(menupont == 4) \{\par
+88             cout << {\cf22 "Mi legyen a vonat azonos\'EDt\'F3ja?"};\par
+89             String azonosito;\par
+90             cin >> azonosito;\par
+91             {\cf19 while}(ja.checkID(azonosito)) \{\par
+92                 cout << {\cf22 "Ilyen azonos\'EDt\'F3 m\'E1r l\'E9tezik, k\'E9rlek \'EDrd be \'FAjra!"} << endl;\par
+93                 cin >> azonosito;\par
+94             \}\par
+95 \par
+96             cout << {\cf22 "Mi legyen a vonat kiindul\'E1si \'E1llom\'E1sa?"};\par
+97             String ind_all;\par
+98             cin >> ind_all;\par
+99 \par
+100             cout << {\cf22 "Mi legyen a vonat indul\'E1si d\'E1tuma?"} << endl;\par
+101             Datum ind;\par
+102             cin >> ind;\par
+103 \par
+104             cout << {\cf22 "Mi legyen a vonat v\'E9g\'E1llom\'E1sa?"};\par
+105             String erk_all;\par
+106             cin >> erk_all;\par
+107 \par
+108             cout << {\cf22 "Mi legyen a vonat \'E9rkez\'E9si d\'E1tuma"} << endl;\par
+109             Datum erk;\par
+110             cin >> erk;\par
+111             {\cf19 while}(erk <= ind) \{\par
+112                 cout << {\cf22 "A vonatnak k\'E9s\'F5bbi id\'F5pontban kell meg\'E9rkeznie, mint az indul\'E1si d\'E1tum, k\'E9rlek \'EDrd be \'FAjra!"} << endl;\par
+113                 cin >> erk;\par
+114             \}\par
+115 \par
+116             Vonat v(azonosito, ind_all, ind, erk_all, erk);\par
+117             ja.add(v);\par
+118         \}\par
+119 \par
+120         {\cf20 /* Vonat t\'F6rl\'E9se men\'FCpont */}\par
+121         {\cf19 else} {\cf19 if}(menupont == 5) \{\par
+122             cout << {\cf22 "Adja meg annak a vonatnak az azonos\'EDt\'F3j\'E1t, amelyiket t\'F6r\'F6lni szeretn\'E9."};\par
+123             String azonosito;\par
+124             cin >> azonosito;\par
+125 \par
+126             {\cf19 try} \{\par
+127                 ja.remove(azonosito.c_str());\par
+128             \}\par
+129             {\cf19 catch}({\cf17 const} {\cf18 char}* c) \{\par
+130                 cout << c;\par
+131             \}\par
+132         \}\par
+133 \par
+134         {\cf20 /* Minden m\'E1s \'E9rt\'E9k az 6-ot kiv\'E9ve => nem l\'E9tez\'F5 men\'FCpont */}\par
+135         {\cf19 else} {\cf19 if}(menupont != 6) \{\par
+136             printf({\cf22 "Nem l\'E9tez\'F5 men\'FCpont.\\n"});\par
+137         \}\par
+138     \}\par
+139 \par
+140     {\cf20 // Mem\'F3ri\'E1ban t\'E1rolt adatok elment\'E9se a sz\'F6veges f\'E1jlokban}\par
+141     ofstream fpp;\par
+142 \par
+143     fpp.open({\cf22 "vonatok.txt"});\par
+144     fpp << ja;\par
+145     fpp.close();\par
+146 \par
+147     fpp.open({\cf22 "jegyek.txt"});\par
+148     fpp << je;\par
+149     fpp.close();\par
+150 \}\par
+}
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbknone
+{\pard\widctlpar\brdrb\brdremboss\brdrw15\brsp20 \adjustright \par}
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+menu.hpp f\'E1jlreferencia\par \pard\plain 
+{\tc\tcl2 \v menu.hpp}
+{\xe \v menu.hpp}
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "vonat.hpp"}\par
+{\f2 #include "jegy.hpp"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+F\'FCggv\'E9nyek\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b menu} ({\b Jaratok} &ja, {\b Jegyek} &je)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+F\'FCggv\'E9nyek dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v menu\:menu.hpp}
+{\xe \v menu.hpp\:menu}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void menu ({\b Jaratok} &  {\i ja}, {\b Jegyek} &  {\i je})}}
+\par
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) menu.cpp f\'E1jl 4. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 4                                   \{\par
+5     {\cf18 int} menupont = 0;\par
+6     {\cf19 while}(menupont != 6) \{\par
+7         cout <<\par
+8         {\cf22 "V\'E1lassz egyet az al\'E1bbi men\'FCpontok k\'F6z\'FCl:\\n"} <<\par
+9         {\cf22 "1.: J\'E1rat keres\'E9se\\n"} <<\par
+10         {\cf22 "2.: Jegy foglal\'E1sa\\n"} <<\par
+11         {\cf22 "3.: Foglal\'E1s t\'F6rl\'E9se\\n"} <<\par
+12         {\cf22 "4.: Vonat felv\'E9tele\\n"} <<\par
+13         {\cf22 "5.: Vonat t\'F6rl\'E9se\\n"} <<\par
+14         {\cf22 "6.: Kil\'E9p\'E9s\\n"};\par
+15 \par
+16         cin >> menupont;\par
+17 \par
+18         {\cf20 /* J\'E1rat keres\'E9se men\'FCpont */}\par
+19         {\cf19 if}(menupont == 1) \{\par
+20             {\cf20 /* \'DAtic\'E9lok beolvas\'E1sa */}\par
+21             cout << {\cf22 "Honnan k\'EDv\'E1n utazni?"};\par
+22             String honnan;\par
+23             cin >> honnan;\par
+24 \par
+25             String hova;\par
+26             cout << {\cf22 "Hova k\'EDv\'E1n utazni?"};\par
+27             cin >> hova;\par
+28 \par
+29             {\cf20 /* D\'E1tumok beolvas\'E1sa */}\par
+30             cout << {\cf22 "Mi legyen az indul\'E1si d\'E1tum?"} << endl;\par
+31             Datum kezdo;\par
+32             cin >> kezdo;\par
+33 \par
+34             cout << {\cf22 "Mi legyen a v\'E9gs\'F5 d\'E1tum?"} << endl;\par
+35             Datum vegso;\par
+36             cin >> vegso;\par
+37 \par
+38             {\cf20 /* J\'E1rat keres\'E9se */}\par
+39             keres(ja, honnan, hova, kezdo, vegso);\par
+40         \}\par
+41 \par
+42         {\cf20 /* Jegy foglal\'E1sa men\'FCpont */}\par
+43         {\cf19 else} {\cf19 if}(menupont == 2) \{\par
+44             cout << {\cf22 "Mi a j\'E1rat azonos\'EDt\'F3ja?"};\par
+45             String azonosito;\par
+46             cin >> azonosito;\par
+47             {\cf19 while}(!ja.checkID(azonosito)) \{\par
+48                 cout << {\cf22 "Ilyen azonos\'EDt\'F3 nem letezik, k\'E9rlek \'EDrd be \'FAjra!"} << endl;\par
+49                 cin >> azonosito;\par
+50             \}\par
+51 \par
+52             cout << {\cf22 "Milyen n\'E9vre legyen a foglal\'E1s?"};\par
+53             String nev;\par
+54             cin >> nev;\par
+55 \par
+56             cout << {\cf22 "K\'E9rlek v\'E1lassz kocsit!"};\par
+57             {\cf18 int} kocsiszam;\par
+58             cin >> kocsiszam;\par
+59 \par
+60             cout << {\cf22 "K\'E9rlek v\'E1lassz \'FCl\'F5helyet!"};\par
+61             {\cf18 int} ulohely;\par
+62             cin >> ulohely;\par
+63             {\cf19 while}(je.checkSeat(azonosito, kocsiszam, ulohely)) \{\par
+64                 cout << {\cf22 "Ez az \'FCl\'F5hely m\'E1r foglalt, k\'E9rlek v\'E1lassz m\'E1sikat!"} << endl;\par
+65                 cout << {\cf22 "K\'E9rlek v\'E1lassz kocsit!"};\par
+66                 cin >> kocsiszam;\par
+67                 cout << {\cf22 "K\'E9rlek v\'E1lassz \'FCl\'F5helyet!"};\par
+68                 cin >> ulohely;\par
+69             \}\par
+70 \par
+71             Jegy j(nev, kocsiszam, ulohely, azonosito, ja);\par
+72             je.add(j);\par
+73         \}\par
+74 \par
+75         {\cf20 /* Jegy t\'F6rl\'E9se men\'FCpont */}\par
+76         {\cf19 else} {\cf19 if}(menupont == 3) \{\par
+77             cout << {\cf22 "Milyen n\'E9ven van a foglal\'E1s?"};\par
+78             String nev;\par
+79             cin >> nev;\par
+80 \par
+81             je.remove(nev.c_str());\par
+82 \par
+83             cout << je;\par
+84         \}\par
+85 \par
+86         {\cf20 /* Vonat felv\'E9tele men\'FCpont */}\par
+87         {\cf19 else} {\cf19 if}(menupont == 4) \{\par
+88             cout << {\cf22 "Mi legyen a vonat azonos\'EDt\'F3ja?"};\par
+89             String azonosito;\par
+90             cin >> azonosito;\par
+91             {\cf19 while}(ja.checkID(azonosito)) \{\par
+92                 cout << {\cf22 "Ilyen azonos\'EDt\'F3 m\'E1r l\'E9tezik, k\'E9rlek \'EDrd be \'FAjra!"} << endl;\par
+93                 cin >> azonosito;\par
+94             \}\par
+95 \par
+96             cout << {\cf22 "Mi legyen a vonat kiindul\'E1si \'E1llom\'E1sa?"};\par
+97             String ind_all;\par
+98             cin >> ind_all;\par
+99 \par
+100             cout << {\cf22 "Mi legyen a vonat indul\'E1si d\'E1tuma?"} << endl;\par
+101             Datum ind;\par
+102             cin >> ind;\par
+103 \par
+104             cout << {\cf22 "Mi legyen a vonat v\'E9g\'E1llom\'E1sa?"};\par
+105             String erk_all;\par
+106             cin >> erk_all;\par
+107 \par
+108             cout << {\cf22 "Mi legyen a vonat \'E9rkez\'E9si d\'E1tuma"} << endl;\par
+109             Datum erk;\par
+110             cin >> erk;\par
+111             {\cf19 while}(erk <= ind) \{\par
+112                 cout << {\cf22 "A vonatnak k\'E9s\'F5bbi id\'F5pontban kell meg\'E9rkeznie, mint az indul\'E1si d\'E1tum, k\'E9rlek \'EDrd be \'FAjra!"} << endl;\par
+113                 cin >> erk;\par
+114             \}\par
+115 \par
+116             Vonat v(azonosito, ind_all, ind, erk_all, erk);\par
+117             ja.add(v);\par
+118         \}\par
+119 \par
+120         {\cf20 /* Vonat t\'F6rl\'E9se men\'FCpont */}\par
+121         {\cf19 else} {\cf19 if}(menupont == 5) \{\par
+122             cout << {\cf22 "Adja meg annak a vonatnak az azonos\'EDt\'F3j\'E1t, amelyiket t\'F6r\'F6lni szeretn\'E9."};\par
+123             String azonosito;\par
+124             cin >> azonosito;\par
+125 \par
+126             {\cf19 try} \{\par
+127                 ja.remove(azonosito.c_str());\par
+128             \}\par
+129             {\cf19 catch}({\cf17 const} {\cf18 char}* c) \{\par
+130                 cout << c;\par
+131             \}\par
+132         \}\par
+133 \par
+134         {\cf20 /* Minden m\'E1s \'E9rt\'E9k az 6-ot kiv\'E9ve => nem l\'E9tez\'F5 men\'FCpont */}\par
+135         {\cf19 else} {\cf19 if}(menupont != 6) \{\par
+136             printf({\cf22 "Nem l\'E9tez\'F5 men\'FCpont.\\n"});\par
+137         \}\par
+138     \}\par
+139 \par
+140     {\cf20 // Mem\'F3ri\'E1ban t\'E1rolt adatok elment\'E9se a sz\'F6veges f\'E1jlokban}\par
+141     ofstream fpp;\par
+142 \par
+143     fpp.open({\cf22 "vonatok.txt"});\par
+144     fpp << ja;\par
+145     fpp.close();\par
+146 \par
+147     fpp.open({\cf22 "jegyek.txt"});\par
+148     fpp << je;\par
+149     fpp.close();\par
+150 \}\par
+}
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbknone
+{\pard\widctlpar\brdrb\brdremboss\brdrw15\brsp20 \adjustright \par}
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+string.cpp f\'E1jlreferencia\par \pard\plain 
+{\tc\tcl2 \v string.cpp}
+{\xe \v string.cpp}
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <iostream>}\par
+{\f2 #include <cstring>}\par
+{\f2 #include "memtrace.h"}\par
+{\f2 #include "string.hpp"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+F\'FCggv\'E9nyek\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ostream & {\b operator<<} (std::ostream &os, const {\b String} &s)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+<< operator, ami ki\'EDr az ostream-re }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::istream & {\b operator>>} (std::istream &is, {\b String} &s0)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid \par
+{\pard\plain \s83\li1080\widctlpar\ql\adjustright \fs20\cgrid operator, ami beolvas az istreamrol egy szot \par
+}}}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b getline} (std::istream &is, {\b String} &s, char d)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b stoi} ({\b String} &s)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+F\'FCggv\'E9nyek dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v getline\:string.cpp}
+{\xe \v string.cpp\:getline}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool getline (std::istream &  {\i is}, {\b String} &  {\i s}, char  {\i d})}}
+\par
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) string.cpp f\'E1jl 109. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 109                                                 \{\par
+110     {\cf18 char} current;\par
+111     {\cf19 while}(is.get(current)) \{\par
+112         {\cf19 if}(current == d) \{\par
+113             {\cf19 return} {\cf17 true};\par
+114         \}\par
+115         s = s + current;\par
+116     \}\par
+117     {\cf19 return} {\cf17 false};\par
+118 \}\par
+}
+}
+{\xe \v operator<<\:string.cpp}
+{\xe \v string.cpp\:operator<<}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+ostream& operator<< (std::ostream &  {\i os}, const {\b String} &  {\i s})}}
+\par
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+<< operator, ami ki\'EDr az ostream-re }}\par
+{
+Defin\'EDci\'F3 a(z) string.cpp f\'E1jl 85. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 85                                                      \{\par
+86     {\cf19 return} os << s.c_str() ;\par
+87 \}\par
+}
+}
+{\xe \v operator>>\:string.cpp}
+{\xe \v string.cpp\:operator>>}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::istream& operator>> (std::istream &  {\i is}, {\b String} &  {\i s0})}}
+\par
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid \par
+{\pard\plain \s83\li1080\widctlpar\ql\adjustright \fs20\cgrid operator, ami beolvas az istreamrol egy szot \par
+}}}}\par
+{
+Defin\'EDci\'F3 a(z) string.cpp f\'E1jl 90. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 90                                                    \{\par
+91     {\cf18 unsigned} {\cf18 char} ch;\par
+92     s0 = String({\cf22 ""});\par
+93     std::ios_base::fmtflags fl = is.flags();\par
+94     is.setf(ios_base::skipws);\par
+95     {\cf19 while} (is >> ch) \{\par
+96         is.unsetf(ios_base::skipws);\par
+97         {\cf19 if} (ch == {\cf23 '\\n'}) \{\par
+98             is.putback(ch);\par
+99             {\cf19 break};\par
+100         \} {\cf19 else} \{\par
+101             s0 = s0 + ch;\par
+102         \}\par
+103     \}\par
+104     is.setf(fl);\par
+105     {\cf19 return} is;\par
+106 \}\par
+}
+}
+{\xe \v stoi\:string.cpp}
+{\xe \v string.cpp\:stoi}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int stoi ({\b String} &  {\i s})}}
+\par
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) string.cpp f\'E1jl 120. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 120                     \{\par
+121     {\cf19 return} atoi(s.c_str());\par
+122 \}\par
+}
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbknone
+{\pard\widctlpar\brdrb\brdremboss\brdrw15\brsp20 \adjustright \par}
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+string.hpp f\'E1jlreferencia\par \pard\plain 
+{\tc\tcl2 \v string.hpp}
+{\xe \v string.hpp}
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <iostream>}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Oszt\'E1lyok\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b String}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+F\'FCggv\'E9nyek\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::ostream & {\b operator<<} (std::ostream &os, const {\b String} &s)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+<< operator, ami ki\'EDr az ostream-re }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::istream & {\b operator>>} (std::istream &is, {\b String} &s0)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid \par
+{\pard\plain \s83\li1080\widctlpar\ql\adjustright \fs20\cgrid operator, ami beolvas az istreamrol egy szot \par
+}}}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b getline} (std::istream &is, {\b String} &s, char d)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b stoi} ({\b String} &s)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+F\'FCggv\'E9nyek dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v getline\:string.hpp}
+{\xe \v string.hpp\:getline}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool getline (std::istream &  {\i is}, {\b String} &  {\i s}, char  {\i d})}}
+\par
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) string.cpp f\'E1jl 109. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 109                                                 \{\par
+110     {\cf18 char} current;\par
+111     {\cf19 while}(is.get(current)) \{\par
+112         {\cf19 if}(current == d) \{\par
+113             {\cf19 return} {\cf17 true};\par
+114         \}\par
+115         s = s + current;\par
+116     \}\par
+117     {\cf19 return} {\cf17 false};\par
+118 \}\par
+}
+}
+{\xe \v operator<<\:string.hpp}
+{\xe \v string.hpp\:operator<<}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::ostream& operator<< (std::ostream &  {\i os}, const {\b String} &  {\i s})}}
+\par
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+<< operator, ami ki\'EDr az ostream-re }}\par
+{
+Defin\'EDci\'F3 a(z) string.cpp f\'E1jl 85. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 85                                                      \{\par
+86     {\cf19 return} os << s.c_str() ;\par
+87 \}\par
+}
+}
+{\xe \v operator>>\:string.hpp}
+{\xe \v string.hpp\:operator>>}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::istream& operator>> (std::istream &  {\i is}, {\b String} &  {\i s0})}}
+\par
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid \par
+{\pard\plain \s83\li1080\widctlpar\ql\adjustright \fs20\cgrid operator, ami beolvas az istreamrol egy szot \par
+}}}}\par
+{
+Defin\'EDci\'F3 a(z) string.cpp f\'E1jl 90. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 90                                                    \{\par
+91     {\cf18 unsigned} {\cf18 char} ch;\par
+92     s0 = String({\cf22 ""});\par
+93     std::ios_base::fmtflags fl = is.flags();\par
+94     is.setf(ios_base::skipws);\par
+95     {\cf19 while} (is >> ch) \{\par
+96         is.unsetf(ios_base::skipws);\par
+97         {\cf19 if} (ch == {\cf23 '\\n'}) \{\par
+98             is.putback(ch);\par
+99             {\cf19 break};\par
+100         \} {\cf19 else} \{\par
+101             s0 = s0 + ch;\par
+102         \}\par
+103     \}\par
+104     is.setf(fl);\par
+105     {\cf19 return} is;\par
+106 \}\par
+}
+}
+{\xe \v stoi\:string.hpp}
+{\xe \v string.hpp\:stoi}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int stoi ({\b String} &  {\i s})}}
+\par
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) string.cpp f\'E1jl 120. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 120                     \{\par
+121     {\cf19 return} atoi(s.c_str());\par
+122 \}\par
+}
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbknone
+{\pard\widctlpar\brdrb\brdremboss\brdrw15\brsp20 \adjustright \par}
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+vonat.cpp f\'E1jlreferencia\par \pard\plain 
+{\tc\tcl2 \v vonat.cpp}
+{\xe \v vonat.cpp}
+{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <iostream>}\par
+{\f2 #include <cstring>}\par
+{\f2 #include "vonat.hpp"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+F\'FCggv\'E9nyek\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ostream & {\b operator<<} (ostream &os, const {\b Vonat} &v)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Vonat}. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b beolvas} ({\b Jaratok} &j, const char *fajlnev)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b keres} ({\b Jaratok} &j, {\b String} honnan, {\b String} hova, {\b Datum} kezdo, {\b Datum} vegso)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ostream & {\b operator<<} (ostream &os, const {\b Jaratok} &j)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+F\'FCggv\'E9nyek dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v beolvas\:vonat.cpp}
+{\xe \v vonat.cpp\:beolvas}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void beolvas ({\b Jaratok} &  {\i j}, const char *  {\i fajlnev})}}
+\par
+{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) vonat.cpp f\'E1jl 76. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 76                                               \{\par
+77     ifstream fpp;\par
+78     fpp.open(fajlnev);\par
+79     {\cf19 if}(!fpp) \{\par
+80         printf({\cf22 "KIV\'C9TEL\\n"});\par
+81         {\cf19 throw} {\cf22 "QP4TVJ"};\par
+82     \}\par
+83     String* adatok = {\cf17 new} String[13];\par
+84 \par
+85     {\cf18 int} i = 0;\par
+86     {\cf19 while}(getline(fpp,adatok[i],{\cf23 '#'})) \{\par
+87         {\cf19 if}(i == 11) \{\par
+88             getline(fpp, adatok[12], {\cf23 '\\n'});\par
+89             Datum ind(stoi(adatok[1]), stoi(adatok[2]), stoi(adatok[3]), stoi(adatok[4])*60+stoi(adatok[5]));\par
+90             Datum erk(stoi(adatok[6]), stoi(adatok[7]), stoi(adatok[8]), stoi(adatok[9])*60+stoi(adatok[10]));\par
+91             Vonat v(adatok[0], adatok[11], ind, adatok[12], erk);\par
+92             i = -1;\par
+93             j.add(v);\par
+94             {\cf17 delete}[] adatok;\par
+95             adatok = {\cf17 new} String[14];\par
+96         \}\par
+97 \par
+98         i++;\par
+99     \}\par
+100     {\cf17 delete}[] adatok;\par
+101     fpp.close();\par
+102 \}\par
+}
+}
+{\xe \v keres\:vonat.cpp}
+{\xe \v vonat.cpp\:keres}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void keres ({\b Jaratok} &  {\i j}, {\b String}  {\i honnan}, {\b String}  {\i hova}, {\b Datum}  {\i kezdo}, {\b Datum}  {\i vegso})}}
+\par
+{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) vonat.cpp f\'E1jl 104. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 104                                                                              \{\par
+105     {\cf18 bool} vanTalalat = {\cf17 false};\par
+106     {\cf19 for} ({\cf18 size_t} i = 0; i < j.size(); i++) \{\par
+107         {\cf19 if} (strstr(j[i].get_ind_all().c_str(), honnan.c_str()) != 0 && strstr(j[i].get_erkez_all().c_str(), hova.c_str()) != NULL) \{\par
+108             {\cf19 if} (j[i].get_ind_dt() >= kezdo && j[i].get_erkez_dt() <= vegso) \{\par
+109                 cout << j[i];\par
+110                 vanTalalat = {\cf17 true};\par
+111             \}\par
+112         \}\par
+113     \}\par
+114     {\cf19 if}(!vanTalalat) \{\par
+115         cout << {\cf22 "Nem tal\'E1lhat\'F3 j\'E1rat a megadott keres\'E9si felt\'E9telek szerint."} << endl;\par
+116     \}\par
+117 \}\par
+}
+}
+{\xe \v operator<<\:vonat.cpp}
+{\xe \v vonat.cpp\:operator<<}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+ostream& operator<< (ostream &  {\i os}, const {\b Jaratok} &  {\i j})}}
+\par
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) vonat.cpp f\'E1jl 119. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 119                                                    \{\par
+120     {\cf19 for}({\cf18 size_t} i = 0; i < j.size(); i++) \{\par
+121         os << j[i];\par
+122     \}\par
+123     {\cf19 return} os;\par
+124 \}\par
+}
+}
+{\xe \v operator<<\:vonat.cpp}
+{\xe \v vonat.cpp\:operator<<}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+ostream& operator<< (ostream &  {\i os}, const {\b Vonat} &  {\i v})}}
+\par
+{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Vonat}. }}\par
+{
+Defin\'EDci\'F3 a(z) vonat.cpp f\'E1jl 7. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 7                                                  \{\par
+8     {\cf19 if}(&os == &cout) \{\par
+9         {\cf19 return} os << v.get_vsz() << {\cf23 ' '} << v.get_ind_dt() << {\cf23 ' '} << v.get_ind_all() << {\cf23 ' '} << v.get_erkez_dt()\par
+10         << {\cf23 ' '}<< v.get_erkez_all() << endl;\par
+11     \} {\cf19 else} \{\par
+12         {\cf19 return} os << v.get_vsz() << {\cf23 '#'} << v.get_ind_dt() << {\cf23 '#'} << v.get_erkez_dt() << {\cf23 '#'} << v.get_ind_all()\par
+13         << {\cf23 '#'}<< v.get_erkez_all() << endl;\par
+14     \}\par
+15 \}\par
+}
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbknone
+{\pard\widctlpar\brdrb\brdremboss\brdrw15\brsp20 \adjustright \par}
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+vonat.hpp f\'E1jlreferencia\par \pard\plain 
+{\tc\tcl2 \v vonat.hpp}
+{\xe \v vonat.hpp}
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <string>}\par
+{\f2 #include "datum.hpp"}\par
+{\f2 #include "string.hpp"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Oszt\'E1lyok\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Vonat}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Jaratok}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+F\'FCggv\'E9nyek\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ostream & {\b operator<<} (ostream &os, const {\b Vonat} &v)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Vonat}. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b beolvas} ({\b Jaratok} &j, const char *fajlnev)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b keres} ({\b Jaratok} &j, {\b String} honnan, {\b String} hova, {\b Datum} kezdo, {\b Datum} vegso)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ostream & {\b operator<<} (ostream &os, const {\b Jaratok} &j)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+F\'FCggv\'E9nyek dokument\'E1ci\'F3ja\par
+\pard\plain 
+{\xe \v beolvas\:vonat.hpp}
+{\xe \v vonat.hpp\:beolvas}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void beolvas ({\b Jaratok} &  {\i j}, const char *  {\i fajlnev})}}
+\par
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) vonat.cpp f\'E1jl 76. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 76                                               \{\par
+77     ifstream fpp;\par
+78     fpp.open(fajlnev);\par
+79     {\cf19 if}(!fpp) \{\par
+80         printf({\cf22 "KIV\'C9TEL\\n"});\par
+81         {\cf19 throw} {\cf22 "QP4TVJ"};\par
+82     \}\par
+83     String* adatok = {\cf17 new} String[13];\par
+84 \par
+85     {\cf18 int} i = 0;\par
+86     {\cf19 while}(getline(fpp,adatok[i],{\cf23 '#'})) \{\par
+87         {\cf19 if}(i == 11) \{\par
+88             getline(fpp, adatok[12], {\cf23 '\\n'});\par
+89             Datum ind(stoi(adatok[1]), stoi(adatok[2]), stoi(adatok[3]), stoi(adatok[4])*60+stoi(adatok[5]));\par
+90             Datum erk(stoi(adatok[6]), stoi(adatok[7]), stoi(adatok[8]), stoi(adatok[9])*60+stoi(adatok[10]));\par
+91             Vonat v(adatok[0], adatok[11], ind, adatok[12], erk);\par
+92             i = -1;\par
+93             j.add(v);\par
+94             {\cf17 delete}[] adatok;\par
+95             adatok = {\cf17 new} String[14];\par
+96         \}\par
+97 \par
+98         i++;\par
+99     \}\par
+100     {\cf17 delete}[] adatok;\par
+101     fpp.close();\par
+102 \}\par
+}
+}
+{\xe \v keres\:vonat.hpp}
+{\xe \v vonat.hpp\:keres}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void keres ({\b Jaratok} &  {\i j}, {\b String}  {\i honnan}, {\b String}  {\i hova}, {\b Datum}  {\i kezdo}, {\b Datum}  {\i vegso})}}
+\par
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) vonat.cpp f\'E1jl 104. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 104                                                                              \{\par
+105     {\cf18 bool} vanTalalat = {\cf17 false};\par
+106     {\cf19 for} ({\cf18 size_t} i = 0; i < j.size(); i++) \{\par
+107         {\cf19 if} (strstr(j[i].get_ind_all().c_str(), honnan.c_str()) != 0 && strstr(j[i].get_erkez_all().c_str(), hova.c_str()) != NULL) \{\par
+108             {\cf19 if} (j[i].get_ind_dt() >= kezdo && j[i].get_erkez_dt() <= vegso) \{\par
+109                 cout << j[i];\par
+110                 vanTalalat = {\cf17 true};\par
+111             \}\par
+112         \}\par
+113     \}\par
+114     {\cf19 if}(!vanTalalat) \{\par
+115         cout << {\cf22 "Nem tal\'E1lhat\'F3 j\'E1rat a megadott keres\'E9si felt\'E9telek szerint."} << endl;\par
+116     \}\par
+117 \}\par
+}
+}
+{\xe \v operator<<\:vonat.hpp}
+{\xe \v vonat.hpp\:operator<<}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+ostream& operator<< (ostream &  {\i os}, const {\b Jaratok} &  {\i j})}}
+\par
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Defin\'EDci\'F3 a(z) vonat.cpp f\'E1jl 119. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 119                                                    \{\par
+120     {\cf19 for}({\cf18 size_t} i = 0; i < j.size(); i++) \{\par
+121         os << j[i];\par
+122     \}\par
+123     {\cf19 return} os;\par
+124 \}\par
+}
+}
+{\xe \v operator<<\:vonat.hpp}
+{\xe \v vonat.hpp\:operator<<}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+ostream& operator<< (ostream &  {\i os}, const {\b Vonat} &  {\i v})}}
+\par
+{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Vonat}. }}\par
+{
+Defin\'EDci\'F3 a(z) vonat.cpp f\'E1jl 7. sor\'E1ban.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 7                                                  \{\par
+8     {\cf19 if}(&os == &cout) \{\par
+9         {\cf19 return} os << v.get_vsz() << {\cf23 ' '} << v.get_ind_dt() << {\cf23 ' '} << v.get_ind_all() << {\cf23 ' '} << v.get_erkez_dt()\par
+10         << {\cf23 ' '}<< v.get_erkez_all() << endl;\par
+11     \} {\cf19 else} \{\par
+12         {\cf19 return} os << v.get_vsz() << {\cf23 '#'} << v.get_ind_dt() << {\cf23 '#'} << v.get_erkez_dt() << {\cf23 '#'} << v.get_ind_all()\par
+13         << {\cf23 '#'}<< v.get_erkez_all() << endl;\par
+14     \}\par
+15 \}\par
+}
+}
+
+\pard\plain \sect\sbknone
+{\pard\widctlpar\brdrb\brdrs\brdrw75\brsp20 \adjustright \par}
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid T\'E1rgymutat\'F3\par 
+\pard\plain 
+{\tc \v T\'E1rgymutat\'F3}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}
