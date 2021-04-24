@@ -42,7 +42,7 @@ String& operator+=(const char rhs_s) {
 }
 
 bool operator==(const String &s) const;
-bool operator!=(const String &s);
+bool operator!=(const String &s) const;
 
 ~String();
 };

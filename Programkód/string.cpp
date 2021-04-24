@@ -77,7 +77,7 @@ bool String::operator==(const String &s) const {
     return false;
 }
 
-bool String::operator!=(const String &s) {
+bool String::operator!=(const String &s) const{
     return !(*this == s);
 }
 

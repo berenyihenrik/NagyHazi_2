@@ -64,7 +64,7 @@ size_t Jaratok::size() const{
     return meret;
 }
 
-bool Jaratok::checkID(String azonosito) {
+bool Jaratok::checkID(String azonosito) const{
     for(size_t i = 0; i < meret; i ++) {
         if(jaratok[i].get_vsz() == azonosito) {
             return true;

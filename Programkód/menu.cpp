@@ -1,7 +1,7 @@
 #include "menu.hpp"
 #include "vonat.hpp"
 
-void menu(Jaratok& ja, Jegyek& je) {
+void menu(Jaratok& ja, Jegyek& je){
     int menupont = 0;
     while(menupont != 6) {
         cout <<

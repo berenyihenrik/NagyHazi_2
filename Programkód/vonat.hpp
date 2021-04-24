@@ -50,7 +50,7 @@ public:
 
     size_t size() const;
 
-    bool checkID(String azonosito);
+    bool checkID(String azonosito) const;
 
     ~Jaratok() {
         delete[] jaratok;
